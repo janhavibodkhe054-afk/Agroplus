@@ -12,16 +12,15 @@ const Footer = () => {
     { name: "Agroplus Software", path: "/software" },
     { name: "Services", path: "/service" },
     { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
     <footer className="relative bg-gray-900 text-gray-300 pt-16 pb-6 px-4">
-
       {/* 🔥 TOP GRADIENT BORDER */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-white to-orange-400"></div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-
         {/* LOGO + ABOUT */}
         <div>
           <img
@@ -32,7 +31,8 @@ const Footer = () => {
 
           <p className="text-sm leading-relaxed text-gray-400">
             Providing high-quality seedlings, agricultural inputs, and smart
-            agro solutions to empower farmers with better productivity and growth.
+            agro solutions to empower farmers with better productivity and
+            growth.
           </p>
         </div>
 
@@ -66,19 +66,48 @@ const Footer = () => {
         </div>
 
         {/* CONTACT */}
+        {/* CONTACT */}
         <div>
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
 
           <div className="space-y-3 text-sm text-gray-400">
-            <p className="flex items-center gap-2">
-              <MapPin size={16} /> Pargaon Mangrul, Pune, Maharashtra 412105
-            </p>
-            <p className="flex items-center gap-2">
-              <Phone size={16} /> 91 41050 40000
-            </p>
-            <p className="flex items-center gap-2">
-              <Mail size={16} /> info@agroplus.com
-            </p>
+            {/* ADDRESS → Google Maps */}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Pargaon+Mangrul+Pune+Maharashtra+412105"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-white transition"
+            >
+              <MapPin size={16} />
+              Pargaon Mangrul, Pune, Maharashtra 412105
+            </a>
+
+            {/* PHONE → Call + WhatsApp */}
+            <a
+              href="tel:+914105040000"
+              className="flex items-center gap-2 hover:text-white transition"
+            >
+              <Phone size={16} />
+              91 41050 40000
+            </a>
+
+            <a
+              href="https://wa.me/914105040000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-green-400 transition"
+            >
+              💬 WhatsApp Chat
+            </a>
+
+            {/* EMAIL → Mail */}
+            <a
+              href="mailto:info@agroplus.com"
+              className="flex items-center gap-2 hover:text-white transition"
+            >
+              <Mail size={16} />
+              info@agroplus.com
+            </a>
           </div>
 
           {/* SOCIAL ICONS */}
@@ -97,17 +126,19 @@ const Footer = () => {
 
       {/* 🔻 BOTTOM BAR */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400 space-y-2">
-
-        <p>
-          © {new Date().getFullYear()} Agroplus. All rights reserved.
-        </p>
+        <p>© {new Date().getFullYear()} Agroplus. All rights reserved.</p>
 
         {/* ✨ DESIGNED BY */}
         <p className="text-xs text-gray-500">
           Designed & Developed by{" "}
-          <span className="text-green-400 font-medium hover:underline cursor-pointer">
+          <a
+            href="https://hashgridtech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 font-medium hover:underline cursor-pointer"
+          >
             Hashgrid Technologies Pvt.Ltd.
-          </span>
+          </a>
         </p>
       </div>
     </footer>

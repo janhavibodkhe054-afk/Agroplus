@@ -25,16 +25,25 @@ export default function KrushiSevaSection() {
     });
   }, []);
 
-  // 🔄 AUTO SLIDE
+  // 👉 NEXT / PREV (ADDED CLEAN FUNCTIONS)
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  // 🔄 AUTO SLIDE (USES nextSlide)
   useEffect(() => {
     if (pause) return;
 
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
+      nextSlide();
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, [pause]);
+  }, [pause, current]);
 
   return (
     <section className="bg-gray-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -78,7 +87,7 @@ export default function KrushiSevaSection() {
 
           {/* BUTTON */}
           <button
-            onClick={() => navigate("/krushi-seva")}
+            onClick={() => navigate("/kendra")}
             data-aos="fade-up"
             className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-orange-400 hover:scale-105 text-black font-semibold px-5 py-2.5 sm:px-6 sm:py-3 rounded-md shadow-lg transition"
           >
@@ -108,16 +117,14 @@ export default function KrushiSevaSection() {
                   ${i === current ? "scale-110" : "scale-100"}`}
                 />
 
-                {/* OVERLAY */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
 
-                {/* BADGE */}
                 <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full text-white text-xs border border-white/30">
                   Trusted by Farmers 🌱
                 </div>
               </div>
             ))}
-            
+
             {/* PROGRESS */}
             <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-200">
               <div
@@ -126,21 +133,31 @@ export default function KrushiSevaSection() {
               ></div>
             </div>
 
-            {/* ARROWS */}
+            {/* ⬅️ PREV */}
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev - 1 + images.length) % images.length)
-              }
-              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev - 1 + images.length) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ‹
             </button>
 
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev + 1) % images.length)
-              }
-              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev + 1) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ›
             </button>
@@ -161,7 +178,7 @@ export default function KrushiSevaSection() {
       {/* ANIMATION */}
       <style jsx>{`
         .animate-progress {
-          animation: progress 4s linear;
+          animation: progress 3s linear;
         }
 
         @keyframes progress {

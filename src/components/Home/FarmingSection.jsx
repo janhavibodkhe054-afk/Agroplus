@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const images = [
-  "https://b1721680.smushcdn.com/1721680/wp-content/uploads/2021/09/Smart-Farming-Solution-A-Sneak-Peek-into-Farming-Revolution-Primary-image-1-1200x600.jpg",
+  "https://img.freepik.com/free-photo/robot-spraying-fertilizer-vegetable-garden_35913-3099.jpg?semt=ais_hybrid&w=740&q=80",
   "https://5.imimg.com/data5/SELLER/Default/2023/9/348871584/TM/VO/VX/5317005/h2y7t9io-500x500.png",
   "https://agricdemy.com/content/uploads/images/March2018/ag-solutions.jpg",
   "https://connectcx.ai/wp-content/uploads/2024/07/Smart-Farming-Solutions-in-Southeast-Asia-scaled.jpg",
@@ -16,18 +16,18 @@ export default function FarmingSection() {
   const [pause, setPause] = useState(false);
   const navigate = useNavigate();
 
-  // 🔄 AUTO SLIDER
+  // AUTO SLIDER
   useEffect(() => {
     if (pause) return;
 
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [pause]);
 
-  // ✨ AOS INIT
+  // AOS INIT
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -40,7 +40,7 @@ export default function FarmingSection() {
     <section className="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-        {/* 🎬 SLIDER */}
+        {/* SLIDER */}
         <div
           data-aos="fade-right"
           className="relative group"
@@ -62,10 +62,8 @@ export default function FarmingSection() {
                   ${i === current ? "scale-110" : "scale-100"}`}
                 />
 
-                {/* 🌑 OVERLAY */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-                {/* TEXT */}
                 <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 text-white z-10">
                   <p className="text-xs sm:text-sm text-gray-200">
                     Improving yield with smart agriculture
@@ -82,27 +80,37 @@ export default function FarmingSection() {
               ></div>
             </div>
 
-            {/* ARROWS */}
+            {/* 🔥 UPDATED ARROWS */}
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev - 1 + images.length) % images.length)
-              }
-              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev - 1 + images.length) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ‹
             </button>
 
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev + 1) % images.length)
-              }
-              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev + 1) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ›
             </button>
           </div>
 
-          {/* 💎 FLOATING CARD */}
+          {/* FLOATING CARD */}
           <div
             data-aos="zoom-in"
             className="relative sm:absolute sm:-bottom-8 sm:left-6 mt-4 sm:mt-0 z-20 bg-white shadow-xl p-4 rounded-xl w-full sm:w-72 border border-gray-100"
@@ -113,7 +121,7 @@ export default function FarmingSection() {
           </div>
         </div>
 
-        {/* 📄 CONTENT */}
+        {/* CONTENT */}
         <div data-aos="fade-left">
           <p className="text-xs sm:text-sm text-orange-500 font-semibold mb-2 uppercase tracking-wider">
             Farming Solutions
@@ -130,7 +138,6 @@ export default function FarmingSection() {
             while maintaining sustainability.
           </p>
 
-          {/* FEATURES */}
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-sm">
             {[
               "Modern Irrigation",
@@ -150,7 +157,6 @@ export default function FarmingSection() {
             ))}
           </div>
 
-          {/* BUTTON */}
           <button
             onClick={() => navigate("/farming")}
             data-aos="zoom-in-up"
@@ -161,10 +167,9 @@ export default function FarmingSection() {
         </div>
       </div>
 
-      {/* 🔥 PROGRESS ANIMATION */}
       <style jsx>{`
         .animate-progress {
-          animation: progress 4s linear;
+          animation: progress 3s linear;
         }
 
         @keyframes progress {

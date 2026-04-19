@@ -22,7 +22,7 @@ export default function AgroSeedlingSection() {
 
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [pause]);
@@ -48,7 +48,7 @@ export default function AgroSeedlingSection() {
     >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-        {/* 📄 LEFT CONTENT */}
+        {/* LEFT CONTENT */}
         <div
           className={`transition-all duration-1000 delay-100 ${
             visible
@@ -70,7 +70,6 @@ export default function AgroSeedlingSection() {
             culture, Sugarcane, and vegetable plants for better productivity.
           </p>
 
-          {/* FEATURES */}
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-sm">
             {[
               "Banana Tissue Culture",
@@ -93,9 +92,8 @@ export default function AgroSeedlingSection() {
             ))}
           </div>
 
-          {/* BUTTON */}
           <button
-            onClick={() => navigate("/seedlings")}
+            onClick={() => navigate("/seed")}
             className={`w-full sm:w-auto bg-gradient-to-r from-green-500 to-orange-400 text-black font-semibold px-5 py-2.5 sm:px-6 sm:py-3 rounded-md shadow-lg transition-all duration-700 ${
               visible
                 ? "opacity-100 scale-100"
@@ -106,7 +104,7 @@ export default function AgroSeedlingSection() {
           </button>
         </div>
 
-        {/* 🎬 RIGHT SLIDER */}
+        {/* RIGHT SLIDER */}
         <div
           className={`relative group transition-all duration-1000 delay-200 ${
             visible
@@ -147,21 +145,31 @@ export default function AgroSeedlingSection() {
               ></div>
             </div>
 
-            {/* ARROWS */}
+            {/* 🔥 UPDATED ARROWS */}
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev - 1 + images.length) % images.length)
-              }
-              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev - 1 + images.length) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ‹
             </button>
 
             <button
-              onClick={() =>
-                setCurrent((prev) => (prev + 1) % images.length)
-              }
-              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-black px-2 sm:px-3 py-1.5 sm:py-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+              onClick={() => {
+                setPause(true);
+                setCurrent((prev) => (prev + 1) % images.length);
+                setTimeout(() => setPause(false), 4000);
+              }}
+              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 
+              bg-black/60 hover:bg-black/60 text-white 
+              w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center 
+              rounded-full transition z-20"
             >
               ›
             </button>
@@ -182,10 +190,9 @@ export default function AgroSeedlingSection() {
         </div>
       </div>
 
-      {/* 🔥 PROGRESS ANIMATION */}
       <style jsx>{`
         .animate-progress {
-          animation: progress 4s linear;
+          animation: progress 3s linear;
         }
 
         @keyframes progress {
