@@ -37,7 +37,7 @@ export default function ERPSection() {
   }, [pause]);
 
   return (
-    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
         {/* 🎬 SLIDER */}
@@ -110,7 +110,7 @@ export default function ERPSection() {
             data-aos="zoom-in-up"
             className="relative sm:absolute sm:-bottom-8 sm:left-6 mt-4 sm:mt-0 z-20 bg-white shadow-xl p-4 rounded-xl w-full sm:w-72 border border-gray-100"
           >
-            <p className="text-xs sm:text-sm text-gray-700 italic">
+            <p className="text-sm sm:text-lg text-gray-900 italic">
               “Digitize your agro business with powerful ERP tools & insights.”
             </p>
           </div>

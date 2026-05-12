@@ -24,9 +24,9 @@ const Footer = () => {
         {/* LOGO + ABOUT */}
         <div>
           <img
-            src="https://agroplus.co.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-3.28.39-PM.jpeg"
+            src="logo.png"
             alt="Agroplus Logo"
-            className="w-70 h-20 object-contain mb-3"
+            className="w-[300px] h-20 object-contain mb-3 -ml-4"
           />
 
           <p className="text-sm leading-relaxed text-gray-400">
@@ -66,31 +66,18 @@ const Footer = () => {
         </div>
 
         {/* CONTACT */}
-        {/* CONTACT */}
         <div>
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
 
           <div className="space-y-3 text-sm text-gray-400">
             {/* ADDRESS → Google Maps */}
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Pargaon+Mangrul+Pune+Maharashtra+412105"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@agroplus.com"
               className="flex items-center gap-2 hover:text-white transition"
             >
-              <MapPin size={16} />
-              Pargaon Mangrul, Pune, Maharashtra 412105
+              <Mail size={16} />
+              info@agroplus.com
             </a>
-
-            {/* PHONE → Call + WhatsApp */}
-            <a
-              href="tel:+914105040000"
-              className="flex items-center gap-2 hover:text-white transition"
-            >
-              <Phone size={16} />
-              91 41050 40000
-            </a>
-
             <a
               href="https://wa.me/914105040000"
               target="_blank"
@@ -99,14 +86,21 @@ const Footer = () => {
             >
               💬 WhatsApp Chat
             </a>
-
-            {/* EMAIL → Mail */}
             <a
-              href="mailto:info@agroplus.com"
+              href="tel:+914105040000"
               className="flex items-center gap-2 hover:text-white transition"
             >
-              <Mail size={16} />
-              info@agroplus.com
+              <Phone size={16} />
+              91 41050 40000
+            </a>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Pargaon+Mangrul+Pune+Maharashtra+412105"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-white transition"
+            >
+              <MapPin size={16} />
+              Pargaon Mangrul, Pune, Maharashtra 412105
             </a>
           </div>
 

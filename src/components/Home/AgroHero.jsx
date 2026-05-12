@@ -5,102 +5,146 @@ export default function AgroHero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full h-[90vh] md:h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden md:pt-10">
 
-      {/* 🌄 BACKGROUND IMAGE (ZOOM ANIMATION) */}
+      {/* 🌄 BACKGROUND IMAGE */}
       <div
         className="absolute inset-0 bg-cover bg-center animate-zoom"
         style={{
           backgroundImage:
             "url('https://static.vecteezy.com/system/resources/thumbnails/023/060/798/small/farming-tractor-spraying-plants-in-a-field-photo.jpg')",
         }}
-      ></div>
+      />
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* 🌑 OVERLAY */}
+      <div className="absolute inset-0 bg-black/55"></div>
 
-      {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-4 sm:px-6">
+      {/* ✨ GRADIENT */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
 
-        <div className="text-white max-w-2xl animate-fadeUp">
+      {/* 📦 CONTENT */}
+      <div className="relative z-10 max-w-7xl mx-auto min-h-screen flex items-center px-5 sm:px-8">
 
-          {/* TAG */}
-          <p className="inline-block bg-white/10 backdrop-blur-md px-4 py-1 rounded-full text-orange-400 uppercase tracking-widest text-xs sm:text-sm mb-4 font-semibold">
-            Natural Environment
-          </p>
+        <div className="max-w-3xl text-white pt-24 md:pt-0 animate-fadeUp">
 
-          {/* HEADING */}
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
-            Healthy & Disease-Free <br />
-            <span className="text-green-400 relative">
-              Quality Seedlings
-              
+          {/* 🏷️ TAG */}
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg border border-white/20 px-4 py-2 rounded-full mb-6">
+            <span className="w-2 h-2 rounded-full bg-green-400"></span>
+
+            <p className="text-xs sm:text-sm tracking-[3px] uppercase text-orange-300 font-semibold">
+              Natural Environment
+            </p>
+          </div>
+
+          {/* 📝 HEADING */}
+          <h1 className="text-[42px] leading-[1.05] sm:text-6xl lg:text-7xl font-black mb-6">
+            Healthy & <br />
+            Disease-Free{" "}
+            <span className="text-green-400">
+              Seedlings
             </span>
           </h1>
 
-          {/* DESCRIPTION */}
-          <p className="text-gray-100 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
-            Agroplus Seedlings & Nursery providing premium Banana tissue culture,
-            Sugarcane, and Vegetable seedlings. Visit our Krushi Seva Kendra
-            for expert guidance and quality farm inputs.
+          {/* 📄 DESCRIPTION */}
+          <p className="text-gray-200 text-[16px] sm:text-lg leading-relaxed max-w-2xl mb-8">
+            Premium Banana tissue culture, Sugarcane, and Vegetable
+            seedlings with expert agricultural guidance for modern farming.
           </p>
 
-          {/* BUTTONS */}
-         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-  
-  <button
-    onClick={() => navigate("/seedlings")}
-    className="bg-gradient-to-r from-green-500 to-orange-400 hover:scale-105 
-    text-black font-semibold 
-    px-4 py-2 text-sm 
-    sm:px-6 sm:py-3 sm:text-base 
-    rounded-md shadow-lg transition"
-  >
-    View Seedlings
-  </button>
+          {/* 🔢 STATS */}
+          <div className="flex flex-wrap items-center gap-8 sm:gap-12 mb-10">
 
-  <button
-    onClick={() => navigate("/contact")}
-    className="border border-white hover:bg-white hover:text-black 
-    px-4 py-2 text-sm 
-    sm:px-6 sm:py-3 sm:text-base 
-    rounded-md transition"
-  >
-    Contact Us
-  </button>
+            {/* STAT */}
+            <div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-green-400">
+                10+
+              </h3>
 
-</div>
+              <p className="text-sm sm:text-base text-gray-300 mt-1">
+                Years Experience
+              </p>
+            </div>
 
-          {/* LOCATION */}
-          <p className="mt-5 text-gray-100 text-xs sm:text-sm flex items-center gap-2">
-            <span className="text-orange-400">📍</span> Based in Pargaon
-          </p>
+            {/* STAT */}
+            <div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-orange-400">
+                5000+
+              </h3>
+
+              <p className="text-sm sm:text-base text-gray-300 mt-1">
+                Happy Farmers
+              </p>
+            </div>
+
+          </div>
+
+          {/* 🔘 BUTTONS */}
+          <div className="flex flex-col sm:flex-row gap-4">
+
+            <button
+              onClick={() => navigate("/seedlings")}
+              className="
+                bg-gradient-to-r from-green-500 to-orange-400
+                hover:scale-105
+                text-black
+                font-bold
+                text-base
+                px-7 py-4
+                rounded-xl
+                shadow-2xl
+                transition-all duration-300
+              "
+            >
+              View Seedlings
+            </button>
+
+            <button
+              onClick={() => navigate("/contact")}
+              className="
+                border border-white/40
+                bg-white/10
+                backdrop-blur-md
+                hover:bg-white
+                hover:text-black
+                text-white
+                font-semibold
+                text-base
+                px-7 py-4
+                rounded-xl
+                transition-all duration-300
+              "
+            >
+              Contact Us
+            </button>
+
+          </div>
+
         </div>
       </div>
 
       {/* ✨ ANIMATIONS */}
       <style jsx>{`
         .animate-zoom {
-          animation: zoomBg 20s ease-in-out infinite alternate;
+          animation: zoomBg 18s ease-in-out infinite alternate;
         }
 
         @keyframes zoomBg {
           from {
-            transform: scale(1);
+            transform: scale(1.05);
           }
           to {
-            transform: scale(1.1);
+            transform: scale(1.15);
           }
         }
 
         .animate-fadeUp {
-          animation: fadeUp 1s ease-out;
+          animation: fadeUp 1.2s ease;
         }
 
         @keyframes fadeUp {
           from {
             opacity: 0;
-            transform: translateY(40px);
+            transform: translateY(50px);
           }
           to {
             opacity: 1;

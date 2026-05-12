@@ -6,7 +6,7 @@ export default function ContactCTA() {
 
   return (
     <section
-      className="relative bg-cover bg-center z-0 -mt-48"
+      className="relative bg-cover bg-center z-0 -mt-68"
       style={{
         backgroundImage:
           "url('https://static.vecteezy.com/system/resources/previews/016/807/601/non_2x/beautiful-green-leaf-background-watercolor-vector.jpg')",
@@ -37,7 +37,7 @@ export default function ContactCTA() {
       </div>
 
       {/* 🔥 OVERLAP SPACE */}
-      <div className="h-20"></div>
+      <div className="h-12"></div>
     </section>
   );
 }

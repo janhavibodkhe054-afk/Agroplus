@@ -46,7 +46,7 @@ export default function KrushiSevaSection() {
   }, [pause, current]);
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="bg-gray-50 py-12 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
         {/* 📄 LEFT CONTENT */}
@@ -119,7 +119,7 @@ export default function KrushiSevaSection() {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
 
-                <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full text-white text-xs border border-white/30">
+                <div className="absolute top-4 right-4 bg-white/80 px-3 py-1.5 rounded-full text-black text-xs border border-white/30">
                   Trusted by Farmers 🌱
                 </div>
               </div>

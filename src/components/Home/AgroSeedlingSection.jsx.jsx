@@ -44,7 +44,7 @@ export default function AgroSeedlingSection() {
   return (
     <section
       ref={sectionRef}
-      className="bg-gray-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="bg-gray-50 py-12 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
@@ -183,7 +183,7 @@ export default function AgroSeedlingSection() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <p className="text-xs sm:text-sm text-gray-700 italic">
+            <p className="text-sm sm:text-lg text-gray-900 italic">
               “Healthy roots today, stronger crops tomorrow.”
             </p>
           </div>
