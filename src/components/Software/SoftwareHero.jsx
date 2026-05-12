@@ -18,7 +18,7 @@ export default function SoftwareHero() {
         />
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/75"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-green-900/40"></div>
       </div>

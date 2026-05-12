@@ -7,217 +7,203 @@ import {
   Activity,
   ArrowRight,
   Phone,
+  Target,
+  DollarSign,
 } from "lucide-react";
 
 export default function AnalyticsDashboard() {
   return (
-    <section className="relative bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative bg-[#f8fafc] py-16 md:py-24 overflow-hidden">
 
-      {/* BLUR EFFECTS */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-40"></div>
-
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-200 rounded-full blur-3xl opacity-30"></div>
+      {/* BACKGROUND EFFECT */}
+      <div className="absolute top-0 left-0 w-80 h-80 bg-green-200/40 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-100/50 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-          {/* LEFT CONTENT */}
+          {/* LEFT SIDE */}
           <motion.div
-            initial={{ opacity: 0, x: -60 }}
+            initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="order-2 lg:order-1"
           >
 
-            {/* TAG */}
-            <div className="
-              inline-flex items-center gap-2
-              bg-green-100
-              text-green-700
-              px-4 py-2
-              rounded-full
-              mb-6
-            ">
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-6">
               <TrendingUp size={18} />
-
-              <p className="text-sm font-semibold tracking-wide">
-                Analytics Dashboard
-              </p>
+              <p className="text-sm font-semibold">Farm Management System</p>
             </div>
 
-            {/* HEADING */}
-            <h2 className="
-              text-3xl sm:text-4xl md:text-5xl
-              font-black
-              text-gray-900
-              leading-tight
-              mb-6
-            ">
-
-              Smart Business <br />
-
-              <span className="
-                bg-gradient-to-r
-                from-green-600
-                to-black
-                bg-clip-text
-                text-transparent
-              ">
-                Insights & Reports
-              </span>
-
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight mb-6">
+              Smart Farming <br />
+              <span className="text-green-600">Cost Tracker Dashboard</span>
             </h2>
 
-            {/* DESCRIPTION */}
-            <p className="
-              text-gray-600
-              text-base sm:text-lg
-              leading-relaxed
-              mb-8
-              max-w-xl
-            ">
-              Monitor revenue, inventory, sales and customer
-              performance with powerful analytics dashboards
-              built for agro businesses and stores.
+            <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
+              Track your farming expenses like seeds, fertilizer, labour and irrigation.
+              Know exactly how much cost goes into each crop season.
             </p>
 
-            
+            <div className="grid grid-cols-2 gap-5 mb-10">
 
-            {/* BUTTONS */}
+              {[
+                { icon: DollarSign, title: "Total Cost", value: "₹12.5K" },
+                { icon: Target, title: "Seeds Used", value: "10 Bags" },
+                { icon: BarChart3, title: "Expenses", value: "4 Types" },
+                { icon: Activity, title: "Efficiency", value: "High" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-lg transition"
+                >
+                  <item.icon className="text-green-600 mb-3" size={22} />
+                  <h4 className="text-gray-500 text-sm">{item.title}</h4>
+                  <h3 className="text-2xl font-black text-gray-900">
+                    {item.value}
+                  </h3>
+                </div>
+              ))}
+
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
 
-              {/* KNOW MORE */}
               <a
-                href="https://wa.me/914105040000
-"
+                href="https://wa.me/919860207957"
                 target="_blank"
                 rel="noreferrer"
-                className="
-                  inline-flex items-center justify-center gap-2
-                  bg-gradient-to-r
-                  from-green-600
-                  to-black
-                  hover:scale-105
-                  text-white
-                  font-semibold
-                  px-7 py-4
-                  rounded-2xl
-                  shadow-xl
-                  transition-all duration-300
-                "
+                className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl"
               >
                 Know More
                 <ArrowRight size={18} />
               </a>
 
-              {/* NUMBER */}
-              <a
-                href="https://wa.me/914105040000
-"
-                target="_blank"
-                rel="noreferrer"
-                className="
-                  inline-flex items-center justify-center gap-2
-                  border border-green-200
-                  bg-white
-                  hover:bg-green-50
-                  text-gray-800
-                  font-semibold
-                  px-7 py-4
-                  rounded-2xl
-                  transition-all duration-300
-                "
-              >
+              <div className="flex items-center justify-center gap-2 border border-gray-300 bg-white px-8 py-4 rounded-2xl font-semibold text-gray-800">
                 <Phone size={18} className="text-green-600" />
-
-                +91 41050 40000
-
-              </a>
+                +91 98602 07957
+              </div>
 
             </div>
 
           </motion.div>
 
-          {/* RIGHT IMAGE */}
+          {/* RIGHT SIDE - FARMING DASHBOARD */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
+            initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative"
+            className="order-1 lg:order-2"
           >
 
-            {/* DASHBOARD IMAGE */}
-            <div className="
-              relative
-              bg-black
-              rounded-[32px]
-              p-4
-              shadow-2xl
-              border border-gray-800
-            ">
+            <div className="bg-white rounded-[32px] shadow-2xl border border-gray-200 overflow-hidden">
 
-              {/* TOP BAR */}
-              <div className="flex items-center gap-2 px-2 pb-4">
-                <span className="w-3 h-3 rounded-full bg-gray-500"></span>
-                <span className="w-3 h-3 rounded-full bg-green-500"></span>
-                <span className="w-3 h-3 rounded-full bg-gray-700"></span>
+              {/* HEADER */}
+              <div className="flex items-center justify-between bg-gradient-to-r from-green-900 to-green-700 px-6 py-5">
+
+                <div className="flex items-center gap-3">
+
+                  <div className="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center text-white">
+                    <PieChart size={22} />
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-bold text-lg">
+                      Farm Cost Tracker
+                    </h3>
+                    <p className="text-green-100 text-xs">
+                      Manage all farming expenses
+                    </p>
+                  </div>
+
+                </div>
+
+                <span className="bg-white text-green-700 text-xs px-3 py-1 rounded-full font-semibold">
+                  ACTIVE
+                </span>
+
               </div>
 
-              {/* IMAGE */}
-              <div className="
-                overflow-hidden
-                rounded-[24px]
-                border border-gray-800
-              ">
+              {/* CONTENT */}
+              <div className="p-6 bg-[#f8fafc]">
 
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
-                  alt="Analytics Dashboard"
-                  className="
-                    w-full
-                    h-[260px] sm:h-[380px] md:h-[450px]
-                    object-cover
-                  "
-                />
+                {/* MAIN COST */}
+                <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 mb-6">
+
+                  <div className="flex items-center justify-between">
+
+                    <div>
+                      <p className="text-gray-500 text-sm">
+                        Total Farming Cost (Season)
+                      </p>
+                      <h2 className="text-4xl font-black text-gray-900 mt-1">
+                        ₹12,500
+                      </h2>
+                    </div>
+
+                    <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center">
+                      <DollarSign className="text-green-600" size={28} />
+                    </div>
+
+                  </div>
+
+                  <div className="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
+                    <div className="h-full w-[60%] bg-green-500 rounded-full"></div>
+                  </div>
+
+                  <p className="text-xs text-gray-500 mt-2">
+                    Cost tracking for this crop cycle
+                  </p>
+
+                </div>
+
+                {/* INPUT COSTS */}
+                <div className="grid grid-cols-2 gap-4 mb-6">
+
+                  {[
+                    { label: "Seeds", value: "10 Bags", icon: Target },
+                    { label: "Fertilizer", value: "₹3,200", icon: Activity },
+                    { label: "Labour", value: "₹4,500", icon: BarChart3 },
+                    { label: "Water", value: "₹1,800", icon: TrendingUp },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-md transition"
+                    >
+                      <item.icon className="text-green-600 mb-2" size={20} />
+                      <p className="text-xs text-gray-500">{item.label}</p>
+                      <h3 className="text-xl font-black text-gray-900">
+                        {item.value}
+                      </h3>
+                    </div>
+                  ))}
+
+                </div>
+
+                {/* INFO BOX */}
+                <div className="bg-green-50 border border-green-100 rounded-3xl p-5">
+
+                  <h4 className="font-bold text-green-900 mb-2">
+                    Smart Farming Insight
+                  </h4>
+
+                  <p className="text-sm text-green-800 leading-relaxed">
+                    Ek crop sathi kitka kharch zhala, kiti seed gela, fertilizer, labour
+                    ani water sagla app madhe track hota. Farmer la manual calculation karaychi garaj nahi.
+                  </p>
+
+                </div>
 
               </div>
 
             </div>
-
-            {/* FLOATING CARD */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="
-                absolute
-                -bottom-6
-                left-6
-                bg-white
-                shadow-2xl
-                rounded-2xl
-                px-6 py-5
-                border border-gray-100
-              "
-            >
-
-              <p className="text-sm text-gray-500 mb-1">
-                Revenue Growth
-              </p>
-
-              <h3 className="text-3xl font-black text-green-600">
-                +32%
-              </h3>
-
-            </motion.div>
 
           </motion.div>
 
         </div>
-
       </div>
     </section>
   );

@@ -1,234 +1,206 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  Boxes,
-  BellRing,
-  FolderTree,
-  History,
-  ShoppingCart,
+  Sprout,
   ArrowRight,
+  CheckCircle2,
+  Tractor,
 } from "lucide-react";
 
-export default function InventoryManagement() {
-  const features = [
-    {
-      icon: <BellRing size={20} />,
-      title: "Low Stock Alerts",
-    },
-    {
-      icon: <FolderTree size={20} />,
-      title: "Product Categories",
-    },
-    {
-      icon: <History size={20} />,
-      title: "Stock History",
-    },
-    {
-      icon: <ShoppingCart size={20} />,
-      title: "Purchase Tracking",
-    },
-  ];
-
+export default function FarmingExpenseManagement() {
   return (
     <section className="relative bg-[#f8fafc] py-16 md:py-24 overflow-hidden">
 
-      {/* 🌈 BACKGROUND EFFECTS */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-green-200/40 rounded-full blur-3xl"></div>
+      {/* BACKGROUND EFFECT */}
+      <div className="absolute top-0 left-0 w-80 h-80 bg-green-200/40 rounded-full blur-3xl"></div>
 
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-orange-200/40 rounded-full blur-3xl"></div>
-
-      {/* DOTS */}
-      <div className="absolute inset-0 opacity-20 hidden md:block">
-        <div className="absolute top-10 left-20 grid grid-cols-8 gap-4">
-          {[...Array(40)].map((_, i) => (
-            <span
-              key={i}
-              className="w-1.5 h-1.5 rounded-full bg-green-400"
-            ></span>
-          ))}
-        </div>
-      </div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-100/50 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-          {/* LEFT IMAGE SIDE */}
+          {/* LEFT SIDE IMAGE/UI */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="relative order-2 lg:order-1"
           >
 
-            {/* FLOATING BOX */}
+            {/* MAIN DASHBOARD */}
+            <div className="
+              bg-white
+              rounded-[32px]
+              shadow-2xl
+              border border-gray-200
+              overflow-hidden
+            ">
+
+              {/* TOP HEADER */}
+              <div className="
+                bg-black
+                px-6 py-5
+                flex items-center justify-between
+              ">
+
+                <div className="flex items-center gap-3">
+
+                  <div className="
+                    w-12 h-12
+                    rounded-2xl
+                    bg-green-500
+                    flex items-center justify-center
+                    text-white
+                  ">
+                    <Tractor size={24} />
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-bold text-lg">
+                      Agroplus Farmer App
+                    </h3>
+
+                    <p className="text-gray-400 text-sm">
+                      Smart Farming Expense Tracker
+                    </p>
+                  </div>
+
+                </div>
+
+                <div className="
+                  bg-green-500/20
+                  text-green-400
+                  px-3 py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                ">
+                  LIVE
+                </div>
+
+              </div>
+
+              {/* BODY */}
+              <div className="p-6 bg-[#f8fafc]">
+
+                {/* TOTAL COST */}
+                <div className="
+                  bg-gradient-to-r
+                  from-green-500
+                  to-green-600
+                  rounded-3xl
+                  p-6
+                  text-white
+                  mb-6
+                ">
+
+                  <p className="text-green-100 mb-2">
+                    Total Farming Expense
+                  </p>
+
+                  <h2 className="text-4xl font-black mb-4">
+                    ₹18,450
+                  </h2>
+
+                  <div className="flex items-center gap-3 text-sm">
+                    <span className="bg-white/20 px-3 py-1 rounded-full">
+                      Soybean Farming
+                    </span>
+
+                    <span className="bg-white/20 px-3 py-1 rounded-full">
+                      Season 2025
+                    </span>
+                  </div>
+
+                </div>
+
+                {/* EXPENSE LIST */}
+                <div className="
+                  bg-white
+                  rounded-3xl
+                  border border-gray-100
+                  overflow-hidden
+                ">
+
+                  {[
+                    {
+                      name: "Soybean Seeds",
+                      amount: "₹4,500",
+                    },
+                    {
+                      name: "Fertilizer Purchase",
+                      amount: "₹5,200",
+                    },
+                    {
+                      name: "Pesticides Spray",
+                      amount: "₹2,300",
+                    },
+                    {
+                      name: "Labor Charges",
+                      amount: "₹3,500",
+                    },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="
+                        flex items-center justify-between
+                        px-6 py-5
+                        border-b last:border-0
+                      "
+                    >
+
+                      <div>
+                        <h4 className="font-bold text-gray-900">
+                          {item.name}
+                        </h4>
+
+                        <p className="text-sm text-gray-500 mt-1">
+                          Farming Expense Record
+                        </p>
+                      </div>
+
+                      <h3 className="text-xl font-black text-green-600">
+                        {item.amount}
+                      </h3>
+
+                    </div>
+                  ))}
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* FLOATING CARD */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
               className="
                 absolute
-                top-0
-                left-2 sm:left-8
-                z-20
+                -bottom-6
+                right-0
                 bg-white
-                shadow-xl
-                rounded-2xl
-                px-5 py-4
-                flex items-center gap-3
-                border border-gray-100
-              "
-            >
-              <div className="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center text-green-600">
-                <BellRing size={20} />
-              </div>
-
-              <p className="font-semibold text-gray-800 text-sm sm:text-base">
-                Real-Time Stock Alerts
-              </p>
-            </motion.div>
-
-            {/* SECOND FLOATING */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              viewport={{ once: true }}
-              className="
-                absolute
-                top-20
-                left-12 sm:left-20
-                z-20
-                bg-white
-                shadow-xl
-                rounded-2xl
-                px-5 py-4
-                flex items-center gap-3
-                border border-gray-100
-              "
-            >
-              <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-500">
-                <Boxes size={20} />
-              </div>
-
-              <p className="font-semibold text-gray-800 text-sm sm:text-base">
-                Inventory Automation
-              </p>
-            </motion.div>
-
-            {/* MAIN MOCKUP */}
-            <div className="relative pt-28 sm:pt-32">
-
-              <div className="
-                bg-white
-                rounded-[32px]
                 shadow-2xl
-                border border-gray-200
-                overflow-hidden
-              ">
+                rounded-2xl
+                px-5 py-4
+                border border-gray-100
+              "
+            >
 
-                {/* HEADER */}
-                <div className="flex items-center justify-between px-5 py-4 border-b bg-[#f8fafc]">
-                  <div className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-red-400"></span>
-                    <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
-                    <span className="w-3 h-3 rounded-full bg-green-400"></span>
-                  </div>
+              <p className="text-sm text-gray-500 mb-1">
+                Expense Tracking Accuracy
+              </p>
 
-                  <p className="text-sm font-semibold text-gray-500">
-                    Agroplus Inventory
-                  </p>
-                </div>
+              <h3 className="text-3xl font-black text-green-600">
+                98%
+              </h3>
 
-                {/* DASHBOARD */}
-                <div className="p-5 bg-white">
-
-                  {/* TOP CARDS */}
-                  <div className="grid grid-cols-2 gap-4 mb-5">
-
-                    <div className="bg-green-50 rounded-2xl p-4 border border-green-100">
-                      <p className="text-sm text-gray-500 mb-1">
-                        Total Products
-                      </p>
-
-                      <h3 className="text-2xl font-black text-green-600">
-                        2,540
-                      </h3>
-                    </div>
-
-                    <div className="bg-orange-50 rounded-2xl p-4 border border-orange-100">
-                      <p className="text-sm text-gray-500 mb-1">
-                        Low Stock
-                      </p>
-
-                      <h3 className="text-2xl font-black text-orange-500">
-                        18
-                      </h3>
-                    </div>
-
-                  </div>
-
-                  {/* TABLE */}
-                  <div className="rounded-2xl border border-gray-100 overflow-hidden">
-
-                    <div className="grid grid-cols-3 bg-[#f8fafc] px-4 py-3 text-sm font-semibold text-gray-600">
-                      <p>Product</p>
-                      <p>Category</p>
-                      <p>Stock</p>
-                    </div>
-
-                    {[
-                      ["Banana Seedlings", "Seedlings", "240"],
-                      ["Fertilizer", "Agro Products", "120"],
-                      ["Pesticides", "Crop Care", "65"],
-                    ].map((item, i) => (
-                      <div
-                        key={i}
-                        className="grid grid-cols-3 px-4 py-3 border-t text-sm text-gray-700"
-                      >
-                        <p>{item[0]}</p>
-                        <p>{item[1]}</p>
-
-                        <p className="font-semibold text-green-600">
-                          {item[2]}
-                        </p>
-                      </div>
-                    ))}
-
-                  </div>
-
-                </div>
-              </div>
-
-              {/* FLOATING ACCURACY */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                viewport={{ once: true }}
-                className="
-                  absolute
-                  -bottom-6
-                  right-0
-                  bg-black
-                  text-white
-                  rounded-2xl
-                  px-6 py-4
-                  shadow-2xl
-                "
-              >
-                <p className="text-sm text-gray-300 mb-1">
-                  Inventory Accuracy
-                </p>
-
-                <h3 className="text-3xl font-black text-green-400">
-                  98%
-                </h3>
-              </motion.div>
-
-            </div>
+            </motion.div>
 
           </motion.div>
 
@@ -236,7 +208,7 @@ export default function InventoryManagement() {
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="order-1 lg:order-2"
           >
@@ -250,69 +222,87 @@ export default function InventoryManagement() {
               rounded-full
               mb-6
             ">
-              <Boxes size={18} />
+              <Sprout size={18} />
 
               <p className="text-sm font-semibold tracking-wide">
-                Inventory Management
+                Farmer Expense Management
               </p>
             </div>
 
             {/* HEADING */}
-            <h2 className="text-4xl sm:text-5xl font-black leading-tight text-gray-900 mb-6">
+            <h2 className="
+              text-4xl
+              sm:text-5xl
+              font-black
+              leading-tight
+              text-gray-900
+              mb-6
+            ">
 
-              Manage Agro <br />
+              Farming Expense <br />
 
               <span className="text-green-600">
-                Inventory Smarter
+                Management Software
               </span>
 
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-              Track fertilizers, seedlings, pesticides, agricultural
-              products and stock levels in real-time with powerful
-              inventory automation built for agro businesses.
-            </p>
-
-            
-
-            {/* WHATSAPP CTA */}
-            <div className="
-              flex flex-col sm:flex-row
-              overflow-hidden
-              rounded-2xl
-              border border-gray-300
-              bg-white
-              shadow-md
+            <p className="
+              text-gray-600
+              text-lg
+              leading-relaxed
+              mb-8
               max-w-xl
             ">
+              Agroplus helps farmers manage complete
+              farming expenses including seeds,
+              fertilizers, pesticides, labor charges
+              and crop investment records in one place.
+            </p>
 
-              <div className="
-                flex items-center
-                px-5 py-4
-                bg-[#f8fafc]
-                border-b sm:border-b-0 sm:border-r
-                font-semibold
-                text-gray-800
-              ">
-                +91
-              </div>
+            {/* FEATURES */}
+            <div className="space-y-5 mb-10">
 
-              <input
-                type="text"
-                placeholder="Enter Mobile Number"
-                className="
-                  flex-1
-                  px-5 py-4
-                  outline-none
-                  text-gray-700
-                "
-              />
+              {[
+                "Record seed purchase expenses",
+                "Manage fertilizer & spray costs",
+                "Track crop-wise farming investment",
+                "Monitor total seasonal expenses",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4"
+                >
+
+                  <div className="
+                    w-11 h-11
+                    rounded-xl
+                    bg-green-100
+                    text-green-600
+                    flex items-center justify-center
+                    shrink-0
+                  ">
+                    <CheckCircle2 size={20} />
+                  </div>
+
+                  <p className="text-lg font-medium text-gray-800">
+                    {item}
+                  </p>
+
+                </div>
+              ))}
+
+            </div>
+
+            {/* CTA */}
+            <div className="
+              flex flex-col sm:flex-row
+              gap-4
+            ">
 
               <a
-                href="https://wa.me/914105040000
-"
+                href="https://wa.me/919860207957"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -321,19 +311,29 @@ export default function InventoryManagement() {
                   hover:bg-gray-900
                   text-white
                   font-semibold
-                  px-7 py-4
-                  transition
+                  px-8 py-4
+                  rounded-2xl
+                  shadow-xl
+                  transition-all duration-300
                 "
               >
                 Know More
                 <ArrowRight size={18} />
               </a>
 
-            </div>
+              <div className="
+                flex items-center justify-center
+                border border-gray-300
+                bg-white
+                px-8 py-4
+                rounded-2xl
+                text-gray-800
+                font-semibold
+              ">
+                +91 98602 07957
+              </div>
 
-            <p className="text-sm text-gray-500 mt-4">
-              Connect instantly with Agroplus Software Support
-            </p>
+            </div>
 
           </motion.div>
 
