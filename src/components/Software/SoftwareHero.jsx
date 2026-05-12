@@ -112,7 +112,7 @@ export default function SoftwareHero() {
 
             {/* WHATSAPP */}
             <a
-              href="https://wa.me/914105040000
+              href="https://wa.me/919860207957
 "
               target="_blank"
               rel="noopener noreferrer"
@@ -131,7 +131,7 @@ export default function SoftwareHero() {
               "
             >
               <PhoneCall size={18} />
-              +91 41050 40000
+              +91 98602 07957
 
             </a>
 
