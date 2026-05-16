@@ -31,7 +31,7 @@ export default function FinancialReports() {
               <div className="w-full max-w-[520px]">
                 <img
                   src="/mobile.jpeg"
-                  alt="Farmer Expense Management App"
+                  alt="Agroplus Farm ERP Dashboard"
                   className="w-full h-auto object-contain rounded-[32px] shadow-2xl border border-gray-200"
                 />
               </div>
@@ -52,28 +52,30 @@ export default function FinancialReports() {
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-6">
               <ReceiptText size={18} />
               <p className="text-sm font-semibold tracking-wide">
-                Farmer Expense Reports
+                Smart Farm Reports
               </p>
             </div>
 
             {/* HEADING */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
-              Track Farming Costs <br />
+              Manage Farm Data <br />
               <span className="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-                & Share Crop Reports Instantly
+                & Access Reports Instantly
               </span>
             </h2>
 
             {/* DESCRIPTION */}
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
-              Farmers can easily track complete crop expenses including seeds,
-              fertilizers, labour, irrigation and tractor costs.
-              Generate simple expense reports for each farming season.
+              Agroplus Farm ERP helps farmers and agribusinesses manage
+              crop-wise accounting, labor records, fertigation history,
+              sales & purchase tracking, and complete farm operations
+              from one centralized platform.
             </p>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
-              Share farming cost details with family, partners or buyers directly
-              through WhatsApp in one click.
+              Generate smart farm reports and instantly access plot-wise
+              profitability, crop performance, and analytics anytime,
+              anywhere through mobile.
             </p>
 
             {/* INPUT + BUTTON */}
@@ -95,14 +97,14 @@ export default function FinancialReports() {
                 rel="noreferrer"
                 className="bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 transition flex items-center justify-center whitespace-nowrap"
               >
-                Get Report
+                Get Demo
               </a>
 
             </div>
 
             {/* NOTE */}
             <p className="text-sm text-gray-500 mt-4">
-              Simple farming expense reports designed for farmers to track and manage crop cost easily.
+              Easy-to-use farm ERP software designed specially for Indian farmers and agribusinesses.
             </p>
 
           </motion.div>

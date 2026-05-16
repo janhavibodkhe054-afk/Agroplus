@@ -34,26 +34,27 @@ export default function AnalyticsDashboard() {
 
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-6">
               <TrendingUp size={18} />
-              <p className="text-sm font-semibold">Farm Management System</p>
+              <p className="text-sm font-semibold">Agroplus Farm ERP</p>
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight mb-6">
-              Smart Farming <br />
-              <span className="text-green-600">Cost Tracker Dashboard</span>
+              Smart Farm <br />
+              <span className="text-green-600">Analytics Dashboard</span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-              Track your farming expenses like seeds, fertilizer, labour and irrigation.
-              Know exactly how much cost goes into each crop season.
+              Agroplus helps farmers and agribusinesses monitor crop-wise
+              profitability, expenses, labor records, fertigation history,
+              and farm activities through a smart real-time dashboard.
             </p>
 
             <div className="grid grid-cols-2 gap-5 mb-10">
 
               {[
-                { icon: DollarSign, title: "Total Cost", value: "₹12.5K" },
-                { icon: Target, title: "Seeds Used", value: "10 Bags" },
-                { icon: BarChart3, title: "Expenses", value: "4 Types" },
-                { icon: Activity, title: "Efficiency", value: "High" },
+                { icon: DollarSign, title: "Farm Revenue", value: "₹8.5L" },
+                { icon: Target, title: "Active Crops", value: "6 Crops" },
+                { icon: BarChart3, title: "Farm Reports", value: "24 Reports" },
+                { icon: Activity, title: "Efficiency", value: "98%" },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -90,7 +91,7 @@ export default function AnalyticsDashboard() {
 
           </motion.div>
 
-          {/* RIGHT SIDE - FARMING DASHBOARD */}
+          {/* RIGHT SIDE - DASHBOARD */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -112,10 +113,10 @@ export default function AnalyticsDashboard() {
 
                   <div>
                     <h3 className="text-white font-bold text-lg">
-                      Farm Cost Tracker
+                      Farm ERP Dashboard
                     </h3>
                     <p className="text-green-100 text-xs">
-                      Manage all farming expenses
+                      Real-time farm management system
                     </p>
                   </div>
 
@@ -130,17 +131,18 @@ export default function AnalyticsDashboard() {
               {/* CONTENT */}
               <div className="p-6 bg-[#f8fafc]">
 
-                {/* MAIN COST */}
+                {/* MAIN CARD */}
                 <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 mb-6">
 
                   <div className="flex items-center justify-between">
 
                     <div>
                       <p className="text-gray-500 text-sm">
-                        Total Farming Cost (Season)
+                        Total Farm Profitability
                       </p>
+
                       <h2 className="text-4xl font-black text-gray-900 mt-1">
-                        ₹12,500
+                        ₹12.5L
                       </h2>
                     </div>
 
@@ -151,30 +153,50 @@ export default function AnalyticsDashboard() {
                   </div>
 
                   <div className="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
-                    <div className="h-full w-[60%] bg-green-500 rounded-full"></div>
+                    <div className="h-full w-[80%] bg-green-500 rounded-full"></div>
                   </div>
 
                   <p className="text-xs text-gray-500 mt-2">
-                    Cost tracking for this crop cycle
+                    Overall farm performance analytics
                   </p>
 
                 </div>
 
-                {/* INPUT COSTS */}
+                {/* ANALYTICS CARDS */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
 
                   {[
-                    { label: "Seeds", value: "10 Bags", icon: Target },
-                    { label: "Fertilizer", value: "₹3,200", icon: Activity },
-                    { label: "Labour", value: "₹4,500", icon: BarChart3 },
-                    { label: "Water", value: "₹1,800", icon: TrendingUp },
+                    {
+                      label: "Crop Records",
+                      value: "6 Active",
+                      icon: Target,
+                    },
+                    {
+                      label: "Fertigation",
+                      value: "128 Logs",
+                      icon: Activity,
+                    },
+                    {
+                      label: "Labor Reports",
+                      value: "54 Workers",
+                      icon: BarChart3,
+                    },
+                    {
+                      label: "Sales Tracking",
+                      value: "₹4.2L",
+                      icon: TrendingUp,
+                    },
                   ].map((item, i) => (
                     <div
                       key={i}
                       className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-md transition"
                     >
                       <item.icon className="text-green-600 mb-2" size={20} />
-                      <p className="text-xs text-gray-500">{item.label}</p>
+
+                      <p className="text-xs text-gray-500">
+                        {item.label}
+                      </p>
+
                       <h3 className="text-xl font-black text-gray-900">
                         {item.value}
                       </h3>
@@ -191,8 +213,10 @@ export default function AnalyticsDashboard() {
                   </h4>
 
                   <p className="text-sm text-green-800 leading-relaxed">
-                    Ek crop sathi kitka kharch zhala, kiti seed gela, fertilizer, labour
-                    ani water sagla app madhe track hota. Farmer la manual calculation karaychi garaj nahi.
+                    Agroplus Farm ERP gives complete visibility of
+                    crop-wise expenses, labor activities, sales,
+                    fertigation history, and farm profitability
+                    through real-time analytics.
                   </p>
 
                 </div>

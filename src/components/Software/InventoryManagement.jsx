@@ -30,53 +30,61 @@ export default function FarmingExpenseManagement() {
           >
 
             {/* MAIN DASHBOARD */}
-            <div className="
+            <div
+              className="
               bg-white
               rounded-[32px]
               shadow-2xl
               border border-gray-200
               overflow-hidden
-            ">
+            "
+            >
 
               {/* TOP HEADER */}
-              <div className="
+              <div
+                className="
                 bg-black
                 px-6 py-5
                 flex items-center justify-between
-              ">
+              "
+              >
 
                 <div className="flex items-center gap-3">
 
-                  <div className="
+                  <div
+                    className="
                     w-12 h-12
                     rounded-2xl
                     bg-green-500
                     flex items-center justify-center
                     text-white
-                  ">
+                  "
+                  >
                     <Tractor size={24} />
                   </div>
 
                   <div>
                     <h3 className="text-white font-bold text-lg">
-                      Agroplus Farmer App
+                      Agroplus Farm ERP
                     </h3>
 
                     <p className="text-gray-400 text-sm">
-                      Smart Farming Expense Tracker
+                      Smart Farm Management Software
                     </p>
                   </div>
 
                 </div>
 
-                <div className="
+                <div
+                  className="
                   bg-green-500/20
                   text-green-400
                   px-3 py-1
                   rounded-full
                   text-sm
                   font-semibold
-                ">
+                "
+                >
                   LIVE
                 </div>
 
@@ -85,8 +93,9 @@ export default function FarmingExpenseManagement() {
               {/* BODY */}
               <div className="p-6 bg-[#f8fafc]">
 
-                {/* TOTAL COST */}
-                <div className="
+                {/* TOTAL CARD */}
+                <div
+                  className="
                   bg-gradient-to-r
                   from-green-500
                   to-green-600
@@ -94,52 +103,55 @@ export default function FarmingExpenseManagement() {
                   p-6
                   text-white
                   mb-6
-                ">
+                "
+                >
 
                   <p className="text-green-100 mb-2">
-                    Total Farming Expense
+                    Total Farm Revenue
                   </p>
 
                   <h2 className="text-4xl font-black mb-4">
-                    ₹18,450
+                    ₹4.8L
                   </h2>
 
                   <div className="flex items-center gap-3 text-sm">
                     <span className="bg-white/20 px-3 py-1 rounded-full">
-                      Soybean Farming
+                      Banana Farming
                     </span>
 
                     <span className="bg-white/20 px-3 py-1 rounded-full">
-                      Season 2025
+                      Season 2026
                     </span>
                   </div>
 
                 </div>
 
-                {/* EXPENSE LIST */}
-                <div className="
+                {/* MANAGEMENT LIST */}
+                <div
+                  className="
                   bg-white
                   rounded-3xl
                   border border-gray-100
                   overflow-hidden
-                ">
+                "
+                >
 
                   {[
                     {
-                      name: "Soybean Seeds",
-                      amount: "₹4,500",
+                      name: "Crop-wise Accounting",
+                      amount: "24 Reports",
                     },
                     {
-                      name: "Fertilizer Purchase",
-                      amount: "₹5,200",
+                      name: "Fertigation Records",
+                      amount: "128 Entries",
                     },
                     {
-                      name: "Pesticides Spray",
-                      amount: "₹2,300",
+                      name: "Labor Management",
+                      amount: "54 Workers",
                     },
                     {
-                      name: "Labor Charges",
-                      amount: "₹3,500",
+                      name: "Sales & Purchase Tracking",
+                      amount: "₹2.1L",
                     },
                   ].map((item, i) => (
                     <div
@@ -157,7 +169,7 @@ export default function FarmingExpenseManagement() {
                         </h4>
 
                         <p className="text-sm text-gray-500 mt-1">
-                          Farming Expense Record
+                          Farm ERP Management
                         </p>
                       </div>
 
@@ -193,7 +205,7 @@ export default function FarmingExpenseManagement() {
             >
 
               <p className="text-sm text-gray-500 mb-1">
-                Expense Tracking Accuracy
+                Farm Management Efficiency
               </p>
 
               <h3 className="text-3xl font-black text-green-600">
@@ -214,75 +226,83 @@ export default function FarmingExpenseManagement() {
           >
 
             {/* TAG */}
-            <div className="
+            <div
+              className="
               inline-flex items-center gap-2
               bg-green-100
               text-green-700
               px-4 py-2
               rounded-full
               mb-6
-            ">
+            "
+            >
               <Sprout size={18} />
 
               <p className="text-sm font-semibold tracking-wide">
-                Farmer Expense Management
+                Smart Farm ERP Software
               </p>
             </div>
 
             {/* HEADING */}
-            <h2 className="
+            <h2
+              className="
               text-4xl
               sm:text-5xl
               font-black
               leading-tight
               text-gray-900
               mb-6
-            ">
+            "
+            >
 
-              Farming Expense <br />
+              Complete Farm <br />
 
               <span className="text-green-600">
-                Management Software
+                ERP Management Software
               </span>
 
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="
+            <p
+              className="
               text-gray-600
               text-lg
               leading-relaxed
               mb-8
               max-w-xl
-            ">
-              Agroplus helps farmers manage complete
-              farming expenses including seeds,
-              fertilizers, pesticides, labor charges
-              and crop investment records in one place.
+            "
+            >
+              Agroplus Farm ERP helps farmers and agribusinesses
+              digitize daily farm operations with real-time data,
+              crop-wise accounting, labor management, fertigation
+              records, and smart farm analytics.
             </p>
 
             {/* FEATURES */}
             <div className="space-y-5 mb-10">
 
               {[
-                "Record seed purchase expenses",
-                "Manage fertilizer & spray costs",
-                "Track crop-wise farming investment",
-                "Monitor total seasonal expenses",
+                "Track crop lifecycle from plantation to harvest",
+                "Manage plot-wise income & expense records",
+                "Maintain fertigation & spray history",
+                "Access real-time reports & farm analytics",
               ].map((item, i) => (
                 <div
                   key={i}
                   className="flex items-center gap-4"
                 >
 
-                  <div className="
+                  <div
+                    className="
                     w-11 h-11
                     rounded-xl
                     bg-green-100
                     text-green-600
                     flex items-center justify-center
                     shrink-0
-                  ">
+                  "
+                  >
                     <CheckCircle2 size={20} />
                   </div>
 
@@ -296,10 +316,12 @@ export default function FarmingExpenseManagement() {
             </div>
 
             {/* CTA */}
-            <div className="
+            <div
+              className="
               flex flex-col sm:flex-row
               gap-4
-            ">
+            "
+            >
 
               <a
                 href="https://wa.me/919860207957"
@@ -321,7 +343,8 @@ export default function FarmingExpenseManagement() {
                 <ArrowRight size={18} />
               </a>
 
-              <div className="
+              <div
+                className="
                 flex items-center justify-center
                 border border-gray-300
                 bg-white
@@ -329,7 +352,8 @@ export default function FarmingExpenseManagement() {
                 rounded-2xl
                 text-gray-800
                 font-semibold
-              ">
+              "
+              >
                 +91 98602 07957
               </div>
 

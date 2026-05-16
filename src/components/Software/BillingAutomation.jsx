@@ -1,14 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  TrendingUp,
-  BarChart3,
-  PieChart,
-  Activity,
   ArrowRight,
   Phone,
-  Target,
-  DollarSign,
   ReceiptText,
   CheckCircle2,
   Tractor,
@@ -39,38 +33,40 @@ export default function BillingAutomation() {
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-6">
               <ReceiptText size={18} />
               <p className="text-sm font-semibold">
-                Farm Expense Management
+                Smart Farm ERP Software
               </p>
             </div>
 
             {/* TITLE */}
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 leading-tight">
-              Smart Farming <br />
+              Complete Farm <br />
               <span className="text-green-600">
-                Expense Tracking System
+                Accounting & Analytics
               </span>
             </h2>
 
             {/* DESCRIPTION */}
             <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-xl">
-              Farmers can easily track all farming expenses in one place,
-              including seeds, fertilizers, pesticides, labor, tractor usage,
-              and irrigation costs.
+              Agroplus Farm ERP helps farmers and agribusinesses
+              manage crop-wise accounting, plot-wise profitability,
+              fertigation records, labor management, and daily farm
+              operations in one powerful platform.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-              Get complete crop-wise expense reports and understand total
-              farming cost in a simple and easy dashboard.
+              Get real-time farm reports, sales & purchase tracking,
+              party ledger management, and complete farm analytics
+              through an easy-to-use dashboard.
             </p>
 
             {/* FEATURES */}
             <div className="space-y-4 mb-8">
 
               {[
-                "Seed & Fertilizer Expense Tracking",
-                "Pesticide & Spray Cost Management",
-                "Labor, Tractor & Water Expenses",
-                "Crop-wise Profit & Expense Reports",
+                "Crop-wise Income & Expense Tracking",
+                "Fertigation & Spray Records",
+                "Labor & Farm Activity Management",
+                "Real-time Reports & Profit Analytics",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
 
@@ -124,7 +120,7 @@ export default function BillingAutomation() {
               </div>
 
               <p className="text-sm font-semibold text-gray-800">
-                Daily Expense Tracking
+                Plot-wise Profit Tracking
               </p>
 
             </div>
@@ -136,7 +132,7 @@ export default function BillingAutomation() {
               </div>
 
               <p className="text-sm font-semibold text-gray-800">
-                Crop-wise Reports
+                Smart Farm Reports
               </p>
 
             </div>
@@ -154,7 +150,7 @@ export default function BillingAutomation() {
                 </div>
 
                 <p className="text-sm font-semibold text-gray-500">
-                  Farmer Expense App
+                  Agroplus Farm ERP
                 </p>
 
               </div>
@@ -165,25 +161,41 @@ export default function BillingAutomation() {
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="bg-green-50 border border-green-100 rounded-2xl p-4">
-                    <p className="text-xs text-gray-500">Total Farming Cost</p>
-                    <h3 className="text-2xl font-black text-green-600">₹24,500</h3>
+                    <p className="text-xs text-gray-500">Total Farm Revenue</p>
+                    <h3 className="text-2xl font-black text-green-600">₹8.5L</h3>
                   </div>
 
                   <div className="bg-gray-900 rounded-2xl p-4">
                     <p className="text-xs text-gray-300">Current Crop</p>
-                    <h3 className="text-2xl font-black text-white">Soybean</h3>
+                    <h3 className="text-2xl font-black text-white">Banana</h3>
                   </div>
 
                 </div>
 
-                {/* EXPENSE LIST */}
+                {/* MANAGEMENT LIST */}
                 <div className="space-y-3">
 
                   {[
-                    { name: "Seeds", type: "Sowing", amount: "₹6,000" },
-                    { name: "Fertilizer", type: "Crop Care", amount: "₹8,500" },
-                    { name: "Pesticide", type: "Spraying", amount: "₹4,200" },
-                    { name: "Labor", type: "Workers", amount: "₹3,500" },
+                    {
+                      name: "Crop Accounting",
+                      type: "Finance",
+                      amount: "24 Reports",
+                    },
+                    {
+                      name: "Fertigation Records",
+                      type: "Crop Care",
+                      amount: "132 Entries",
+                    },
+                    {
+                      name: "Labor Management",
+                      type: "Workers",
+                      amount: "58 Staff",
+                    },
+                    {
+                      name: "Sales Tracking",
+                      type: "Business",
+                      amount: "₹3.2L",
+                    },
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -191,11 +203,18 @@ export default function BillingAutomation() {
                     >
 
                       <div>
-                        <p className="font-semibold text-gray-900">{item.name}</p>
-                        <p className="text-xs text-gray-500">{item.type}</p>
+                        <p className="font-semibold text-gray-900">
+                          {item.name}
+                        </p>
+
+                        <p className="text-xs text-gray-500">
+                          {item.type}
+                        </p>
                       </div>
 
-                      <p className="font-bold text-green-600">{item.amount}</p>
+                      <p className="font-bold text-green-600">
+                        {item.amount}
+                      </p>
 
                     </div>
                   ))}
@@ -210,8 +229,8 @@ export default function BillingAutomation() {
                   </p>
 
                   <p className="text-xs text-green-800 leading-relaxed">
-                    All farming expenses are tracked automatically in one place,
-                    so farmers don’t need manual calculations.
+                    Agroplus digitizes daily farm operations and provides
+                    real-time reports to improve productivity and profitability.
                   </p>
 
                 </div>
