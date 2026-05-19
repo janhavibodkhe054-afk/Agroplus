@@ -47,26 +47,31 @@ export default function BillingAutomation() {
 
             {/* DESCRIPTION */}
             <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-xl">
-              Agroplus Farm ERP helps farmers and agribusinesses
-              manage crop-wise accounting, plot-wise profitability,
-              fertigation records, labor management, and daily farm
-              operations in one powerful platform.
+              Whether you manage a single farm or multiple plots,
+              Agroplus gives complete control over daily farm
+              operations with smart digital management tools and
+              real-time farm analytics.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-              Get real-time farm reports, sales & purchase tracking,
-              party ledger management, and complete farm analytics
-              through an easy-to-use dashboard.
+              Manage crop-wise accounting, plot-wise profitability,
+              fertigation & spray records, labor management,
+              sales & purchase tracking, party ledger management,
+              and complete farm reports through one powerful
+              ERP dashboard.
             </p>
 
             {/* FEATURES */}
             <div className="space-y-4 mb-8">
 
               {[
-                "Crop-wise Income & Expense Tracking",
+                "Crop-wise Accounting",
+                "Plot-wise Profitability",
                 "Fertigation & Spray Records",
-                "Labor & Farm Activity Management",
-                "Real-time Reports & Profit Analytics",
+                "Labor Management",
+                "Sales & Purchase Tracking",
+                "Party Ledger Management",
+                "Farm Reports & Analytics",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
 
@@ -74,7 +79,9 @@ export default function BillingAutomation() {
                     <CheckCircle2 size={18} />
                   </div>
 
-                  <p className="text-gray-800 font-medium">{item}</p>
+                  <p className="text-gray-800 font-medium">
+                    {item}
+                  </p>
 
                 </div>
               ))}
@@ -161,13 +168,21 @@ export default function BillingAutomation() {
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="bg-green-50 border border-green-100 rounded-2xl p-4">
-                    <p className="text-xs text-gray-500">Total Farm Revenue</p>
-                    <h3 className="text-2xl font-black text-green-600">₹8.5L</h3>
+                    <p className="text-xs text-gray-500">
+                      Total Farm Revenue
+                    </p>
+                    <h3 className="text-2xl font-black text-green-600">
+                      ₹8.5L
+                    </h3>
                   </div>
 
                   <div className="bg-gray-900 rounded-2xl p-4">
-                    <p className="text-xs text-gray-300">Current Crop</p>
-                    <h3 className="text-2xl font-black text-white">Banana</h3>
+                    <p className="text-xs text-gray-300">
+                      Current Crop
+                    </p>
+                    <h3 className="text-2xl font-black text-white">
+                      Banana
+                    </h3>
                   </div>
 
                 </div>

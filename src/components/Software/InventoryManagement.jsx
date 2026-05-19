@@ -239,7 +239,7 @@ export default function FarmingExpenseManagement() {
               <Sprout size={18} />
 
               <p className="text-sm font-semibold tracking-wide">
-                Smart Farm ERP Software
+                Built for Farmers, Agribusinesses
               </p>
             </div>
 
@@ -273,10 +273,13 @@ export default function FarmingExpenseManagement() {
               max-w-xl
             "
             >
-              Agroplus Farm ERP helps farmers and agribusinesses
-              digitize daily farm operations with real-time data,
-              crop-wise accounting, labor management, fertigation
-              records, and smart farm analytics.
+              Agroplus Farm ERP helps farmers and agribusiness
+              owners digitize daily farm operations and make
+              better decisions using real-time data. From
+              banana, sugarcane, pomegranate, papaya,
+              vegetables, and other crops — Agroplus helps
+              you manage every activity from planting to
+              harvest.
             </p>
 
             {/* FEATURES */}
