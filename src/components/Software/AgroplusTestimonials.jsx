@@ -75,7 +75,7 @@ export default function AgroplusTestimonials() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
             What Farmers Say About
             <span className="block text-green-600 mt-2">
               Agroplus ERP
@@ -106,7 +106,7 @@ export default function AgroplusTestimonials() {
               repeat: Infinity,
               ease: "linear",
             }}
-            className="flex gap-4 sm:gap-6 lg:gap-8 w-max px-4"
+            className="flex gap-4 sm:gap-6 lg:gap-6 w-max px-4"
           >
             {[...testimonials, ...testimonials].map(
               (item, index) => (
@@ -158,7 +158,7 @@ export default function AgroplusTestimonials() {
                     </div>
 
                     {/* REVIEW */}
-                    <p className="relative z-10 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 min-h-[100px] sm:min-h-[120px]">
+                    <p className="relative z-10 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-2 sm:mb-2 min-h-[100px] sm:min-h-[120px]">
                       “{item.review}”
                     </p>
 

@@ -9,6 +9,12 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Software from "./pages/Software";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Seedling from "./pages/Seedling";
+import KrushiSeva from "./pages/KrushiSeva";
+import ContactPage from "./pages/ContactPage";
+
 
 export default function App() {
   return (
@@ -22,6 +28,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/software" element={<Software />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Service/>} />
+          <Route path="/Seed" element={<Seedling/>} />
+          <Route path="/kendra" element={<KrushiSeva/>} />
+          <Route path="/contact" element={<ContactPage/>} />
+
         </Routes>
 
         {/* FOOTER */}

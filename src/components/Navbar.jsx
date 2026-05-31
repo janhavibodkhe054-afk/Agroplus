@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Krushi Seva Kendra", path: "/kendra" },
     { name: "Seedling", path: "/seed" },
     { name: "Agroplus Software", path: "/software" },
-    { name: "Services", path: "/service" },
+    { name: "Services", path: "/services" },
     { name: "Blog", path: "/blog" },
   ];
 

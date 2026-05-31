@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import {
   TrendingUp,
   BarChart3,
@@ -18,61 +19,85 @@ export default function AnalyticsDashboard() {
   const features = [
     {
       icon: Sprout,
-      title: "Crop Management",
-      value: "Plantation to Harvest",
+      title: "Crop Management System",
+      value: "Planting to Harvest Tracking",
     },
     {
       icon: MapPinned,
-      title: "Plot-wise Tracking",
-      value: "Profit & Expense",
+      title: "Farm Profitability",
+      value: "Plot-wise Cost & Revenue",
     },
     {
       icon: Droplets,
-      title: "Fertigation",
-      value: "Spray Records",
+      title: "Fertigation Management",
+      value: "Irrigation & Spray Records",
     },
     {
       icon: Users,
-      title: "Labor Management",
-      value: "Attendance & Wages",
+      title: "Workforce Management",
+      value: "Labor Attendance & Payroll",
     },
     {
       icon: Package,
-      title: "Agro Inputs",
-      value: "Stock Management",
+      title: "Inventory Control",
+      value: "Seeds, Fertilizers & Stock",
     },
     {
       icon: Wallet,
-      title: "Party Ledger",
-      value: "Easy Accounting",
+      title: "Farm Accounting",
+      value: "Sales, Purchase & Ledger",
     },
   ];
-
   const analyticsCards = [
     {
-      label: "Crop Records",
-      value: "Harvest Tracking",
+      label: "Crop Performance",
+      value: "Real-Time Tracking",
       icon: Sprout,
     },
     {
-      label: "Fertigation",
-      value: "128 Logs",
+      label: "Farm Operations",
+      value: "128 Activity Logs",
       icon: Droplets,
     },
     {
-      label: "Labor Reports",
-      value: "54 Workers",
+      label: "Labor Analytics",
+      value: "54 Active Workers",
       icon: Users,
     },
     {
-      label: "Sales Tracking",
-      value: "Party Ledger",
+      label: "Revenue Management",
+      value: "Sales & Profit Reports",
       icon: TrendingUp,
     },
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] via-white to-green-50 py-14 sm:py-16 md:py-20 lg:py-24">
+    <><Helmet>
+  <title>
+    Farm ERP Software | Agriculture Management & Farm Analytics Platform
+  </title>
+
+  <meta
+    name="description"
+    content="Agroplus Farm ERP Software helps farmers manage crop records, farm accounting, inventory, labor management, fertigation schedules, sales tracking and real-time farm analytics through one powerful agriculture management platform."
+  />
+
+  <meta
+    name="keywords"
+    content="Farm ERP Software, Agriculture ERP Software, Farm Management Software, Crop Management System, Farm Accounting Software, Agribusiness Management Software, Farm Analytics Dashboard, Smart Farming Solution, Agriculture Management Platform"
+  />
+
+  <meta
+    property="og:title"
+    content="Agroplus Farm ERP Software"
+  />
+
+  <meta
+    property="og:description"
+    content="Complete agriculture ERP software for crop management, farm accounting, inventory control, labor management and real-time farm analytics."
+  />
+</Helmet>
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] via-white to-green-50 py-10 sm:py-10 md:py-10 lg:py-10">
       {/* BACKGROUND */}
       <div className="absolute top-0 left-0 w-60 sm:w-80 md:w-96 h-60 sm:h-80 md:h-96 bg-green-200/40 rounded-full blur-3xl"></div>
 
@@ -98,25 +123,26 @@ export default function AnalyticsDashboard() {
             >
               <TrendingUp size={18} />
               <p className="text-xs sm:text-sm font-semibold">
-                Powerful Features for Smart Farming
+                Smart Agriculture ERP Software
               </p>
             </motion.div>
 
             {/* TITLE */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
-              Smart Farm
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-3 sm:mb-3">
+              Farm ERP Software &
               <br />
               <span className="text-green-600">
-                Management & Analytics
+                Advanced Agriculture Analytics
               </span>
             </h2>
 
             {/* DESCRIPTION */}
             <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl">
-              Agroplus Farm ERP helps farmers and agribusinesses manage
-              crop lifecycle, plot-wise income & expenses, fertigation
-              records, labor activities, inventory, sales, accounting,
-              and farm analytics from one smart platform.
+              Agroplus Farm ERP Software helps farmers, agribusinesses, FPOs,
+              and agricultural enterprises digitize farm operations, manage crop
+              records, monitor farm expenses, control inventory, track labor
+              activities, and improve profitability through a centralized
+              agriculture management platform.
             </p>
 
             {/* FEATURES */}
@@ -175,7 +201,7 @@ export default function AnalyticsDashboard() {
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-6 sm:px-8 py-4 rounded-2xl shadow-xl text-sm sm:text-base"
               >
-                Know More
+                Book Free Demo
                 <ArrowRight size={18} />
               </motion.a>
 
@@ -226,11 +252,11 @@ export default function AnalyticsDashboard() {
 
                   <div>
                     <h3 className="text-white font-bold text-base sm:text-lg">
-                      Farm ERP Dashboard
+                      Agriculture ERP Dashboard
                     </h3>
 
                     <p className="text-green-100 text-xs">
-                      Smart farming analytics & management
+                      Farm management, accounting & analytics platform
                     </p>
                   </div>
                 </div>
@@ -252,7 +278,7 @@ export default function AnalyticsDashboard() {
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <p className="text-gray-500 text-xs sm:text-sm">
-                        Total Farm Performance
+                        Overall Farm Efficiency
                       </p>
 
                       <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-1">
@@ -267,10 +293,7 @@ export default function AnalyticsDashboard() {
                       }}
                       className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-green-100 flex items-center justify-center"
                     >
-                      <BarChart3
-                        className="text-green-600"
-                        size={28}
-                      />
+                      <BarChart3 className="text-green-600" size={28} />
                     </motion.div>
                   </div>
 
@@ -285,7 +308,7 @@ export default function AnalyticsDashboard() {
                   </div>
 
                   <p className="text-xs text-gray-500 mt-2">
-                    Real-time smart farming analytics dashboard
+                    Live farm analytics and performance monitoring
                   </p>
                 </motion.div>
 
@@ -316,9 +339,7 @@ export default function AnalyticsDashboard() {
                         <item.icon size={20} />
                       </motion.div>
 
-                      <p className="text-xs text-gray-500">
-                        {item.label}
-                      </p>
+                      <p className="text-xs text-gray-500">{item.label}</p>
 
                       <h3 className="text-base sm:text-lg font-black text-gray-900">
                         {item.value}
@@ -335,28 +356,32 @@ export default function AnalyticsDashboard() {
                   className="bg-green-50 border border-green-100 rounded-3xl p-5"
                 >
                   <h4 className="font-bold text-green-900 mb-4 text-base sm:text-lg">
-                    Smart Farming Insights
+                    Agriculture Business Insights
                   </h4>
 
                   <div className="space-y-3 text-sm text-green-800 leading-relaxed">
                     <p>
-                      📱 Mobile Friendly access to farm data anytime,
-                      anywhere.
+                      📱 Access your farm operations, crop records and business
+                      reports from anywhere using a mobile-friendly Farm ERP
+                      platform
                     </p>
 
                     <p>
-                      ☁ Cloud Backup & Security keeps your farm data
-                      safe and secure automatically.
+                      ☁ Secure cloud-based agriculture software keeps all farm
+                      records protected with automatic backups and data
+                      security.
                     </p>
 
                     <p>
-                      📊 Smart Reports & Analytics provide real-time
-                      performance insights for better farm decisions.
+                      📊 Advanced farm analytics dashboards provide real-time
+                      insights into crop performance, expenses, productivity and
+                      profitability.
                     </p>
 
                     <p>
-                      💰 Party Ledger & Accounting helps manage
-                      customers, suppliers & transporters easily.
+                      💰 Integrated accounting, sales tracking and ledger
+                      management simplify financial operations for farmers and
+                      agribusiness owners.
                     </p>
                   </div>
                 </motion.div>
@@ -366,5 +391,6 @@ export default function AnalyticsDashboard() {
         </div>
       </div>
     </section>
+    </>
   );
 }

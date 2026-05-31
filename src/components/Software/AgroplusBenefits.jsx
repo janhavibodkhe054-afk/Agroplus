@@ -45,7 +45,7 @@ export default function AgroplusBenefits() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-green-50 to-white py-14 sm:py-10 md:py-10 lg:py-10">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-green-50 to-white py-10 sm:py-10 md:py-10 lg:py-10">
       {/* BACKGROUND BLURS */}
       <div className="absolute top-0 left-0 w-52 sm:w-72 h-52 sm:h-72 bg-green-200 rounded-full blur-3xl opacity-40"></div>
 
@@ -70,7 +70,7 @@ export default function AgroplusBenefits() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
             What You Gain with
             <span className="block text-green-600 mt-2">
               Agroplus Farm ERP
@@ -89,7 +89,7 @@ export default function AgroplusBenefits() {
           {/* CENTER LINE */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-gradient-to-b from-green-200 via-green-500 to-green-200 -translate-x-1/2"></div>
 
-          <div className="space-y-8 sm:space-y-10 lg:space-y-14">
+          <div className="space-y-4 sm:space-y-10 lg:space-y-2">
             {benefits.map((item, index) => (
               <motion.div
                 key={index}
