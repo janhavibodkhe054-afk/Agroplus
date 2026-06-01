@@ -13,6 +13,10 @@ const Footer = () => {
     { name: "Services", path: "/service" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+
+    // NEW PAGES
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Terms & Conditions", path: "/terms-conditions" },
   ];
 
   return (
@@ -118,22 +122,35 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* 🔻 BOTTOM BAR */}
-      <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400 space-y-2">
-        <p>© {new Date().getFullYear()} Agroplus. All rights reserved.</p>
+      <div className="border-t border-gray-700 mt-10 pt-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} Agroplus. All rights reserved.</p>
 
-        {/* ✨ DESIGNED BY */}
-        <p className="text-xs text-gray-500">
-          Designed & Developed by{" "}
-          <a
-            href="https://hashgridtech.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-400 font-medium hover:underline cursor-pointer"
-          >
-            Hashgrid Technologies Pvt.Ltd.
-          </a>
-        </p>
+          <div className="flex items-center gap-5">
+            <Link to="/privacy-policy" className="hover:text-white transition">
+              Privacy Policy
+            </Link>
+
+            <Link
+              to="/terms-conditions"
+              className="hover:text-white transition"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
+
+          <p className="text-xs text-gray-500 text-center md:text-right">
+            Designed & Developed by{" "}
+            <a
+              href="https://hashgridtech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 font-medium hover:underline"
+            >
+              Hashgrid Technologies Pvt. Ltd.
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

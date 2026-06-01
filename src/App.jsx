@@ -14,7 +14,8 @@ import Service from "./pages/Service";
 import Seedling from "./pages/Seedling";
 import KrushiSeva from "./pages/KrushiSeva";
 import ContactPage from "./pages/ContactPage";
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 export default function App() {
   return (
@@ -34,7 +35,8 @@ export default function App() {
           <Route path="/Seed" element={<Seedling/>} />
           <Route path="/kendra" element={<KrushiSeva/>} />
           <Route path="/contact" element={<ContactPage/>} />
-
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms-conditions" element={<TermsConditions/>} />
         </Routes>
 
         {/* FOOTER */}
