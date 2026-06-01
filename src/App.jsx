@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
 
-
+import ScrollToTop from "./components/ScrollToTop";
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -19,6 +19,7 @@ import ContactPage from "./pages/ContactPage";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div >
         
         {/* NAVBAR */}

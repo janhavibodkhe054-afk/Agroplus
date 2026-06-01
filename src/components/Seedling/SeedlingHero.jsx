@@ -44,11 +44,9 @@ export default function SeedlingHero() {
 
         {/* Content */}
         <div className="relative z-10 text-center px-6">
-          <p className="text-green-200 text-sm md:text-base font-medium mb-3 tracking-widest uppercase">
-            Agroplus Farm ERP
-          </p>
+          
 
-          <h1 className="text-5xl md:text-7xl font-black text-white">
+          <h1 className="text-5xl md:text-6xl font-black text-white">
             Seedlings
           </h1>
 

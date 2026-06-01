@@ -277,15 +277,15 @@ ${formData.message}`;
       {/* MAP */}
       <section className="w-full">
         <iframe
-          title="Krushi Seva Kendra Location"
-          src="https://www.google.com/maps/embed?pb="
-          width="100%"
-          height="280"
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full border-0"
-        ></iframe>
+    title="Pargaon Mangrul Pune Maharashtra Location"
+    src="https://maps.google.com/maps?q=Pargaon%20Mangrul%20Pune%20Maharashtra%20412105&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="320"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full border-0"
+  ></iframe>
       </section>
     </>
   );

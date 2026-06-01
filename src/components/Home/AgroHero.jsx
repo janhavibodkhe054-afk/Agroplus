@@ -82,7 +82,7 @@ export default function AgroHero() {
           <div className="flex flex-col sm:flex-row gap-4">
 
             <button
-              onClick={() => navigate("/seedlings")}
+              onClick={() => navigate("/seed")}
               className="
                 bg-gradient-to-r from-green-500 to-orange-400
                 hover:scale-105

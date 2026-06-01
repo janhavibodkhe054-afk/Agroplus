@@ -44,18 +44,18 @@ export default function CTASection() {
                 {/* Heading */}
                 <div>
                   <h2
-                    className="text-white leading-tight font-light"
-                    style={{
-                      fontSize: "clamp(1.6rem, 4vw, 3.6rem)",
-                      fontFamily: "cursive",
-                    }}
-                  >
-                    WE'RE LEADING DIGITAL
-                    <br />
-                    FARM MANAGEMENT &
-                    <br />
-                    AGRICULTURE ERP
-                  </h2>
+  className="text-white leading-tight font-bold"
+  style={{
+    fontSize: "clamp(1.6rem, 3vw, 3.6rem)",
+    fontFamily: "'DM Serif Display', serif",
+  }}
+>
+  WE'RE LEADING DIGITAL
+  
+  FARM MANAGEMENT &
+  
+  AGRICULTURE ERP
+</h2>
                 </div>
               </div>
 

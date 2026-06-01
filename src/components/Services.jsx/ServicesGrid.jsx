@@ -8,6 +8,9 @@ import {
   Droplets,
   BarChart3,
   Warehouse,
+  Bug,
+  ShieldCheck,
+  Leaf,
 } from "lucide-react";
 
 export default function AgricultureServicesCarousel() {
@@ -60,6 +63,27 @@ export default function AgricultureServicesCarousel() {
       description:
         "Track production, harvest records, sales entries, and customer transactions.",
     },
+    {
+  image: "/17.jpeg",
+  icon: <Bug size={32} />,
+  title: "Pesticides Solutions",
+  description:
+    "Effective pesticide solutions to protect crops from diseases, improve plant health and maximize farm productivity.",
+},
+{
+  image: "/18.jpeg",
+  icon: <ShieldCheck size={32} />,
+  title: "Insecticides Management",
+  description:
+    "Advanced insecticide products and crop protection programs for healthy growth and reduced pest damage.",
+},
+{
+  image: "/17.jpeg",
+  icon: <Leaf size={32} />,
+  title: "Organic Farming Solutions",
+  description:
+    "Guidance and products for sustainable farming including organic fertilizers, bio-inputs, soil health improvement and eco-friendly crop cultivation practices.",
+}
   ];
 
   const [current, setCurrent] = useState(0);
@@ -180,6 +204,7 @@ export default function AgricultureServicesCarousel() {
               />
             ))}
           </div>
+          
         </div>
       </section>
     </>

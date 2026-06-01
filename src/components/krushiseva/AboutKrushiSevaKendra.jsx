@@ -8,8 +8,8 @@ export default function AboutKrushiSevaKendra() {
     <>
       <Helmet>
         <title>
-          About Krushi Seva Kendra | Quality Agricultural Products &
-          Farming Solutions
+          About Krushi Seva Kendra | Quality Agricultural Products & Farming
+          Solutions
         </title>
 
         <meta
@@ -32,44 +32,47 @@ export default function AboutKrushiSevaKendra() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             {/* LEFT IMAGE LAYOUT */}
+            {/* LEFT IMAGE LAYOUT */}
             <motion.div
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 gap-5"
+              className="grid grid-cols-2 gap-5 order-2 lg:order-1"
             >
               {/* LEFT COLUMN */}
               <div className="flex flex-col gap-5">
                 <img
-                  src="3.jpeg"
+                  src="https://media.licdn.com/dms/image/v2/D5612AQEtMc7-bu9nwg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1688187907939?e=2147483647&v=beta&t=XLtz2GNcdXyBsQuR5hVx3BRrQmIOwRU5_YQs218c4fA"
                   alt="Farmer working in agricultural field"
-                  className="h-[200px] md:h-[320px] w-full object-cover rounded-[22px]"
+                  className="h-[160px] md:h-[320px] w-full object-cover rounded-[22px]"
                 />
 
                 <img
-                  src="4.jpeg"
+                  src="https://www.bentoli.com/wp-content/uploads/2017/07/CommercialFarming-1.jpg"
                   alt="Agriculture farm plantation"
-                  className="h-[200px] md:h-[320px] w-full object-cover rounded-[22px]"
+                  className="h-[160px] md:h-[320px] w-full object-cover rounded-[22px]"
                 />
               </div>
 
               {/* TALL IMAGE */}
               <div>
                 <img
-                  src="5.jpeg"
+                  src="https://media.istockphoto.com/id/1901542091/photo/tractor-spraying-soybean-crops-field.jpg?b=1&s=1024x1024&w=0&k=20&c=VYiEhZqdwR69LHWvKpC5v7ax5ceNQcAwnQP1Xo0HFFg="
                   alt="Modern tractor in farming field"
-                  className="h-[424px] md:h-[660px] w-full object-cover rounded-[22px]"
+                  className="h-[342px] md:h-[660px] w-full object-cover rounded-[22px]"
                 />
               </div>
             </motion.div>
 
+            {/* RIGHT CONTENT */}
             {/* RIGHT CONTENT */}
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="order-1 lg:order-2"
             >
               {/* Subtitle */}
               <p className="text-green-700 text-xl font-medium mb-4">
@@ -78,20 +81,13 @@ export default function AboutKrushiSevaKendra() {
 
               {/* Heading */}
               <h2
-                className="text-[24px] md:text-[42px] leading-[1.05] text-[#14210f] mb-5"
+                className="text-[20px] md:text-[32px] font-bold leading-[1.05] text-[#14210f] mb-5"
                 style={{
-                  fontFamily: "'Amatic SC', cursive",
+                  fontFamily: "'DM Serif Display', serif",
                 }}
               >
-                TRUSTED
-                
-                AGRICULTURAL
-                
-                PRODUCTS &
-                
-                FARMING SOLUTIONS
+                TRUSTED AGRICULTURAL PRODUCTS & FARMING SOLUTIONS
               </h2>
-
               {/* Divider */}
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-6 h-[3px] bg-yellow-500 rounded-full"></div>
@@ -101,21 +97,17 @@ export default function AboutKrushiSevaKendra() {
 
               {/* Description */}
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                At Krushi Seva Kendra, we provide quality seeds,
-                fertilizers, pesticides, crop protection products and
-                expert agricultural guidance to help farmers improve
-                crop productivity, profitability and sustainable
-                farming practices.
+                At Krushi Seva Kendra, we provide quality seeds, fertilizers,
+                pesticides, crop protection products and expert agricultural
+                guidance to help farmers improve crop productivity,
+                profitability and sustainable farming practices.
               </p>
 
               {/* FEATURES */}
               <div className="grid md:grid-cols-2 gap-8 mb-10">
                 <div>
                   <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle
-                      size={22}
-                      className="text-yellow-500 mt-1"
-                    />
+                    <CheckCircle size={22} className="text-yellow-500 mt-1" />
 
                     <h3 className="text-2xl font-bold text-[#16220f]">
                       Quality Agricultural Inputs
@@ -123,17 +115,14 @@ export default function AboutKrushiSevaKendra() {
                   </div>
 
                   <p className="text-gray-600">
-                    Premium seeds, fertilizers and crop nutrition
-                    products from trusted agricultural brands.
+                    Premium seeds, fertilizers and crop nutrition products from
+                    trusted agricultural brands.
                   </p>
                 </div>
 
                 <div>
                   <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle
-                      size={22}
-                      className="text-yellow-500 mt-1"
-                    />
+                    <CheckCircle size={22} className="text-yellow-500 mt-1" />
 
                     <h3 className="text-2xl font-bold text-[#16220f]">
                       Farmer Support & Guidance
@@ -141,8 +130,8 @@ export default function AboutKrushiSevaKendra() {
                   </div>
 
                   <p className="text-gray-600">
-                    Expert recommendations for crop management,
-                    disease control and better farm productivity.
+                    Expert recommendations for crop management, disease control
+                    and better farm productivity.
                   </p>
                 </div>
               </div>

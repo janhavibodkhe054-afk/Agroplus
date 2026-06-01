@@ -10,7 +10,7 @@ const Service = () => {
       <ServicesHero/>
       <ServicesGrid/>
       <ServiceCTA/>
-      <AboutFarmSection/>
+      
     </div>
   )
 }

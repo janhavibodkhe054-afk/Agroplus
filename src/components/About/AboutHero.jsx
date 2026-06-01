@@ -27,14 +27,7 @@ export default function AboutHero() {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-5"
-          >
-            About Agroplus
-          </motion.span>
+          
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -42,18 +35,10 @@ export default function AboutHero() {
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-5xl md:text-6xl font-black text-white"
           >
-            Smart Farm ERP
+            About Agroplus
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mt-4 text-gray-200 text-base sm:text-lg max-w-2xl mx-auto"
-          >
-            Simplifying farm management with technology, analytics, and
-            smarter decision-making.
-          </motion.p>
+          
         </div>
       </section>
     </>

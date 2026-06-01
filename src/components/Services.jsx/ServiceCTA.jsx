@@ -58,7 +58,7 @@ export default function ServiceCTA() {
                 />
 
                 <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-                  Agriculture ERP
+                  Agroplus
                   <br />
                   Services
                 </h2>

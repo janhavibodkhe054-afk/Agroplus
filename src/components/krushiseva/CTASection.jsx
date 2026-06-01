@@ -57,7 +57,8 @@ export default function CTASection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="tel:+919860207957"
+                href="tel:+914105040000
+"
                 className="group inline-flex items-center justify-center gap-3 bg-[#F0C84B] hover:bg-white text-black font-bold px-8 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Phone size={20} />
@@ -65,7 +66,8 @@ export default function CTASection() {
               </a>
 
               <a
-                href="https://wa.me/919860207957"
+                href="https://wa.me/914105040000
+"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"

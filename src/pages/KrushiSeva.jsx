@@ -11,7 +11,7 @@ const KrushiSeva = () => {
       <KrushiSevaKendraHero/>
       <AboutKrushiSevaKendra/>
       <ProductsSection/>
-      <ServicesSection/>
+      
       <CTASection/>
     </div>
   )
