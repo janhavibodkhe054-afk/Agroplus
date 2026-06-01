@@ -21,7 +21,7 @@ export default function SeedlingServices() {
       title: "Banana Farming",
       icon: <Banana size={34} />,
       image:
-        "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop",
+        "https://t4.ftcdn.net/jpg/04/89/06/83/360_F_489068377_bhXFwovpIVIJbVc2lONCpDsyUm2JJPat.jpg",
       description:
         "Complete banana farming solutions with expert guidance for higher productivity and better crop management.",
     },
@@ -29,7 +29,7 @@ export default function SeedlingServices() {
       title: "Sugarcane Farming",
       icon: <Tractor size={34} />,
       image:
-        "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop",
+        "https://media.istockphoto.com/id/518044433/photo/sugarcane-field-and-road-with-white-cloud-in-thailand.jpg?s=612x612&w=0&k=20&c=7U8GSHsOL2wrkFqlaAJwWzUHYRGDjh5Teho5rhq2AWI=",
       description:
         "Modern sugarcane farming techniques and support to improve yield, quality and farm profitability.",
     },
@@ -37,7 +37,7 @@ export default function SeedlingServices() {
       title: "Banana Tissue Culture",
       icon: <Leaf size={34} />,
       image:
-        "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop",
+        "https://creativefarmer.in/cdn/shop/products/61-54LyCZ8L._SL1024_4d004bc6-780d-49ef-aab3-26db0172619e.jpg?v=1646894156",
       description:
         "Healthy disease-free banana tissue culture plants for uniform growth and superior production.",
     },
@@ -45,7 +45,7 @@ export default function SeedlingServices() {
       title: "Sugarcane Seedlings",
       icon: <Sprout size={34} />,
       image:
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+        "https://thumbs.dreamstime.com/b/sugarcane-seedlings-prepared-nurseries-saccharum-officinarum-sugarcane-seedlings-prepared-nurseries-317930107.jpg",
       description:
         "Premium quality sugarcane seedlings developed for strong root systems and healthy crop establishment.",
     },
@@ -53,7 +53,7 @@ export default function SeedlingServices() {
       title: "Vegetable Plants",
       icon: <Trees size={34} />,
       image:
-        "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=1200&auto=format&fit=crop",
+        "https://wp.plantsnap.com/wp-content/uploads/2018/09/green-bean.jpg",
       description:
         "Wide range of vegetable plants and seedlings suitable for commercial and small-scale farming.",
     },
@@ -61,7 +61,7 @@ export default function SeedlingServices() {
       title: "Farm Guidance",
       icon: <Tractor size={34} />,
       image:
-        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=1200&auto=format&fit=crop",
+        "https://geomaticslandsurveying.com/wp-content/uploads/2019/04/Trimble-Guidance-Systems.jpg.webp",
       description:
         "Professional agricultural consultation for crop planning, nutrition management and farm success.",
     },
@@ -69,7 +69,7 @@ export default function SeedlingServices() {
       title: "Agro Software Solutions",
       icon: <MonitorSmartphone size={34} />,
       image:
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+        "https://khetibuddy.com/wp-content/uploads/2026/05/Software-Development-for-Agriculture.png",
       description:
         "Smart agriculture ERP software for farm management, inventory tracking, accounting and analytics.",
     },
