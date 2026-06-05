@@ -83,7 +83,7 @@ export default function AboutKrushiSevaKendra() {
                   10+
                 </h4>
 
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base md:text-lg">
                   Years Supporting Farmers
                 </p>
               </motion.div>
@@ -114,9 +114,9 @@ export default function AboutKrushiSevaKendra() {
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                At Krushi Seva Kendra, we provide quality seeds, fertilizers,
-                pesticides, crop protection products and expert agricultural
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10">
+                At Krushi Seva Kendra, we provide quality fertilizers,
+                pesticides, Insecticides crop protection products and expert agricultural
                 guidance to help farmers improve crop productivity,
                 profitability and sustainable farming practices.
               </p>
@@ -135,8 +135,8 @@ export default function AboutKrushiSevaKendra() {
                     </h3>
                   </div>
 
-                  <p className="text-gray-600">
-                    Premium seeds, fertilizers and crop nutrition products from
+                  <p className="text-gray-600 text-base md:text-lg">
+                    Premium fertilizers, pesticides and crop nutrition products from
                     trusted agricultural brands.
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export default function AboutKrushiSevaKendra() {
                     </h3>
                   </div>
 
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-base md:text-lg">
                     Expert recommendations for crop management, disease control
                     and better farm productivity.
                   </p>

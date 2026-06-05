@@ -70,7 +70,7 @@ export default function StatsSection() {
         </h2>
 
         {/* LABEL */}
-        <p className="text-gray-600 text-sm mt-2 font-medium">
+        <p className="text-gray-600 text-base md:text-lg mt-2 font-medium">
           {item.label}
         </p>
       </div>

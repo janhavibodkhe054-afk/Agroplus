@@ -134,14 +134,14 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:info@agroplus.com"
+                href="mailto:info@agroplus.co.in"
                 className="flex items-start gap-3 text-gray-400 hover:text-white transition"
               >
                 <div className="w-9 h-9 rounded-lg bg-green-600/15 flex items-center justify-center shrink-0">
                   <Mail size={16} className="text-green-400" />
                 </div>
 
-                <span>info@agroplus.com</span>
+                <span>info@agroplus.co.in</span>
               </a>
 
               <a

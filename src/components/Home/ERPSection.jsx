@@ -127,13 +127,13 @@ export default function ERPSection() {
             Modern Agriculture 🌱
           </h2>
 
-          <p className="text-gray-600 mb-6 text-sm sm:text-base">
+          <p className="text-gray-600 mb-6 text-base md:text-lg">
             Manage inventory, billing, and financial data with ease using our
             intelligent ERP platform designed for agro businesses.
           </p>
 
           {/* FEATURES */}
-          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-sm">
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-base md:text-lg">
             {[
               "Inventory Management",
               "Billing Automation",

@@ -185,13 +185,25 @@ export default function FarmingExpenseManagement() {
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="/AgroPlus-Application.apk" // Change to your APK/PDF file path
-                  download
-                  className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300"
-                >
-                  <Download size={18} />
-                  Download Application
-                </a>
+  href="/AgroPlus-Application.apk"
+  download
+  className="
+    flex items-center justify-center gap-2
+    bg-gradient-to-r
+    from-green-500
+    to-orange-400
+    hover:scale-105
+    text-black
+    font-semibold
+    px-8 py-4
+    rounded-2xl
+    shadow-xl
+    transition-all duration-300
+  "
+>
+  <Download size={18} />
+  Download Application
+</a>
               </div>
             </motion.div>
           </div>

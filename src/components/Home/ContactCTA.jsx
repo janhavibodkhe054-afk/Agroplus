@@ -22,7 +22,7 @@ export default function ContactCTA() {
           Contact Agroplus Today 🌱
         </h2>
 
-        <p className="text-gray-600 mb-6 text-sm md:text-base">
+        <p className="text-gray-600 mb-6 text-base md:text-lg">
           Get expert guidance, quality seedlings, and complete farming solutions.
           We're here to support your growth.
         </p>

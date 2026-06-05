@@ -128,7 +128,7 @@ export default function AgroplusBenefits() {
                           {item.title}
                         </h3>
 
-                        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                        <p className="text-gray-600 leading-relaxed text-base md:text-lg">
                           {item.desc}
                         </p>
                       </div>
@@ -144,7 +144,7 @@ export default function AgroplusBenefits() {
                   />
                 </div>
 
-                {/* Empty Side */}
+               
                 
               </motion.div>
             ))}

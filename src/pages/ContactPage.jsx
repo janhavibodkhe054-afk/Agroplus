@@ -156,7 +156,7 @@ ${formData.message}`;
                       </p>
 
                       <p className="font-bold text-lg text-gray-900">
-                        info@yourwebsite.com
+                        info@agroplus.co.in
                       </p>
                     </div>
                   </div>

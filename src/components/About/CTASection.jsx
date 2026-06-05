@@ -42,7 +42,7 @@ export default function CTASection() {
                   For Farmers Every Day
                 </h2>
 
-                <p className="text-white/80 text-sm md:text-base max-w-2xl">
+                <p className="text-white/80 text-base md:text-lg max-w-2xl">
                   From quality agricultural solutions to expert guidance,
                   AgroPlus is committed to supporting farmers with the resources
                   and knowledge they need to grow with confidence.

@@ -18,11 +18,7 @@ import "swiper/css";
 
 export default function ProductsSection() {
   const products = [
-    {
-      icon: <Sprout size={42} />,
-      title: "Seeds",
-      desc: "High-quality certified seeds for improved crop yield and healthy plant growth.",
-    },
+    
     {
       icon: <FlaskConical size={42} />,
       title: "Fertilizers",
@@ -38,21 +34,19 @@ export default function ProductsSection() {
       title: "Bio Products",
       desc: "Eco-friendly agricultural inputs supporting sustainable farming practices.",
     },
-    
+
     {
-  icon: <Bug size={42} />,
-  title: "Insecticides",
-  desc: "High-quality insecticides that help safeguard crops against pests.",
-}
-   
+      icon: <Bug size={42} />,
+      title: "Insecticides",
+      desc: "High-quality insecticides that help safeguard crops against pests.",
+    },
   ];
 
   return (
     <>
       <Helmet>
         <title>
-          Agricultural Products | Seeds, Fertilizers, Pesticides &
-          Farm Inputs
+          Agricultural Products | Seeds, Fertilizers, Pesticides & Farm Inputs
         </title>
 
         <meta
@@ -65,10 +59,7 @@ export default function ProductsSection() {
           content="Krushi Seva Kendra, Agricultural Products, Seeds, Fertilizers, Pesticides, Bio Products, Drip Irrigation, Farm Equipment, Crop Protection Products, Plant Growth Promoters"
         />
 
-        <link
-          rel="canonical"
-          href="https://yourwebsite.com/products"
-        />
+        <link rel="canonical" href="https://yourwebsite.com/products" />
 
         <meta
           property="og:title"
@@ -92,28 +83,26 @@ export default function ProductsSection() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Heading */}
           <div className="text-center mb-10">
-  <span className="inline-block text-green-700 text-sm font-semibold uppercase tracking-[0.25em] mb-4">
-    Products We Offer
-  </span>
+            <span className="inline-block text-green-700 text-sm font-semibold uppercase tracking-[0.25em] mb-4">
+              Products We Offer
+            </span>
 
-  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
-    Complete Agricultural
-    
-    Solutions For Modern Farming
-  </h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
+              Complete Agricultural Solutions For Modern Farming
+            </h2>
 
-  <div className="flex items-center justify-center gap-2 mb-6">
-    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
-    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
-    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
-  </div>
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+              <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+              <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+            </div>
 
-  <p className="max-w-2xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
-    Premium agricultural products and farming essentials that help
-    improve crop health, increase productivity and support sustainable
-    farming practices throughout every stage of cultivation.
-  </p>
-</div>
+            <p className="max-w-2xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
+              Premium agricultural products and farming essentials that help
+              improve crop health, increase productivity and support sustainable
+              farming practices throughout every stage of cultivation.
+            </p>
+          </div>
 
           {/* Slider */}
           <Swiper
@@ -152,7 +141,7 @@ export default function ProductsSection() {
                     stiffness: 250,
                     damping: 18,
                   }}
-                  className="group relative h-[400px] flex flex-col overflow-hidden rounded-[32px] bg-white border border-gray-100 shadow-md hover:shadow-[0_20px_60px_rgba(22,101,52,0.15)] transition-all duration-500"
+                  className="group relative h-[450px] flex flex-col overflow-hidden rounded-[32px] bg-white border border-gray-100 shadow-md hover:shadow-[0_20px_60px_rgba(22,101,52,0.15)] transition-all duration-500"
                 >
                   {/* Hover Glow */}
                   <div className="absolute inset-0 bg-gradient-to-br from-green-100/0 via-green-100/50 to-emerald-100/0 opacity-0 group-hover:opacity-100 transition duration-700"></div>
@@ -181,7 +170,7 @@ export default function ProductsSection() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-center leading-relaxed flex-grow">
+                    <p className="text-gray-600 text-center leading-relaxed flex-grow text-base md:text-lg">
                       {item.desc}
                     </p>
 

@@ -7,7 +7,7 @@ const images = [
   "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg71Zt_FRpZwFweucYj-I-MzQBBhqtJ4Nzhz5jZdJRkkWsg16AVWwGOk0IVNf2NcpXrHTZDdthya3dtqddJrAR3rFMM1TGvmGuE40OStCNUv7JzSBRZ5pei8wdjycSyOfBxxfk93MrpV1MW/s320/ss5.jpg",
   "https://5.imimg.com/data5/SELLER/Default/2022/2/SL/NJ/XQ/55158557/krushi-seva-kendra-software.jpg",
   "https://shriramfarmsolutions.com/wp-content/uploads/2025/04/Agricultural-Innovations.jpg",
-  "https://newsoftsage.co.uk/wp-content/uploads/2024/02/istockphoto-1429073633-612x612-1.webp",
+  "https://img.magnific.com/premium-photo/tractor-spraying-crops-lush-farm-field-sunset-highlighting-modern-agriculture-practices_1294398-12848.jpg?semt=ais_hybrid&w=740&q=80",
   "https://images.stockcake.com/public/2/8/6/286e5b6b-817c-447c-8836-0482de32f167_large/precision-agriculture-technology-stockcake.jpg",
 ];
 
@@ -60,18 +60,18 @@ export default function KrushiSevaSection() {
             Under One Roof 🌾
           </h2>
 
-          <p className="text-gray-600 mb-6 text-sm sm:text-base">
+          <p className="text-gray-600 mb-6 text-base md:text-lg">
             Agroplus provides expert guidance, quality farm inputs, and modern
             solutions for better yield and sustainable farming.
           </p>
 
           {/* FEATURES */}
-          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-sm">
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-base md:text-lg">
             {[
               "Expert Farming Guidance",
-              "Quality Fertilizers & Seeds",
+              "Quality Fertilizers",
               "Crop Protection",
-              "Soil Testing",
+              "Quality Pesticides & Insecticides",
             ].map((item, i) => (
               <div
                 key={i}
@@ -168,7 +168,7 @@ export default function KrushiSevaSection() {
             data-aos="zoom-in-up"
             className="relative sm:absolute sm:-bottom-8 sm:right-6 mt-4 sm:mt-0 z-20 bg-white shadow-xl p-4 rounded-xl w-full sm:w-72 border border-gray-100"
           >
-            <p className="text-xs sm:text-sm text-gray-700 italic">
+            <p className="text-base md:text-lg text-gray-700 italic">
               “Your trusted partner for modern farming.”
             </p>
           </div>

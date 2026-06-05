@@ -6,11 +6,12 @@ import FinancialReports from "../components/Software/FinancialReports";
 import AnalyticsDashboard from "../components/Software/AnalyticsDashboard";
 import WhyChooseAgroplus from "../components/Software/WhyChooseAgroplus";
 import AgroplusBenefits from "../components/Software/AgroplusBenefits";
-import AgroplusTestimonials from "../components/Software/AgroplusTestimonials";
+import HeroSection from "../components/Software/HeroSection";
 
 const Software = () => {
   return (
     <div>
+      <HeroSection/>
       <SoftwareHero />
       <InventoryManagement />
       
@@ -18,7 +19,7 @@ const Software = () => {
       <AnalyticsDashboard />
       
       <AgroplusBenefits/>
-      <AgroplusTestimonials/>
+      
     </div>
   );
 };

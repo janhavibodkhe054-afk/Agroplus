@@ -51,8 +51,8 @@ export default function CTASection() {
                 Let's Grow Better Together
               </h2>
 
-              <p className="text-gray-300 mt-4 max-w-xl text-sm sm:text-base">
-                Get expert guidance for seeds, fertilizers, crop protection
+              <p className="text-gray-300 mt-4 max-w-xl text-base md:text-lg">
+                Get expert guidance for fertilizers, crop protection
                 products and modern farming solutions.
               </p>
             </motion.div>

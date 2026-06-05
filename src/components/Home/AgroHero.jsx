@@ -49,7 +49,7 @@ export default function AgroHero() {
           </h1>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-200 text-[15px] sm:text-lg leading-relaxed max-w-2xl mb-8">
+          <p className="text-gray-200 text-base md:text-lg leading-relaxed max-w-2xl mb-8">
             Premium Sugarcane, Vegetable and Marigold
             seedlings with expert agricultural guidance for modern farming and
             higher productivity.

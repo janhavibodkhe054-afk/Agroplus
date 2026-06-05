@@ -65,16 +65,15 @@ export default function AgroSeedlingSection() {
             Better Farming Growth 🌱
           </h2>
 
-          <p className="text-gray-600 mb-6 text-sm sm:text-base">
-            We provide disease-free, high-yield seedlings including Banana tissue
-            culture, Sugarcane, and vegetable plants for better productivity.
+          <p className="text-gray-600 mb-6 text-base md:text-lg">
+            We provide disease-free, high-yield seedlings including Marigold, Sugarcane, and vegetable plants for better productivity.
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-sm">
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-6 text-base md:text-lg">
             {[
-              "Banana Tissue Culture",
+              "Sugarcane Seedling",
               "Vegetable Seedlings",
-              "Disease-Free Plants",
+              "Marigold Plants",
               "High Yield Growth",
             ].map((item, i) => (
               <div

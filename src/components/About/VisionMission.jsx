@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { Eye, Target } from "lucide-react";
+import { Eye, Target, ArrowRight } from "lucide-react";
 
 export default function VisionMission() {
   return (
@@ -10,91 +10,83 @@ export default function VisionMission() {
         <title>Vision & Mission | AgroPlus</title>
       </Helmet>
 
-      <section className="bg-gray-50 py-10 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-green-50 to-white overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute top-0 left-0 w-72 h-72 bg-green-200 rounded-full blur-3xl opacity-40"></div>
+
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-40"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Heading */}
           
 
-          <div className="grid lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-14 items-center">
-            {/* VISION */}
+          {/* Cards */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
+            {/* Vision */}
             <motion.div
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center lg:text-right"
+              whileHover={{ y: -8 }}
+              className="group relative"
             >
-              <div className="inline-flex items-center gap-3 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-orange-400 flex items-center justify-center shadow-lg">
-                  <Eye size={22} className="text-black" />
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-green-300/10 rounded-[32px] blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
-                Our Vision
-              </h3>
-
-              <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-                To build a future where every farmer has access to innovative
-                agricultural solutions, quality resources and modern technology
-                that improve productivity, sustainability and long-term growth.
-              </p>
-            </motion.div>
-
-            {/* CENTER IMAGE */}
-            <motion.div
-              animate={{
-                y: [0, -12, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative flex justify-center"
-            >
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-green-400/30 to-orange-400/30 blur-3xl rounded-full scale-125"></div>
-
-              <div className="relative z-10">
-                <div className="p-2 bg-white rounded-[28px] shadow-2xl border border-gray-100">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/075/140/209/small/sugarcane-plants-growing-in-a-green-agriculture-field-photo.jpg"
-                    alt="Agriculture"
-                    className="w-52 h-72 md:w-64 md:h-80 object-cover rounded-3xl"
-                  />
+              <div className="relative bg-white rounded-[32px] p-8 md:p-10 border border-green-100 shadow-xl h-full">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center text-white shadow-lg mb-6">
+                  <Eye size={28} />
                 </div>
 
-               
+                <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">
+                  Our Vision
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                  To create a future where every farmer has access to modern
+                  agricultural technology, quality resources, and expert
+                  guidance that improve productivity, sustainability, and
+                  long-term prosperity.
+                </p>
+
                 
               </div>
             </motion.div>
 
-            {/* MISSION */}
+            {/* Mission */}
             <motion.div
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center lg:text-left"
+              whileHover={{ y: -8 }}
+              className="group relative"
             >
-              <div className="inline-flex items-center gap-3 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-orange-400 flex items-center justify-center shadow-lg">
-                  <Target size={22} className="text-black" />
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-orange-200/10 rounded-[32px] blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+              <div className="relative bg-white rounded-[32px] p-8 md:p-10 border border-orange-100 shadow-xl h-full">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center text-white shadow-lg mb-6">
+                  <Target size={28} />
                 </div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">
+                  Our Mission
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                  To empower farmers through premium agricultural products,
+                  smart farming solutions, professional support, and digital
+                  innovations that simplify farm operations and maximize
+                  profitability.
+                </p>
+
+                
               </div>
-
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
-                Our Mission
-              </h3>
-
-              <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-                To empower farmers through expert guidance, premium agricultural
-                products, smart farming services and innovative solutions that
-                simplify operations and maximize agricultural success.
-              </p>
             </motion.div>
           </div>
+
+          
+          
         </div>
       </section>
     </>

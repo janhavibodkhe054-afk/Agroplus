@@ -46,10 +46,9 @@ export default function SoftwareHero() {
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 text-justify md:text-left">
                 Agroplus Farm ERP Software helps farmers digitize farm
-                operations, manage crop records, monitor farm expenses,
-                control inventory, track labor activities, and improve
-                profitability through a centralized agriculture management
-                platform.
+                operations, manage crop records, monitor farm expenses, control
+                inventory, track labor activities, and improve profitability
+                through a centralized agriculture management platform.
               </p>
 
               {/* FEATURES */}
@@ -75,13 +74,26 @@ export default function SoftwareHero() {
 
               {/* DOWNLOAD BUTTON */}
               <a
-                href="/AgroPlus-App.apk"
-                download
-                className="inline-flex items-center gap-3 bg-black hover:bg-gray-900 text-white font-semibold px-7 py-4 rounded-2xl shadow-xl transition-all duration-300"
-              >
-                <Download size={18} />
-                Download Application
-              </a>
+  href="/AgroPlus-Application.apk"
+  download
+  className="
+    w-full sm:w-auto
+    inline-flex items-center justify-center gap-2
+    bg-gradient-to-r
+    from-green-500
+    to-orange-400
+    hover:scale-105
+    text-black
+    font-semibold
+    px-8 py-4
+    rounded-xl
+    shadow-lg
+    transition-all duration-300
+  "
+>
+  <Download size={16} />
+  Download Application
+</a>
             </motion.div>
 
             {/* RIGHT DASHBOARD */}

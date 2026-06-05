@@ -77,7 +77,7 @@ export default function AboutSection() {
                 Innovation & Experience 🌿
               </h2>
 
-              <p className="text-gray-600 mb-6 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-600 mb-6 text-base md:text-lg leading-relaxed">
                 At AgroPlus, we believe agriculture thrives when traditional
                 farming knowledge meets modern technology. Our mission is to
                 provide farmers with reliable products, expert guidance, and
@@ -85,7 +85,7 @@ export default function AboutSection() {
                 sustainable growth opportunities.
               </p>
 
-              <p className="text-gray-600 mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-600 mb-8 text-base md:text-lg leading-relaxed">
                 From healthy nursery plants and quality agricultural inputs to
                 smart farm management systems, we are committed to supporting
                 every stage of the farming journey. Our focus is on delivering
@@ -94,7 +94,7 @@ export default function AboutSection() {
               </p>
 
               {/* FEATURE CARDS */}
-              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
+              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-8 text-base md:text-lg">
                 {features.map((item, i) => (
                   <div
                     key={i}
@@ -111,7 +111,7 @@ export default function AboutSection() {
                       {item.icon}
                     </div>
 
-                    <span className="text-gray-700 font-medium text-sm">
+                    <span className="text-gray-700 font-medium text-base md:text-lg">
                       {item.text}
                     </span>
                   </div>
@@ -140,9 +140,9 @@ export default function AboutSection() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop"
+                  src="/aimg.png"
                   alt="Modern Agriculture"
-                  className="w-full h-[280px] sm:h-[380px] md:h-[500px] lg:h-[560px] object-cover transition-transform duration-[6000ms] hover:scale-110"
+                  className="w-full h-[280px] sm:h-[380px] md:h-[550px] lg:h-[700px] object-cover transition-transform duration-[6000ms] hover:scale-110"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
@@ -172,7 +172,7 @@ export default function AboutSection() {
                   </div>
                 </div>
 
-                <p className="text-sm text-gray-600 italic">
+                <p className="text-base md:text-lg text-gray-600 italic">
                   "Helping farmers adopt smarter practices for higher
                   productivity and sustainable growth."
                 </p>

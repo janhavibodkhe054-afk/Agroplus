@@ -4,11 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const images = [
-  "https://img.freepik.com/free-photo/robot-spraying-fertilizer-vegetable-garden_35913-3099.jpg?semt=ais_hybrid&w=740&q=80",
-  "https://5.imimg.com/data5/SELLER/Default/2023/9/348871584/TM/VO/VX/5317005/h2y7t9io-500x500.png",
-  "https://agricdemy.com/content/uploads/images/March2018/ag-solutions.jpg",
-  "https://connectcx.ai/wp-content/uploads/2024/07/Smart-Farming-Solutions-in-Southeast-Asia-scaled.jpg",
-  "https://static.vecteezy.com/system/resources/previews/070/683/468/large_2x/precision-agriculture-field-monitoring-with-technology-overlay-displaying-smart-farming-solutions-for-sustainable-crop-management-and-yield-photo.jpeg",
+  "/46.jpeg",
+  "/31.jpeg",
+  "/51.jpeg",
+  "/7.jpeg",
+  "/10.jpeg",
 ];
 
 export default function FarmingSection() {
@@ -158,7 +158,7 @@ export default function FarmingSection() {
               "
             >
 
-              <p className="text-sm sm:text-base text-gray-800 italic leading-relaxed">
+              <p className="text-base md:text-lg text-gray-800 italic leading-relaxed">
                 “Empowering farmers with modern tools &
                 sustainable farming practices.”
               </p>
@@ -187,21 +187,21 @@ export default function FarmingSection() {
 </h2>
 
             {/* DESCRIPTION */}
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-5">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-5">
               Agroplus is not just a business — we are farmers ourselves.
               With years of hands-on farming experience, we understand
               real field challenges and provide practical agricultural
               solutions that truly help farmers grow.
             </p>
 
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
               From quality seedlings and crop care guidance to modern
               farming techniques, we work closely with farmers to improve
               productivity, soil health and sustainable growth.
             </p>
 
             {/* FEATURES */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8 text-base md:text-lg ">
 
               {[
                 "Own Farming Experience",
@@ -221,6 +221,7 @@ export default function FarmingSection() {
                     border border-gray-100
                     hover:shadow-md
                     transition-all duration-300
+                    text-base md:text-lg
                   "
                 >
 
