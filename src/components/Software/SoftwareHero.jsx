@@ -31,7 +31,7 @@ export default function SoftwareHero() {
         </script>
       </Helmet>
 
-      <section className="relative overflow-hidden min-h-screen flex items-center pt-10 md:pt-10 lg:pt-4 pb-0 md:-pb-0">
+      <section className="relative overflow-hidden min-h-screen flex items-center pt-10 md:pt-10 lg:pt-16 pb-0 md:-pb-0">
         {/* Background */}
         <div className="absolute inset-0">
           <img

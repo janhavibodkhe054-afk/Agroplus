@@ -42,7 +42,7 @@ export default function ProductsSection() {
     {
   icon: <Bug size={42} />,
   title: "Insecticides",
-  desc: "High-quality insecticides that help safeguard crops against pests, ensuring better crop protection.",
+  desc: "High-quality insecticides that help safeguard crops against pests.",
 }
    
   ];

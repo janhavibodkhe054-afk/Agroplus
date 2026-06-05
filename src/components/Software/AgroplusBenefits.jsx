@@ -69,7 +69,7 @@ export default function AgroplusBenefits() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-black text-gray-900 leading-tight mb-5">
             What You Gain with Agroplus Farm ERP
           </h2>
 

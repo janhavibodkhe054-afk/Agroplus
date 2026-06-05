@@ -45,7 +45,7 @@ export default function AboutKrushiSevaKendra() {
               {/* Main Image */}
               <div className="relative z-10 overflow-hidden rounded-[30px] shadow-2xl">
                 <img
-                  src="https://media.istockphoto.com/id/1901542091/photo/tractor-spraying-soybean-crops-field.jpg?b=1&s=1024x1024&w=0&k=20&c=VYiEhZqdwR69LHWvKpC5v7ax5ceNQcAwnQP1Xo0HFFg="
+                  src="/21.jpeg"
                   alt="Krushi Seva Kendra"
                   className="
                     w-full

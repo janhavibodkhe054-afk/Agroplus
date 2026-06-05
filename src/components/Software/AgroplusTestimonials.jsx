@@ -75,7 +75,7 @@ export default function AgroplusTestimonials() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
             What Farmers Say About
             
               Agroplus ERP

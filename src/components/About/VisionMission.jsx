@@ -10,7 +10,7 @@ export default function VisionMission() {
         <title>Vision & Mission | AgroPlus</title>
       </Helmet>
 
-      <section className="bg-gray-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="bg-gray-50 py-10 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           
@@ -59,7 +59,7 @@ export default function VisionMission() {
               <div className="relative z-10">
                 <div className="p-2 bg-white rounded-[28px] shadow-2xl border border-gray-100">
                   <img
-                    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/075/140/209/small/sugarcane-plants-growing-in-a-green-agriculture-field-photo.jpg"
                     alt="Agriculture"
                     className="w-52 h-72 md:w-64 md:h-80 object-cover rounded-3xl"
                   />
