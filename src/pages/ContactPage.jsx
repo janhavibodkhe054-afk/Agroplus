@@ -138,7 +138,7 @@ ${formData.message}`;
                         href="tel:+919860207957"
                         className="font-bold text-lg text-gray-900"
                       >
-                        ++91 98602 07957
+                        +91 98602 07957
                       </a>
                     </div>
                   </div>
