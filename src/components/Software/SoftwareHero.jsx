@@ -18,7 +18,8 @@ export default function SoftwareHero() {
     <>
       <Helmet>
         <title>
-          Agriculture ERP Software | Farm Management Software | Agroplus Smart ERP
+          Agriculture ERP Software | Farm Management Software | Agroplus Smart
+          ERP
         </title>
 
         <meta
@@ -31,12 +32,10 @@ export default function SoftwareHero() {
           content="Agriculture ERP Software, Farm Management Software, Crop Management Software, Farm Accounting, Farm Analytics, Labor Management, Inventory Management"
         />
 
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
-      <section className="relative overflow-hidden flex items-center bg-white py-10 lg:py-16">
+      <section className="relative overflow-hidden flex items-center bg-white py-6 lg:py-10">
         {/* Background Blur Effects */}
         <div className="absolute top-0 left-0 w-80 h-80 bg-green-100 rounded-full blur-3xl opacity-70"></div>
 
@@ -45,13 +44,13 @@ export default function SoftwareHero() {
         <div className="absolute inset-0 bg-gradient-to-b from-white via-green-50/30 to-white"></div>
 
         {/* Content */}
-        <div className="relative z-10 w-full">
+        <div className="relative z-10 w-full text-left md:text-center ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center"
+              className="text-left md:text-center"
             >
               {/* Tag */}
               <div className="inline-flex items-center bg-green-100 border border-green-200 text-green-700 px-5 py-2 rounded-full mb-6 text-xs sm:text-sm font-semibold">
@@ -59,7 +58,7 @@ export default function SoftwareHero() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-2xl sm:text-3xl md:text-5xl font-black text-gray-900 leading-snug mb-8">
+              <h1 className="text-2xl md:text-3xl font-bold font-black text-gray-900 leading-snug mb-8">
                 Agriculture ERP Software{" "}
                 <span className="text-green-600">
                   For Smart Farm Management
@@ -69,29 +68,29 @@ export default function SoftwareHero() {
               {/* Description */}
               <p className="max-w-4xl mx-auto text-gray-600 leading-relaxed mb-10 text-base md:text-lg px-2">
                 Agroplus Smart ERP is a complete farm management platform
-                designed to simplify crop planning, farm accounting,
-                inventory management, labor tracking, expense monitoring
-                and real-time analytics. Manage your entire agricultural
-                operation from a single powerful system.
+                designed to simplify crop planning, farm accounting, inventory
+                management, labor tracking, expense monitoring and real-time
+                analytics. Manage your entire agricultural operation from a
+                single powerful system.
               </p>
 
               {/* Features */}
-              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 max-w-5xl mx-auto text-base sm:text-lg">
-                {[
-                  "Crop Management",
-                  "Farm Accounting",
-                  "Inventory Tracking",
-                  "Labor Management",
-                  "Farm Analytics",
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-full text-gray-700 text-xs sm:text-sm font-medium hover:border-green-500 transition"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+              <div className="flex flex-wrap justify-start md:justify-center gap-3 md:gap-4 mb-12 max-w-5xl mx-auto text-base sm:text-lg">
+  {[
+    "Crop Management",
+    "Farm Accounting",
+    
+    "Labor Management",
+    "Farm Analytics",
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-full text-gray-700 text-xs sm:text-sm font-medium hover:border-green-500 transition"
+    >
+      {item}
+    </div>
+  ))}
+</div>
 
               {/* Download Button */}
               <div className="flex justify-center">
@@ -99,17 +98,14 @@ export default function SoftwareHero() {
                   href="/AgroPlus-Application.apk"
                   download
                   className="
-                    inline-flex items-center gap-2
-                    bg-gradient-to-r
-                    from-green-500
-                    to-orange-400
-                    hover:scale-105
-                    text-black
-                    font-semibold
-                    px-8 py-4
-                    rounded-xl
-                    shadow-lg
-                    transition-all duration-300
+                   flex items-center justify-center gap-2
+    w-full md:w-auto
+    bg-gradient-to-r from-green-500 to-orange-400
+    hover:scale-105
+    text-black font-semibold
+    px-8 py-4
+    rounded-2xl shadow-xl
+    transition-all duration-300
                   "
                 >
                   <Download size={18} />

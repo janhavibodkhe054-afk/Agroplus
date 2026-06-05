@@ -24,7 +24,7 @@ export default function FarmingExpenseManagement() {
         />
       </Helmet>
 
-      <section className="relative bg-[#f8fafc] py-16 md:py-10 overflow-hidden">
+      <section className="relative bg-[#f8fafc] py-10 md:py-10 overflow-hidden">
         {/* BACKGROUND EFFECT */}
         <div className="absolute top-0 left-0 w-80 h-80 bg-green-200/40 rounded-full blur-3xl"></div>
 
@@ -147,7 +147,7 @@ export default function FarmingExpenseManagement() {
               </div>
 
               {/* HEADING */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black leading-snug text-gray-900 mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold font-black leading-snug text-gray-900 mb-6">
                 Best Agriculture ERP Software{" "}
                 <span className="text-green-600">
                   For Smart Farm Management
@@ -155,7 +155,7 @@ export default function FarmingExpenseManagement() {
               </h2>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl text-justify md:text-left">
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 max-w-xl ">
                 Agroplus is an advanced Agriculture ERP Software designed for
                 farmers. Manage crop planning, farm accounting, expense
                 tracking, inventory, labor management, party ledger, and

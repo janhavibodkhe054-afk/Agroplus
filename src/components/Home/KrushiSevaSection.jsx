@@ -55,8 +55,8 @@ export default function KrushiSevaSection() {
             Krushi Seva Kendra
           </p>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
-            Complete Agricultural Support <br />
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 leading-snug">
+            Complete Agricultural Support 
             Under One Roof 🌾
           </h2>
 

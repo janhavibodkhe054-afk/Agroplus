@@ -135,22 +135,22 @@ export default function FinancialReports() {
               </div>
 
               {/* HEADING */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black text-gray-900 snug mb-6">
-                Farm ERP Software for <br />
+              <h2 className="text-2xl md:text-3xl font-bold font-black text-gray-900 snug mb-6">
+                Farm ERP Software for {""}
                 <span className="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
                   Smart Farming & Agribusiness Management
                 </span>
               </h2>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-6 text-justify md:text-left">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-6 ">
                 Agroplus is a complete Farm ERP Software designed for farmers to
                 manage crop planning, farm accounting, inventory, labor
                 operations, and profitability through one powerful digital
                 platform.
               </p>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8 text-justify md:text-left">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8 ">
                 Track crop-wise expenses, monitor plot performance, maintain
                 labor records, control inventory, and access real-time farm
                 analytics to improve productivity, reduce operational costs, and

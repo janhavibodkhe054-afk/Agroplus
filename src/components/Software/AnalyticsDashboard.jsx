@@ -37,14 +37,14 @@ export default function SoftwareHero() {
                 Smart Agriculture ERP Software
               </span>
 
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black leading-snug text-gray-900 mb-6">
+              <h1 className="text-2xl md:text-3xl font-bold font-black leading-snug text-gray-900 mb-6">
                 Farm ERP Software &{" "}
                 <span className="text-green-600">
                   Advanced Agriculture Analytics
                 </span>
               </h1>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 text-justify md:text-left">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 ">
                 Agroplus Farm ERP Software helps farmers digitize farm
                 operations, manage crop records, monitor farm expenses, control
                 inventory, track labor activities, and improve profitability

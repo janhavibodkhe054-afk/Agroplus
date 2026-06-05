@@ -60,7 +60,7 @@ export default function AgroplusBenefits() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center max-w-5xl mx-auto mb-12 lg:mb-20"
+          className="text-left md:text-center max-w-5xl mx-auto mb-12 lg:mb-20"
         >
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-5">
             <CheckCircle2 size={18} />
@@ -69,7 +69,7 @@ export default function AgroplusBenefits() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-black text-gray-900 leading-tight mb-5">
+          <h2 className="text-2xl md:text-3xl font-bold font-black text-gray-900 leading-tight mb-5">
             What You Gain with Agroplus Farm ERP
           </h2>
 

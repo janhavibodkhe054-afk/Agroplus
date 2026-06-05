@@ -42,7 +42,7 @@ export default function SeedlingPhotos() {
               Our Gallery
             </span>
 
-            <h2 className="text-3xl md:text-4xl font-black text-[#172312] mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#172312] mb-5">
               Farming In Action
             </h2>
 

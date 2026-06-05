@@ -56,13 +56,13 @@ export default function SeedlingServices() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="text-center mb-10 md:mb-14"
+            className="text-center mb-10 md:mb-14 text-left md:text-center"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 font-semibold text-xs sm:text-sm mb-4">
               Agroplus Seedling
             </span>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#172312] mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#172312] mb-4">
               Seedlings & Farming Solutions
             </h2>
 

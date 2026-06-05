@@ -112,7 +112,7 @@ ${formData.message}`;
                 Contact Agroplus
               </span>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4 sm:mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold font-black text-gray-900 leading-tight mb-4 sm:mb-6">
                 Let's Grow{" "}
                 <span className="text-green-600">Agriculture Together</span>
               </h2>

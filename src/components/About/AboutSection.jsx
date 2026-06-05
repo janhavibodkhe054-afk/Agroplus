@@ -71,9 +71,9 @@ export default function AboutSection() {
                 About AgroPlus
               </p>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-5 leading-snug">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-5 leading-snug">
                 Growing Agriculture With
-                <br />
+                
                 Innovation & Experience 🌿
               </h2>
 

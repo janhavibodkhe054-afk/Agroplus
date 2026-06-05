@@ -47,7 +47,7 @@ export default function CTASection() {
                 Need Assistance?
               </span>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold font-black text-white leading-tight">
                 Let's Grow Better Together
               </h2>
 

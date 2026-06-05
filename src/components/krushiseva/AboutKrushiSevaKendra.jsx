@@ -79,9 +79,7 @@ export default function AboutKrushiSevaKendra() {
                   border-gray-100
                 "
               >
-                <h4 className="text-3xl font-bold text-[#416E1F]">
-                  10+
-                </h4>
+                <h4 className="text-3xl font-bold text-[#416E1F]">10+</h4>
 
                 <p className="text-gray-600 text-base md:text-lg">
                   Years Supporting Farmers
@@ -99,12 +97,12 @@ export default function AboutKrushiSevaKendra() {
             >
               {/* Subtitle */}
               <p className="text-green-700 font-semibold text-sm uppercase tracking-[0.25em] mb-4">
-  About Krushi Seva Kendra
-</p>
+                About Krushi Seva Kendra
+              </p>
 
-<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
-  Trusted Agricultural Products & Farming Solutions
-</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 leading-snug">
+                Trusted Agricultural Products & Farming Solutions
+              </h2>
 
               {/* Divider */}
               <div className="flex items-center gap-2 mb-8">
@@ -116,8 +114,8 @@ export default function AboutKrushiSevaKendra() {
               {/* Description */}
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10">
                 At Krushi Seva Kendra, we provide quality fertilizers,
-                pesticides, Insecticides crop protection products and expert agricultural
-                guidance to help farmers improve crop productivity,
+                pesticides, Insecticides crop protection products and expert
+                agricultural guidance to help farmers improve crop productivity,
                 profitability and sustainable farming practices.
               </p>
 
@@ -125,10 +123,7 @@ export default function AboutKrushiSevaKendra() {
               <div className="grid md:grid-cols-2 gap-6 mb-10">
                 <div>
                   <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle
-                      size={22}
-                      className="text-orange-400 mt-1"
-                    />
+                    <CheckCircle size={22} className="text-orange-400 mt-1" />
 
                     <h3 className="text-xl font-bold text-[#16220f]">
                       Quality Agricultural Inputs
@@ -136,17 +131,14 @@ export default function AboutKrushiSevaKendra() {
                   </div>
 
                   <p className="text-gray-600 text-base md:text-lg">
-                    Premium fertilizers, pesticides and crop nutrition products from
-                    trusted agricultural brands.
+                    Premium fertilizers, pesticides and crop nutrition products
+                    from trusted agricultural brands.
                   </p>
                 </div>
 
                 <div>
                   <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle
-                      size={22}
-                      className="text-orange-400 mt-1"
-                    />
+                    <CheckCircle size={22} className="text-orange-400 mt-1" />
 
                     <h3 className="text-xl font-bold text-[#16220f]">
                       Farmer Support & Guidance

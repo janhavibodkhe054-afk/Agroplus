@@ -87,7 +87,7 @@ export default function ProductsSection() {
               Products We Offer
             </span>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 leading-snug">
               Complete Agricultural Solutions For Modern Farming
             </h2>
 
