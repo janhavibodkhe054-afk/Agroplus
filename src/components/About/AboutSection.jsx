@@ -140,7 +140,7 @@ export default function AboutSection() {
                 <img
                   src="/aimg.png"
                   alt="Modern Agriculture"
-                  className="w-full h-[280px] sm:h-[380px] md:h-[550px] lg:h-[700px] object-cover transition-transform duration-[6000ms] hover:scale-110"
+                  className="w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover transition-transform duration-[6000ms] hover:scale-110"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
