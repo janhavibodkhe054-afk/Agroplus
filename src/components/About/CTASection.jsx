@@ -51,7 +51,7 @@ export default function CTASection() {
 
               {/* Button */}
               <a
-                href="https://wa.me/914105040000"
+                href="https://wa.me/+919860207957"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group shrink-0 bg-gradient-to-r from-green-500 to-orange-400 text-black font-semibold px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-3"

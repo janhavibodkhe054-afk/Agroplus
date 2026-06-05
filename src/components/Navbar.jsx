@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* RIGHT SIDE */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
-              href="https://wa.me/914105040000"
+              href="https://wa.me/919860207957"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -174,7 +174,7 @@ export default function Navbar() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/914105040000"
+            href="https://wa.me/919860207957"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

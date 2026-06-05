@@ -67,7 +67,7 @@ export default function SoftwareHero() {
               </h1>
 
               {/* Description */}
-              <p className="max-w-4xl mx-auto text-gray-600 leading-relaxed mb-10 text-base sm:text-lg lg:text-xl px-2">
+              <p className="max-w-4xl mx-auto text-gray-600 leading-relaxed mb-10 text-base md:text-lg px-2">
                 Agroplus Smart ERP is a complete farm management platform
                 designed to simplify crop planning, farm accounting,
                 inventory management, labor tracking, expense monitoring
@@ -76,7 +76,7 @@ export default function SoftwareHero() {
               </p>
 
               {/* Features */}
-              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 max-w-5xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 max-w-5xl mx-auto text-base sm:text-lg">
                 {[
                   "Crop Management",
                   "Farm Accounting",

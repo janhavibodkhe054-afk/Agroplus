@@ -30,7 +30,7 @@ export default function ContactPage() {
 ${formData.message}`;
 
     window.open(
-      `https://wa.me/914105040000?text=${encodeURIComponent(whatsappMessage)}`,
+      `https://wa.me/+919860207957?text=${encodeURIComponent(whatsappMessage)}`,
       "_blank",
     );
   };
@@ -135,10 +135,10 @@ ${formData.message}`;
                       <p className="text-sm text-gray-500 mb-1">Phone Number</p>
 
                       <a
-                        href="tel:+914105040000"
+                        href="tel:+919860207957"
                         className="font-bold text-lg text-gray-900"
                       >
-                        +91 41050 40000
+                        ++91 98602 07957
                       </a>
                     </div>
                   </div>

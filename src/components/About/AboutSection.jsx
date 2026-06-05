@@ -11,7 +11,7 @@ export default function AboutSection() {
   const features = [
     {
       icon: <Sprout size={18} />,
-      text: "Premium Quality Nursery Plants",
+      text: "Premium Quality Agricultural Products",
     },
     {
       icon: <Leaf size={18} />,
@@ -32,7 +32,7 @@ export default function AboutSection() {
       ([entry]) => {
         if (entry.isIntersecting) setVisible(true);
       },
-      { threshold: 0.25 }
+      { threshold: 0.25 },
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -44,7 +44,7 @@ export default function AboutSection() {
     <>
       <Helmet>
         <title>
-          About AgroPlus | Smart Agriculture Solutions & Nursery Services
+          About AgroPlus | Smart Agriculture Solutions & Agricultural Services
         </title>
 
         <meta
@@ -86,9 +86,9 @@ export default function AboutSection() {
               </p>
 
               <p className="text-gray-600 mb-8 text-base md:text-lg leading-relaxed">
-                From healthy nursery plants and quality agricultural inputs to
-                smart farm management systems, we are committed to supporting
-                every stage of the farming journey. Our focus is on delivering
+                From healthy saplings and quality agricultural inputs to smart
+                farm management systems, we are committed to supporting every
+                stage of the farming journey. Our focus is on delivering
                 practical solutions that help farmers achieve better results and
                 long-term success.
               </p>
@@ -121,9 +121,7 @@ export default function AboutSection() {
               <button
                 onClick={() => navigate("/contact")}
                 className={`bg-gradient-to-r from-green-500 to-orange-400 text-black font-semibold px-6 py-3 rounded-md shadow-lg hover:scale-105 transition-all duration-300 ${
-                  visible
-                    ? "opacity-100 scale-100"
-                    : "opacity-0 scale-75"
+                  visible ? "opacity-100 scale-100" : "opacity-0 scale-75"
                 }`}
               >
                 Contact Us →

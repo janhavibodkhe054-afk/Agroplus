@@ -43,7 +43,7 @@ export default function Footer() {
               className="h-20 w-auto object-contain mb-5"
             />
 
-            <p className="text-sm leading-relaxed text-gray-400">
+            <p className="text-base md:text-lg leading-relaxed text-gray-400">
               Agroplus provides quality seedlings, agricultural inputs,
               crop protection products and smart digital solutions that
               help farmers improve productivity and achieve sustainable
@@ -123,14 +123,14 @@ export default function Footer() {
 
             <div className="space-y-4">
               <a
-                href="tel:+914105040000"
+                href="tel:+919860207957"
                 className="flex items-start gap-3 text-gray-400 hover:text-white transition"
               >
                 <div className="w-9 h-9 rounded-lg bg-green-600/15 flex items-center justify-center shrink-0">
                   <Phone size={16} className="text-green-400" />
                 </div>
 
-                <span>+91 41050 40000</span>
+                <span>+91 98602 07957</span>
               </a>
 
               <a
@@ -145,7 +145,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/914105040000"
+                href="https://wa.me/919860207957"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-gray-400 hover:text-green-400 transition"

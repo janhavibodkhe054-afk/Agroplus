@@ -73,7 +73,7 @@ export default function AgroplusBenefits() {
             What You Gain with Agroplus Farm ERP
           </h2>
 
-          <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             Improve farm operations, increase profitability and make
             smarter agricultural decisions with a powerful digital
             farm management platform.

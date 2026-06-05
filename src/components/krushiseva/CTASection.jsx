@@ -67,7 +67,7 @@ export default function CTASection() {
             >
               {/* Call Button */}
               <a
-                href="tel:+914105040000"
+                href="tel:+919860207957"
                 className="
                   w-full sm:w-auto
                   inline-flex items-center justify-center gap-3
@@ -86,7 +86,7 @@ export default function CTASection() {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/914105040000"
+                href="https://wa.me/+919860207957"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
