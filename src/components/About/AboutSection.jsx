@@ -137,14 +137,25 @@ export default function AboutSection() {
               }`}
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src="/aimg.png"
-                  alt="Modern Agriculture"
-                  className="w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] object-cover transition-transform duration-[6000ms] hover:scale-110"
-                />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
-              </div>
+  {/* MOBILE IMAGE */}
+  <img
+    src="/aimg2.png"
+    alt="Modern Agriculture"
+    className="block lg:hidden w-full h-[380px] sm:h-[650px] object-cover transition-transform duration-[6000ms] hover:scale-110"
+  />
+
+  {/* LAPTOP / DESKTOP IMAGE */}
+  <img
+    src="/aimg.png"
+    alt="Modern Agriculture"
+    className="hidden lg:block w-full h-[700px] object-cover transition-transform duration-[6000ms] hover:scale-110"
+  />
+
+  {/* OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+
+</div>
 
               {/* FLOATING EXPERIENCE CARD */}
               <div
