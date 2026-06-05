@@ -7,7 +7,9 @@ export default function CTASection() {
   return (
     <>
       <Helmet>
-        <title>Contact Krushi Seva Kendra | Farming Support & Agricultural Solutions</title>
+        <title>
+          Contact Krushi Seva Kendra | Farming Support & Agricultural Solutions
+        </title>
 
         <meta
           name="description"
@@ -21,58 +23,87 @@ export default function CTASection() {
       </Helmet>
 
       <section
-        className="relative py-14 lg:py-16 bg-fixed bg-center bg-cover overflow-hidden"
+        className="relative py-12 sm:py-14 lg:py-16 bg-cover bg-center overflow-hidden"
         style={{
-          backgroundImage: "url('https://cropcareequipment.com/wp-content/uploads/2024/03/01-the-history-of-agriculture.jpg')",
+          backgroundImage:
+            "url('https://cropcareequipment.com/wp-content/uploads/2024/03/01-the-history-of-agriculture.jpg')",
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/65"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            {/* Content */}
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
-              <span className="inline-block text-green-300 font-semibold uppercase tracking-[3px] mb-3">
+              <span className="inline-block text-green-300 font-semibold uppercase tracking-[2px] sm:tracking-[3px] mb-3">
                 Need Assistance?
               </span>
 
-              <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
-                Let's Grow Better
-                <span className="block text-[#F0C84B]">
-                  Together
-                </span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+                Let's Grow Better Together
               </h2>
+
+              <p className="text-gray-300 mt-4 max-w-xl text-sm sm:text-base">
+                Get expert guidance for seeds, fertilizers, crop protection
+                products and modern farming solutions.
+              </p>
             </motion.div>
 
-            {/* Buttons */}
+            {/* Right Buttons */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
+              {/* Call Button */}
               <a
-                href="tel:+914105040000
-"
-                className="group inline-flex items-center justify-center gap-3 bg-[#F0C84B] hover:bg-white text-black font-bold px-8 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                href="tel:+914105040000"
+                className="
+                  w-full sm:w-auto
+                  inline-flex items-center justify-center gap-3
+                  bg-green-600 hover:bg-green-700
+                  text-white font-semibold
+                  px-7 py-3.5
+                  rounded-xl
+                  shadow-lg
+                  transition-all duration-300
+                  hover:-translate-y-1
+                "
               >
-                <Phone size={20} />
+                <Phone size={18} />
                 Call Now
               </a>
 
+              {/* WhatsApp Button */}
               <a
-                href="https://wa.me/914105040000
-"
+                href="https://wa.me/914105040000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                className="
+                  w-full sm:w-auto
+                  inline-flex items-center justify-center gap-3
+                  bg-white/10 backdrop-blur-md
+                  border border-white/20
+                  hover:bg-white hover:text-black
+                  text-white font-semibold
+                  px-7 py-3.5
+                  rounded-xl
+                  shadow-lg
+                  transition-all duration-300
+                  hover:-translate-y-1
+                "
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={18} />
                 WhatsApp
               </a>
             </motion.div>

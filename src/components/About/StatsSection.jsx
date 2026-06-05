@@ -12,7 +12,6 @@ function Counter({ end, suffix = "", duration = 2000 }) {
 
   useEffect(() => {
     let start = 0;
-
     const increment = end / (duration / 16);
 
     const timer = setInterval(() => {
@@ -60,13 +59,14 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="relative py-10 overflow-hidden bg-[#f7f7f7]">
-      {/* Background Blur */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-green-100 rounded-full blur-3xl opacity-40" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-yellow-100 rounded-full blur-3xl opacity-40" />
+    <section className="relative py-12 md:py-16 overflow-hidden bg-[#f8f8f5]">
+      {/* Background Effects */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-30" />
+
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-30" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-12 lg:gap-8">
           {stats.map((item, index) => {
             const Icon = item.icon;
 
@@ -76,32 +76,46 @@ export default function StatsSection() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.7,
                   delay: index * 0.15,
                 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="text-center"
+                whileHover={{
+                  y: -6,
+                  scale: 1.02,
+                }}
+                className="relative text-center"
               >
-                {/* Leaves + Icon */}
-                <div className="flex items-center justify-center gap-5 mb-8">
+                {/* Vertical Divider */}
+                {index !== stats.length - 1 && (
+                  <div className="hidden md:block absolute top-1/2 right-0 -translate-y-1/2 w-px h-40 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+                )}
+
+                {/* Icon Area */}
+                <div className="flex items-center justify-center gap-4 mb-8">
                   <img
                     src="https://pixydrops.com/agrionhtml/main-html/assets/images/shapes/counter-one-shape-1.png"
                     alt=""
-                    className="w-16 h-16 object-contain"
+                    className="w-14 h-14 object-contain opacity-80"
                   />
 
-                  <div className="w-24 h-24 rounded-full border-2 border-[#4c742d] bg-white shadow-lg flex items-center justify-center">
-                    <Icon
-                      size={42}
-                      className="text-[#4c742d]"
-                    />
+                  <div className="relative">
+                    {/* Outer Ring */}
+                    <div className="absolute inset-0 rounded-full border-2 border-green-200 scale-125"></div>
+
+                    {/* Icon Circle */}
+                    <div className="relative w-22 h-22 rounded-full bg-white shadow-xl border border-green-100 flex items-center justify-center">
+                      <Icon
+                        size={42}
+                        className="text-[#416E1F]"
+                      />
+                    </div>
                   </div>
 
                   <img
                     src="https://pixydrops.com/agrionhtml/main-html/assets/images/shapes/counter-one-shape-2.png"
                     alt=""
-                    className="w-16 h-16 object-contain"
+                    className="w-14 h-14 object-contain opacity-80"
                   />
                 </div>
 
@@ -113,11 +127,11 @@ export default function StatsSection() {
                   />
                 </h2>
 
-                {/* Small Divider */}
-                <div className="w-14 h-[2px] bg-[#e7c34a] mx-auto mb-4"></div>
+                {/* Gradient Divider */}
+                <div className="w-16 h-[3px] rounded-full bg-gradient-to-r from-green-500 to-orange-400 mx-auto mb-5"></div>
 
                 {/* Title */}
-                <p className="text-gray-500 text-lg lg:text-xl font-medium">
+                <p className="text-gray-600 text-lg lg:text-xl font-medium">
                   {item.title}
                 </p>
               </motion.div>

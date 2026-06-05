@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-  "https://agronomy.unl.edu/sites/unl.edu.ianr.agronomy-horticulture/files/media/image/Soybean-young-4x5.jpg",
-  "https://hasiruagro.com/images/service_plant_nursery_shop_hasiru_agro.webp",
-  "https://img.freepik.com/premium-photo/pepper-plant-garden-early-morning-planting-pepper-seedlings-ground-concept-conservation-nature-agriculture_332694-192.jpg",
-  "https://img.freepik.com/premium-photo/baby-plants-sowing-small-pots-trays-agricultural-seedlings-front-view-seedlings-pots-windowsill-green-plants-plastic-cups_106652-6237.jpg",
-  "https://swiftagro.com/wp-content/uploads/2022/09/banner-15.jpg",
+  "/61.jpeg",
+  "/63.jpeg",
+  "/64.jpeg",
+  "/58.jpeg",
+  "/60.jpeg",
 ];
 
 export default function AgroSeedlingSection() {
@@ -50,7 +50,7 @@ export default function AgroSeedlingSection() {
 
         {/* LEFT CONTENT */}
         <div
-          className={`transition-all duration-1000 delay-100 ${
+          className={`transition-all duration-1000 delay-100 order-2 lg:order-1 ${
             visible
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-16"
@@ -106,7 +106,7 @@ export default function AgroSeedlingSection() {
 
         {/* RIGHT SLIDER */}
         <div
-          className={`relative group transition-all duration-1000 delay-200 ${
+          className={`relative group transition-all duration-1000 delay-200 order-1 lg:order-2 ${
             visible
               ? "opacity-100 translate-x-0"
               : "opacity-0 translate-x-16"

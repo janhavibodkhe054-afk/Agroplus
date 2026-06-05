@@ -1,396 +1,169 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import {
-  TrendingUp,
-  BarChart3,
-  PieChart,
-  ArrowRight,
-  Phone,
-  Sprout,
-  MapPinned,
-  Droplets,
-  Users,
-  Package,
-  Wallet,
-} from "lucide-react";
+import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 
-export default function AnalyticsDashboard() {
-  const features = [
-    {
-      icon: Sprout,
-      title: "Crop Management System",
-      value: "Planting to Harvest Tracking",
-    },
-    {
-      icon: MapPinned,
-      title: "Farm Profitability",
-      value: "Plot-wise Cost & Revenue",
-    },
-    {
-      icon: Droplets,
-      title: "Fertigation Management",
-      value: "Irrigation & Spray Records",
-    },
-    {
-      icon: Users,
-      title: "Workforce Management",
-      value: "Labor Attendance & Payroll",
-    },
-    {
-      icon: Package,
-      title: "Inventory Control",
-      value: "Seeds, Fertilizers & Stock",
-    },
-    {
-      icon: Wallet,
-      title: "Farm Accounting",
-      value: "Sales, Purchase & Ledger",
-    },
-  ];
-  const analyticsCards = [
-    {
-      label: "Crop Performance",
-      value: "Real-Time Tracking",
-      icon: Sprout,
-    },
-    {
-      label: "Farm Operations",
-      value: "128 Activity Logs",
-      icon: Droplets,
-    },
-    {
-      label: "Labor Analytics",
-      value: "54 Active Workers",
-      icon: Users,
-    },
-    {
-      label: "Revenue Management",
-      value: "Sales & Profit Reports",
-      icon: TrendingUp,
-    },
-  ];
-
+export default function SoftwareHero() {
   return (
-    <><Helmet>
-  <title>
-    Farm ERP Software | Agriculture Management & Farm Analytics Platform
-  </title>
+    <>
+      <Helmet>
+        <title>
+          Agriculture ERP Software | Farm Management Software | Agroplus
+        </title>
 
-  <meta
-    name="description"
-    content="Agroplus Farm ERP Software helps farmers manage crop records, farm accounting, inventory, labor management, fertigation schedules, sales tracking and real-time farm analytics through one powerful agriculture management platform."
-  />
+        <meta
+          name="description"
+          content="Agroplus Farm ERP Software helps farmers digitize farm operations, manage crop records, monitor farm expenses, control inventory, track labor activities and improve profitability."
+        />
+      </Helmet>
 
-  <meta
-    name="keywords"
-    content="Farm ERP Software, Agriculture ERP Software, Farm Management Software, Crop Management System, Farm Accounting Software, Agribusiness Management Software, Farm Analytics Dashboard, Smart Farming Solution, Agriculture Management Platform"
-  />
+      <section className="relative overflow-hidden bg-[#f8faf7] py-14 lg:py-16">
+        {/* Background Effects */}
+        <div className="absolute top-0 left-0 w-80 h-80 bg-green-100 rounded-full blur-3xl opacity-50"></div>
 
-  <meta
-    property="og:title"
-    content="Agroplus Farm ERP Software"
-  />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-50 rounded-full blur-3xl opacity-60"></div>
 
-  <meta
-    property="og:description"
-    content="Complete agriculture ERP software for crop management, farm accounting, inventory control, labor management and real-time farm analytics."
-  />
-</Helmet>
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] via-white to-green-50 py-10 sm:py-10 md:py-10 lg:py-10">
-      {/* BACKGROUND */}
-      <div className="absolute top-0 left-0 w-60 sm:w-80 md:w-96 h-60 sm:h-80 md:h-96 bg-green-200/40 rounded-full blur-3xl"></div>
-
-      <div className="absolute bottom-0 right-0 w-60 sm:w-80 md:w-96 h-60 sm:h-80 md:h-96 bg-emerald-100/50 rounded-full blur-3xl"></div>
-
-      {/* GRID BACKGROUND */}
-      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#000000_1px,transparent_1px),linear-gradient(to_bottom,#000000_1px,transparent_1px)] bg-[size:55px_55px] sm:bg-[size:70px_70px]"></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* LEFT SIDE */}
-          <motion.div
-            initial={{ opacity: 0, x: -80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="order-2 lg:order-1"
-          >
-            {/* TOP TAG */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* LEFT CONTENT */}
             <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-5 sm:mb-6 shadow-sm"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="relative order-2 lg:order-2"
             >
-              <TrendingUp size={18} />
-              <p className="text-xs sm:text-sm font-semibold">
+              <span className="inline-flex items-center bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
                 Smart Agriculture ERP Software
-              </p>
-            </motion.div>
-
-            {/* TITLE */}
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-3 sm:mb-3">
-              Farm ERP Software &
-              <br />
-              <span className="text-green-600">
-                Advanced Agriculture Analytics
               </span>
-            </h2>
 
-            {/* DESCRIPTION */}
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl">
-              Agroplus Farm ERP Software helps farmers, agribusinesses, FPOs,
-              and agricultural enterprises digitize farm operations, manage crop
-              records, monitor farm expenses, control inventory, track labor
-              activities, and improve profitability through a centralized
-              agriculture management platform.
-            </p>
-
-            {/* FEATURES */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-10">
-              {features.map((item, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{
-                    y: -8,
-                    scale: 1.03,
-                  }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 18,
-                  }}
-                  className="group relative bg-white/90 backdrop-blur-xl border border-white rounded-2xl p-5 shadow-md hover:shadow-2xl overflow-hidden"
-                >
-                  {/* HOVER EFFECT */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-100/40 to-emerald-100/20 opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-                  <div className="relative z-10">
-                    <motion.div
-                      whileHover={{
-                        rotate: 10,
-                        scale: 1.1,
-                      }}
-                      className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 text-white flex items-center justify-center shadow-lg mb-4"
-                    >
-                      <item.icon size={22} />
-                    </motion.div>
-
-                    <h4 className="text-gray-500 text-xs sm:text-sm mb-1">
-                      {item.title}
-                    </h4>
-
-                    <h3 className="text-base sm:text-lg font-black text-gray-900 leading-snug">
-                      {item.value}
-                    </h3>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                whileHover={{
-                  scale: 1.05,
-                  y: -3,
-                }}
-                whileTap={{ scale: 0.95 }}
-                href="https://wa.me/919860207957"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-6 sm:px-8 py-4 rounded-2xl shadow-xl text-sm sm:text-base"
-              >
-                Book Free Demo
-                <ArrowRight size={18} />
-              </motion.a>
-
-              <motion.div
-                whileHover={{
-                  scale: 1.03,
-                  y: -2,
-                }}
-                className="flex items-center justify-center gap-2 border border-gray-300 bg-white px-6 sm:px-8 py-4 rounded-2xl font-semibold text-gray-800 shadow-sm text-sm sm:text-base"
-              >
-                <Phone size={18} className="text-green-600" />
-                +91 98602 07957
-              </motion.div>
-            </div>
-          </motion.div>
-
-          {/* RIGHT SIDE DASHBOARD */}
-          <motion.div
-            initial={{ opacity: 0, x: 80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="order-1 lg:order-2"
-          >
-            <motion.div
-              whileHover={{
-                scale: 1.02,
-                y: -5,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 180,
-              }}
-              className="bg-white/90 backdrop-blur-xl rounded-[28px] sm:rounded-[32px] shadow-2xl border border-white overflow-hidden"
-            >
-              {/* HEADER */}
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-gradient-to-r from-green-900 to-green-700 px-5 sm:px-6 py-5">
-                <div className="flex items-center gap-3">
-                  <motion.div
-                    whileHover={{
-                      rotate: 10,
-                      scale: 1.1,
-                    }}
-                    className="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center text-white"
-                  >
-                    <PieChart size={22} />
-                  </motion.div>
-
-                  <div>
-                    <h3 className="text-white font-bold text-base sm:text-lg">
-                      Agriculture ERP Dashboard
-                    </h3>
-
-                    <p className="text-green-100 text-xs">
-                      Farm management, accounting & analytics platform
-                    </p>
-                  </div>
-                </div>
-
-                <span className="bg-white text-green-700 text-xs px-3 py-1 rounded-full font-semibold w-fit">
-                  ACTIVE
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black leading-snug text-gray-900 mb-6">
+                Farm ERP Software &{" "}
+                <span className="text-green-600">
+                  Advanced Agriculture Analytics
                 </span>
+              </h1>
+
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 text-justify md:text-left">
+                Agroplus Farm ERP Software helps farmers digitize farm
+                operations, manage crop records, monitor farm expenses,
+                control inventory, track labor activities, and improve
+                profitability through a centralized agriculture management
+                platform.
+              </p>
+
+              {/* FEATURES */}
+              <div className="grid sm:grid-cols-2 gap-4 mb-10">
+                {[
+                  "Crop Management System",
+                  "Planting to Harvest Tracking",
+                  "Farm Profitability Analysis",
+                  "Plot-wise Cost & Revenue",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 bg-white px-4 py-4 rounded-2xl border border-gray-100 shadow-sm"
+                  >
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
+
+                    <span className="font-medium text-gray-700 text-sm sm:text-base">
+                      {item}
+                    </span>
+                  </div>
+                ))}
               </div>
 
-              {/* DASHBOARD BODY */}
-              <div className="p-4 sm:p-6 bg-[#f8fafc]">
-                {/* MAIN PERFORMANCE CARD */}
-                <motion.div
-                  whileHover={{
-                    scale: 1.02,
-                  }}
-                  className="bg-white rounded-3xl p-5 sm:p-6 shadow-md border border-gray-100 mb-6"
-                >
-                  <div className="flex items-center justify-between gap-4">
+              {/* DOWNLOAD BUTTON */}
+              <a
+                href="/AgroPlus-App.apk"
+                download
+                className="inline-flex items-center gap-3 bg-black hover:bg-gray-900 text-white font-semibold px-7 py-4 rounded-2xl shadow-xl transition-all duration-300"
+              >
+                <Download size={18} />
+                Download Application
+              </a>
+            </motion.div>
+
+            {/* RIGHT DASHBOARD */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="relative order-2 lg:order-1"
+            >
+              <div className="bg-white rounded-[32px] border border-gray-100 overflow-hidden shadow-2xl">
+                {/* Header */}
+                <div className="p-6 sm:p-8 border-b border-gray-100">
+                  <p className="text-sm text-gray-500 mb-2">
+                    Agriculture ERP Dashboard
+                  </p>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
+                    Farm Management, Accounting & Analytics Platform
+                  </h3>
+                </div>
+
+                {/* Efficiency Section */}
+                <div className="p-6 sm:p-8 bg-green-50 border-b border-gray-100">
+                  <div className="flex items-start justify-between">
                     <div>
-                      <p className="text-gray-500 text-xs sm:text-sm">
+                      <p className="text-gray-600 text-sm">
                         Overall Farm Efficiency
                       </p>
 
-                      <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-1">
+                      <h2 className="text-4xl sm:text-5xl font-black text-green-600 mt-2">
                         98%
                       </h2>
                     </div>
 
-                    <motion.div
-                      whileHover={{
-                        rotate: 12,
-                        scale: 1.1,
-                      }}
-                      className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-green-100 flex items-center justify-center"
-                    >
-                      <BarChart3 className="text-green-600" size={28} />
-                    </motion.div>
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      ACTIVE
+                    </span>
                   </div>
 
-                  {/* PROGRESS BAR */}
-                  <div className="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "88%" }}
-                      transition={{ duration: 1.5 }}
-                      className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"
-                    ></motion.div>
-                  </div>
-
-                  <p className="text-xs text-gray-500 mt-2">
+                  <p className="text-sm text-gray-600 mt-4">
                     Live farm analytics and performance monitoring
                   </p>
-                </motion.div>
-
-                {/* ANALYTICS GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  {analyticsCards.map((item, i) => (
-                    <motion.div
-                      key={i}
-                      whileHover={{
-                        y: -6,
-                        scale: 1.03,
-                      }}
-                      whileTap={{ scale: 0.97 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 250,
-                        damping: 18,
-                      }}
-                      className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-lg"
-                    >
-                      <motion.div
-                        whileHover={{
-                          rotate: 8,
-                          scale: 1.1,
-                        }}
-                        className="w-11 h-11 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-3"
-                      >
-                        <item.icon size={20} />
-                      </motion.div>
-
-                      <p className="text-xs text-gray-500">{item.label}</p>
-
-                      <h3 className="text-base sm:text-lg font-black text-gray-900">
-                        {item.value}
-                      </h3>
-                    </motion.div>
-                  ))}
                 </div>
 
-                {/* INFO BOX */}
-                <motion.div
-                  whileHover={{
-                    scale: 1.01,
-                  }}
-                  className="bg-green-50 border border-green-100 rounded-3xl p-5"
-                >
-                  <h4 className="font-bold text-green-900 mb-4 text-base sm:text-lg">
-                    Agriculture Business Insights
-                  </h4>
+                {/* Dashboard Items */}
+                {[
+                  {
+                    name: "Crop Performance",
+                    amount: "Real-Time Tracking",
+                  },
+                  {
+                    name: "Farm Operations",
+                    amount: "128 Activity Logs",
+                  },
+                  {
+                    name: "Labor Analytics",
+                    amount: "54 Active Workers",
+                  },
+                  {
+                    name: "Revenue Management",
+                    amount: "Sales & Profit Reports",
+                  },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center justify-between gap-4 px-6 sm:px-8 py-5 border-b last:border-0 border-gray-100"
+                  >
+                    <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
+                      {item.name}
+                    </h4>
 
-                  <div className="space-y-3 text-sm text-green-800 leading-relaxed">
-                    <p>
-                      📱 Access your farm operations, crop records and business
-                      reports from anywhere using a mobile-friendly Farm ERP
-                      platform
-                    </p>
-
-                    <p>
-                      ☁ Secure cloud-based agriculture software keeps all farm
-                      records protected with automatic backups and data
-                      security.
-                    </p>
-
-                    <p>
-                      📊 Advanced farm analytics dashboards provide real-time
-                      insights into crop performance, expenses, productivity and
-                      profitability.
-                    </p>
-
-                    <p>
-                      💰 Integrated accounting, sales tracking and ledger
-                      management simplify financial operations for farmers and
-                      agribusiness owners.
-                    </p>
+                    <span className="text-green-600 font-bold text-xs sm:text-sm text-right">
+                      {item.amount}
+                    </span>
                   </div>
-                </motion.div>
+                ))}
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }

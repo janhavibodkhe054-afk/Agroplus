@@ -4,13 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 import {
-  Banana,
   Sprout,
   Leaf,
   Tractor,
-  MonitorSmartphone,
   Trees,
   ArrowRight,
+  Flower2,
 } from "lucide-react";
 
 import "swiper/css";
@@ -18,60 +17,28 @@ import "swiper/css";
 export default function SeedlingServices() {
   const services = [
     {
-      title: "Banana Farming",
-      icon: <Banana size={34} />,
-      image:
-        "https://t4.ftcdn.net/jpg/04/89/06/83/360_F_489068377_bhXFwovpIVIJbVc2lONCpDsyUm2JJPat.jpg",
-      description:
-        "Complete banana farming solutions with expert guidance for higher productivity and better crop management.",
-    },
-    {
       title: "Sugarcane Farming",
       icon: <Tractor size={34} />,
-      image:
-        "https://media.istockphoto.com/id/518044433/photo/sugarcane-field-and-road-with-white-cloud-in-thailand.jpg?s=612x612&w=0&k=20&c=7U8GSHsOL2wrkFqlaAJwWzUHYRGDjh5Teho5rhq2AWI=",
       description:
         "Modern sugarcane farming techniques and support to improve yield, quality and farm profitability.",
     },
     {
-      title: "Banana Tissue Culture",
-      icon: <Leaf size={34} />,
-      image:
-        "https://creativefarmer.in/cdn/shop/products/61-54LyCZ8L._SL1024_4d004bc6-780d-49ef-aab3-26db0172619e.jpg?v=1646894156",
-      description:
-        "Healthy disease-free banana tissue culture plants for uniform growth and superior production.",
-    },
-    {
       title: "Sugarcane Seedlings",
       icon: <Sprout size={34} />,
-      image:
-        "https://thumbs.dreamstime.com/b/sugarcane-seedlings-prepared-nurseries-saccharum-officinarum-sugarcane-seedlings-prepared-nurseries-317930107.jpg",
       description:
         "Premium quality sugarcane seedlings developed for strong root systems and healthy crop establishment.",
     },
     {
       title: "Vegetable Plants",
       icon: <Trees size={34} />,
-      image:
-        "https://wp.plantsnap.com/wp-content/uploads/2018/09/green-bean.jpg",
       description:
         "Wide range of vegetable plants and seedlings suitable for commercial and small-scale farming.",
     },
     {
-      title: "Farm Guidance",
-      icon: <Tractor size={34} />,
-      image:
-        "https://geomaticslandsurveying.com/wp-content/uploads/2019/04/Trimble-Guidance-Systems.jpg.webp",
+      title: "Marigold Plants",
+      icon: <Flower2 size={34} />,
       description:
-        "Professional agricultural consultation for crop planning, nutrition management and farm success.",
-    },
-    {
-      title: "Agro Software Solutions",
-      icon: <MonitorSmartphone size={34} />,
-      image:
-        "https://khetibuddy.com/wp-content/uploads/2026/05/Software-Development-for-Agriculture.png",
-      description:
-        "Smart agriculture ERP software for farm management, inventory tracking, accounting and analytics.",
+        "Healthy marigold seedlings suitable for commercial flower farming, landscaping and decorative cultivation.",
     },
   ];
 
@@ -84,132 +51,109 @@ export default function SeedlingServices() {
 
         <meta
           name="description"
-          content="Explore banana tissue culture plants, sugarcane seedlings, vegetable plants, farm guidance services, banana farming solutions and Agro ERP software from Agroplus."
+          content="Explore banana tissue culture plants, sugarcane seedlings, vegetable plants and agricultural solutions from Agroplus."
         />
-
-        <meta
-          name="keywords"
-          content="Banana Tissue Culture, Sugarcane Seedlings, Vegetable Plants, Banana Farming, Sugarcane Farming, Farm Guidance, Agro Software Solutions, Nursery Plants"
-        />
-
-        <link
-          rel="canonical"
-          href="https://yourwebsite.com/seedlings"
-        />
-
-        <meta
-          property="og:title"
-          content="Seedlings & Agricultural Solutions | Agroplus"
-        />
-
-        <meta
-          property="og:description"
-          content="Premium banana tissue culture plants, sugarcane seedlings, vegetable plants and smart agricultural solutions."
-        />
-
-        <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="relative py-10 overflow-hidden bg-[#f8faf7]">
+      <section className="relative py-12 md:py-16 overflow-hidden bg-[#f8faf7]">
         {/* Background Effects */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-50"></div>
 
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-yellow-100 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-50 rounded-full blur-3xl opacity-50"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Heading */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="text-center mb-14"
+            className="text-center mb-10 md:mb-14"
           >
-            <span className="inline-block px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold mb-5">
+            <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 font-semibold text-xs sm:text-sm mb-4">
               Agroplus Seedling
             </span>
 
-            <h2 className="text-3xl md:text-4xl font-black text-[#172312] mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#172312] mb-4">
               Seedlings & Farming Solutions
             </h2>
 
-            <p className="max-w-5xl mx-auto text-gray-600 text-lg">
+            <p className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
               Quality seedlings, tissue culture plants, farming guidance and
-              smart agricultural solutions designed for modern farmers.
+              agricultural solutions designed to support healthy crop growth and
+              better farming outcomes.
             </p>
           </motion.div>
 
-          {/* Auto Scroll Slider */}
+          {/* Slider */}
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={25}
+            spaceBetween={20}
             loop={true}
             speed={1000}
             autoplay={{
-              delay: 2000, // Stops 2 sec on each slide
+              delay: 2500,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
             breakpoints={{
               0: {
                 slidesPerView: 1,
+                spaceBetween: 15,
               },
               640: {
                 slidesPerView: 2,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 3,
+                spaceBetween: 25,
               },
             }}
           >
             {services.map((item, index) => (
               <SwiperSlide key={index}>
                 <motion.div
-                  whileHover={{
-                    y: -12,
-                  }}
-                  className="group bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-[520px] flex flex-col"
+                  whileHover={{ y: -8 }}
+                  className="group relative min-h-[350px] md:min-h-[390px] pb-2"
                 >
-                  {/* Image */}
-                  <div className="overflow-hidden h-[240px]">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-                    />
-                  </div>
+                  {/* Hover Border */}
+                  <div className="absolute inset-0 border-2 border-transparent group-hover:border-green-600 rounded-[24px] md:rounded-[30px] transition-all duration-500"></div>
 
-                  {/* Content */}
-                  <div className="p-7 flex flex-col flex-grow">
-                    <div className="w-16 h-16 rounded-2xl bg-green-700 text-white flex items-center justify-center mb-5 group-hover:bg-[#f0c84b] group-hover:text-black transition duration-500">
+                  {/* Card */}
+                  <div className="relative h-full bg-white rounded-[24px] md:rounded-[30px] p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
+                    {/* Number */}
+                    <span className="absolute top-4 right-4 md:top-5 md:right-6 text-5xl md:text-6xl font-black text-gray-100">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+
+                    {/* Icon */}
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-green-100 text-[#2d6416] flex items-center justify-center mb-5 group-hover:bg-green-700 group-hover:text-white transition-all duration-500">
                       {item.icon}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-[#172312] mb-4">
+                    {/* Title */}
+                    <h3 className="text-xl md:text-2xl font-bold text-[#172312] mb-3">
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
+                    {/* Description */}
+                    <p className="text-gray-600 text-sm md:text-base leading-relaxed flex-grow">
                       {item.description}
                     </p>
 
+                    {/* Divider */}
+                    <div className="w-12 md:w-16 h-1 bg-green-600 rounded-full my-5"></div>
+
+                    {/* Button */}
                     <a
-                      href="https://wa.me/914105040000
-"
+                      href="https://wa.me/914105040000"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/button inline-flex items-center justify-between bg-[#2d6416] hover:bg-[#214b10] text-white rounded-full overflow-hidden"
+                      className="inline-flex items-center gap-2 text-[#2d6416] font-semibold text-sm border border-green-200 hover:border-green-600 hover:bg-green-50 px-4 md:px-5 py-2 rounded-full transition-all duration-300 w-fit"
                     >
-                      <span className="px-6 py-4 font-semibold">
-                        Enquire Now
-                      </span>
-
-                      <div className="w-14 h-14 bg-[#f0c84b] flex items-center justify-center">
-                        <ArrowRight
-                          size={20}
-                          className="text-black group-hover/button:translate-x-1 transition"
-                        />
-                      </div>
+                      Enquire Now
+                      <ArrowRight size={15} />
                     </a>
                   </div>
                 </motion.div>

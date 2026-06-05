@@ -1,7 +1,7 @@
 import React from "react";
 import SoftwareHero from "../components/Software/SoftwareHero";
 import InventoryManagement from "../components/Software/InventoryManagement";
-import BillingAutomation from "../components/Software/BillingAutomation";
+
 import FinancialReports from "../components/Software/FinancialReports";
 import AnalyticsDashboard from "../components/Software/AnalyticsDashboard";
 import WhyChooseAgroplus from "../components/Software/WhyChooseAgroplus";
@@ -13,10 +13,10 @@ const Software = () => {
     <div>
       <SoftwareHero />
       <InventoryManagement />
-      <BillingAutomation />
+      
       <FinancialReports />
       <AnalyticsDashboard />
-      <WhyChooseAgroplus/>
+      
       <AgroplusBenefits/>
       <AgroplusTestimonials/>
     </div>

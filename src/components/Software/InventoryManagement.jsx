@@ -1,19 +1,16 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Download } from "lucide-react";
 import { motion } from "framer-motion";
-import {
-  Sprout,
-  ArrowRight,
-  CheckCircle2,
-  Tractor,
-} from "lucide-react";
+import { Sprout, ArrowRight, CheckCircle2, Tractor } from "lucide-react";
 
 export default function FarmingExpenseManagement() {
   return (
     <>
       <Helmet>
         <title>
-          Agriculture ERP Software | Farm Management Software | Agroplus Smart ERP
+          Agriculture ERP Software | Farm Management Software | Agroplus Smart
+          ERP
         </title>
 
         <meta
@@ -35,7 +32,6 @@ export default function FarmingExpenseManagement() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-
             {/* LEFT SIDE DASHBOARD */}
             <motion.div
               initial={{ opacity: 0, x: -80 }}
@@ -45,7 +41,6 @@ export default function FarmingExpenseManagement() {
               className="relative order-2 lg:order-1"
             >
               <div className="bg-white rounded-[32px] shadow-2xl border border-gray-200 overflow-hidden">
-
                 {/* HEADER */}
                 <div className="bg-black px-6 py-5 flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -71,16 +66,13 @@ export default function FarmingExpenseManagement() {
 
                 {/* BODY */}
                 <div className="p-6 bg-[#f8fafc]">
-
                   {/* REVENUE CARD */}
                   <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-3xl p-6 text-white mb-6">
                     <p className="text-green-100 mb-2">
                       Agriculture Business Performance
                     </p>
 
-                    <h2 className="text-4xl font-black mb-4">
-                      ₹4.8L+
-                    </h2>
+                    <h2 className="text-4xl font-black mb-4">₹4.8L+</h2>
 
                     <div className="flex items-center gap-3 text-sm">
                       <span className="bg-white/20 px-3 py-1 rounded-full">
@@ -101,16 +93,16 @@ export default function FarmingExpenseManagement() {
                         amount: "24 Reports",
                       },
                       {
-                        name: "Fertigation Management",
-                        amount: "128 Records",
+                        name: "Crop-wise Profitability Analysis",
+                        amount: "18 Insights",
                       },
                       {
                         name: "Labor & Workforce Tracking",
                         amount: "54 Workers",
                       },
                       {
-                        name: "Sales, Purchase & Accounting",
-                        amount: "₹2.1L",
+                        name: "Real-Time Farm Analytics Dashboard",
+                        amount: "Live Data",
                       },
                     ].map((item, i) => (
                       <div
@@ -135,23 +127,6 @@ export default function FarmingExpenseManagement() {
                   </div>
                 </div>
               </div>
-
-              {/* FLOATING CARD */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                viewport={{ once: true }}
-                className="absolute -bottom-6 right-0 bg-white shadow-2xl rounded-2xl px-5 py-4 border border-gray-100"
-              >
-                <p className="text-sm text-gray-500 mb-1">
-                  Operational Efficiency
-                </p>
-
-                <h3 className="text-3xl font-black text-green-600">
-                  98%
-                </h3>
-              </motion.div>
             </motion.div>
 
             {/* RIGHT CONTENT */}
@@ -172,25 +147,21 @@ export default function FarmingExpenseManagement() {
               </div>
 
               {/* HEADING */}
-              <h2 className="text-4xl sm:text-5xl font-black leading-tight text-gray-900 mb-6">
-                Best Agriculture ERP Software
-                <br />
-
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black leading-snug text-gray-900 mb-6">
+                Best Agriculture ERP Software{" "}
                 <span className="text-green-600">
                   For Smart Farm Management
                 </span>
               </h2>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-                Agroplus is an advanced Agriculture ERP Software designed
-                for farmers, FPOs, farm owners, and agribusiness companies.
-                Manage crop planning, farm accounting, expense tracking,
-                inventory, labor management, fertigation schedules, sales,
-                purchases, party ledger, and real-time farm analytics from
-                a single platform. Increase productivity, reduce operational
-                costs, and make data-driven farming decisions with Agroplus
-                Smart ERP.
+              <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl text-justify md:text-left">
+                Agroplus is an advanced Agriculture ERP Software designed for
+                farmers. Manage crop planning, farm accounting, expense
+                tracking, inventory, labor management, party ledger, and
+                real-time farm analytics from a single platform. Increase
+                productivity, reduce operational costs, and make data-driven
+                farming decisions with Agroplus Smart ERP.
               </p>
 
               {/* FEATURES */}
@@ -198,7 +169,7 @@ export default function FarmingExpenseManagement() {
                 {[
                   "Complete Farm Management Software with crop lifecycle tracking",
                   "Farm Accounting & Expense Management for higher profitability",
-                  "Inventory, Fertigation & Agricultural Input Management",
+
                   "Real-Time Farm Analytics & Business Intelligence Dashboard",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
@@ -206,9 +177,7 @@ export default function FarmingExpenseManagement() {
                       <CheckCircle2 size={20} />
                     </div>
 
-                    <p className="text-lg font-medium text-gray-800">
-                      {item}
-                    </p>
+                    <p className="text-lg font-medium text-gray-800">{item}</p>
                   </div>
                 ))}
               </div>
@@ -216,21 +185,15 @@ export default function FarmingExpenseManagement() {
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/919860207957"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/AgroPlus-Application.apk" // Change to your APK/PDF file path
+                  download
                   className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300"
                 >
-                  Schedule Demo
-                  <ArrowRight size={18} />
+                  <Download size={18} />
+                  Download Application
                 </a>
-
-                <div className="flex items-center justify-center border border-gray-300 bg-white px-8 py-4 rounded-2xl text-gray-800 font-semibold">
-                  +91 98602 07957
-                </div>
               </div>
             </motion.div>
-
           </div>
         </div>
       </section>

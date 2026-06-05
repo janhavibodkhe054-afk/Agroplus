@@ -13,6 +13,7 @@ import {
   Smartphone,
   Cloud,
 } from "lucide-react";
+import { Download } from "lucide-react";
 
 export default function FinancialReports() {
   const features = [
@@ -100,7 +101,7 @@ export default function FinancialReports() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative order-2 lg:order-1"
+              className="relative order-2 lg:order-2"
             >
               {/* GREEN BACKGROUND CIRCLE */}
               <div className="absolute top-10 left-10 w-[420px] h-[420px] bg-green-200 rounded-full opacity-40 blur-2xl"></div>
@@ -123,7 +124,7 @@ export default function FinancialReports() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="order-1 lg:order-2"
+              className="order-1 lg:order-1"
             >
               {/* TAG */}
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-6">
@@ -134,7 +135,7 @@ export default function FinancialReports() {
               </div>
 
               {/* HEADING */}
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-black text-gray-900 snug mb-6">
                 Farm ERP Software for <br />
                 <span className="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
                   Smart Farming & Agribusiness Management
@@ -142,40 +143,30 @@ export default function FinancialReports() {
               </h2>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-6">
-                Agroplus is a complete Farm ERP Software designed for farmers,
-                farm owners, FPOs, and agribusinesses to manage crop planning,
-                farm accounting, inventory, labor operations, sales, purchases,
-                and profitability through one powerful digital platform.
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-6 text-justify md:text-left">
+                Agroplus is a complete Farm ERP Software designed for farmers to
+                manage crop planning, farm accounting, inventory, labor
+                operations, and profitability through one powerful digital
+                platform.
               </p>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
-                Track crop-wise expenses, monitor plot performance, manage
-                fertigation schedules, maintain labor records, control
-                inventory, and access real-time farm analytics to improve
-                productivity, reduce operational costs, and maximize
-                agricultural profits.
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8 text-justify md:text-left">
+                Track crop-wise expenses, monitor plot performance, maintain
+                labor records, control inventory, and access real-time farm
+                analytics to improve productivity, reduce operational costs, and
+                maximize agricultural profits.
               </p>
 
               {/* INPUT + BUTTON */}
-              <div className="flex flex-col sm:flex-row items-stretch w-full max-w-xl overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
-                <div className="flex items-center justify-center px-5 font-bold text-gray-900 border-b sm:border-b-0 sm:border-r border-gray-300 bg-gray-50">
-                  +91
-                </div>
-
-                <input
-                  type="text"
-                  placeholder="Enter Your Mobile Number"
-                  className="flex-1 px-5 py-4 outline-none text-gray-700"
-                />
-
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/919860207957"
+                  href="https://play.google.com/store/apps/details?id=your.app.id"
                   target="_blank"
-                  rel="noreferrer"
-                  className="bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 transition flex items-center justify-center whitespace-nowrap"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300"
                 >
-                  Book Free Demo
+                  <Download size={18} />
+                  Download Application
                 </a>
               </div>
 

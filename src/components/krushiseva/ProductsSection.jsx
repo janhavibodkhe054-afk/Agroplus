@@ -38,26 +38,13 @@ export default function ProductsSection() {
       title: "Bio Products",
       desc: "Eco-friendly agricultural inputs supporting sustainable farming practices.",
     },
+    
     {
-      icon: <Droplets size={42} />,
-      title: "Drip Irrigation",
-      desc: "Modern irrigation materials for efficient water management and savings.",
-    },
-    {
-      icon: <Tractor size={42} />,
-      title: "Farm Equipment",
-      desc: "Agricultural tools and equipment designed for everyday farming operations.",
-    },
-    {
-      icon: <ShieldCheck size={42} />,
-      title: "Crop Protection",
-      desc: "Advanced solutions to protect crops and maximize farm productivity.",
-    },
-    {
-      icon: <TrendingUp size={42} />,
-      title: "Growth Promoters",
-      desc: "Specialized products that support healthy crop development and higher yields.",
-    },
+  icon: <Bug size={42} />,
+  title: "Insecticides",
+  desc: "High-quality insecticides that help safeguard crops against pests, ensuring better crop protection.",
+}
+   
   ];
 
   return (
@@ -104,26 +91,29 @@ export default function ProductsSection() {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Heading */}
-          <div className="text-center mb-16">
-            <span className="inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full font-semibold uppercase tracking-[3px]">
-              Products We Offer
-            </span>
+          <div className="text-center mb-10">
+  <span className="inline-block text-green-700 text-sm font-semibold uppercase tracking-[0.25em] mb-4">
+    Products We Offer
+  </span>
 
-            <h2
-              className="text-4xl md:text-6xl text-[#172312] mt-6"
-              style={{
-                fontFamily: "'Amatic SC', cursive",
-              }}
-            >
-              Complete Agricultural Solutions
-            </h2>
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
+    Complete Agricultural
+    
+    Solutions For Modern Farming
+  </h2>
 
-            <p className="max-w-3xl mx-auto mt-5 text-gray-600 text-lg leading-relaxed">
-              Premium agricultural products designed to improve crop
-              health, enhance soil fertility, increase productivity
-              and support sustainable farming practices.
-            </p>
-          </div>
+  <div className="flex items-center justify-center gap-2 mb-6">
+    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+    <div className="w-8 h-[3px] bg-gradient-to-r from-green-500 to-orange-400 rounded-full"></div>
+  </div>
+
+  <p className="max-w-2xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
+    Premium agricultural products and farming essentials that help
+    improve crop health, increase productivity and support sustainable
+    farming practices throughout every stage of cultivation.
+  </p>
+</div>
 
           {/* Slider */}
           <Swiper
@@ -152,7 +142,7 @@ export default function ProductsSection() {
             }}
           >
             {products.map((item, index) => (
-              <SwiperSlide key={index} className="h-auto">
+              <SwiperSlide key={index} className="h-auto py-8">
                 <motion.div
                   whileHover={{
                     y: -12,
@@ -162,7 +152,7 @@ export default function ProductsSection() {
                     stiffness: 250,
                     damping: 18,
                   }}
-                  className="group relative h-[420px] flex flex-col overflow-hidden rounded-[32px] bg-white border border-gray-100 shadow-md hover:shadow-[0_20px_60px_rgba(22,101,52,0.15)] transition-all duration-500"
+                  className="group relative h-[400px] flex flex-col overflow-hidden rounded-[32px] bg-white border border-gray-100 shadow-md hover:shadow-[0_20px_60px_rgba(22,101,52,0.15)] transition-all duration-500"
                 >
                   {/* Hover Glow */}
                   <div className="absolute inset-0 bg-gradient-to-br from-green-100/0 via-green-100/50 to-emerald-100/0 opacity-0 group-hover:opacity-100 transition duration-700"></div>

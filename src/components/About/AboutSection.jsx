@@ -1,153 +1,183 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
-import { Check, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Sprout, Leaf, Tractor, ShieldCheck } from "lucide-react";
 
 export default function AboutSection() {
-  const points = [
-    "Own Farming Experience",
-    "Quality Seedlings & Nursery Plants",
-    "Smart ERP Solutions For Agriculture",
-    "Expert Farming Guidance & Support",
+  const navigate = useNavigate();
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  const features = [
+    {
+      icon: <Sprout size={18} />,
+      text: "Premium Quality Nursery Plants",
+    },
+    {
+      icon: <Leaf size={18} />,
+      text: "Sustainable Farming Solutions",
+    },
+    {
+      icon: <Tractor size={18} />,
+      text: "Modern Agriculture Technology",
+    },
+    {
+      icon: <ShieldCheck size={18} />,
+      text: "Trusted Farmer Support Network",
+    },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.25 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <Helmet>
         <title>
-          About Agroplus | Agriculture ERP, Nursery & Krushi Seva Kendra
+          About AgroPlus | Smart Agriculture Solutions & Nursery Services
         </title>
 
         <meta
           name="description"
-          content="Agroplus provides smart agriculture ERP software, healthy disease-free seedlings, and complete Krushi Seva Kendra services to help farmers improve productivity and farm management."
+          content="AgroPlus helps farmers grow better with quality seedlings, agricultural services, farming guidance, and innovative ERP solutions for modern agriculture."
         />
-
-        <meta
-          name="keywords"
-          content="Agroplus, Agriculture ERP, Banana Tissue Culture, Nursery Plants, Krushi Seva Kendra, Farming Solutions, Agriculture Services"
-        />
-
-        <link rel="canonical" href="https://yourwebsite.com/about" />
-
-        <meta
-          property="og:title"
-          content="About Agroplus | Agriculture ERP & Farming Solutions"
-        />
-
-        <meta
-          property="og:description"
-          content="Empowering farmers with quality seedlings, smart ERP solutions and complete agricultural support services."
-        />
-
-        <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="relative overflow-hidden bg-[#F5F5F5] py-14 md:py-20 lg:py-24">
-        {/* Background Effects */}
-        <div className="absolute top-10 left-0 w-48 md:w-72 h-48 md:h-72 bg-green-100 rounded-full blur-3xl opacity-40"></div>
-
-        <div className="absolute bottom-0 right-0 w-56 md:w-80 h-56 md:h-80 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section
+        ref={sectionRef}
+        className="bg-gray-50 py-12 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* LEFT CONTENT */}
-            <motion.div
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-1"
+            <div
+              className={`transition-all duration-1000 ${
+                visible
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-16"
+              }`}
             >
-              <p className="text-green-700 font-semibold text-base md:text-lg mb-4 uppercase tracking-wider">
-                Get to Know Agroplus
+              <p className="text-xs sm:text-sm text-green-600 font-semibold mb-2 uppercase tracking-wider">
+                About AgroPlus
               </p>
 
-              <h2
-                className="text-[32px] sm:text-[48px] md:text-[52px] lg:text-[55px] font-bold leading-[0.9] text-[#14210f] mb-5"
-                style={{
-                  fontFamily: "'Poppins', sans-serif",
-                }}
-              >
-                FARMERS FIRST AGRICULTURE ALWAYS
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-5 leading-snug">
+                Growing Agriculture With
+                <br />
+                Innovation & Experience 🌿
               </h2>
 
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#416E1F] mb-5 leading-snug">
-                Providing quality seedlings, smart ERP solutions and complete
-                agricultural support for modern farming.
-              </h3>
-
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-                Agroplus is not just a business — we are farmers ourselves. With
-                years of hands-on farming experience, we understand real field
-                challenges and provide practical agricultural solutions through
-                our Agro Seedlings Nursery, Agroplus ERP platform and Krushi
-                Seva Kendra services.
+              <p className="text-gray-600 mb-6 text-sm sm:text-base leading-relaxed">
+                At AgroPlus, we believe agriculture thrives when traditional
+                farming knowledge meets modern technology. Our mission is to
+                provide farmers with reliable products, expert guidance, and
+                innovative solutions that improve productivity and create
+                sustainable growth opportunities.
               </p>
 
-              <div className="space-y-4 mb-8">
-                {points.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center shrink-0">
-                      <Check size={18} className="text-[#416E1F]" />
+              <p className="text-gray-600 mb-8 text-sm sm:text-base leading-relaxed">
+                From healthy nursery plants and quality agricultural inputs to
+                smart farm management systems, we are committed to supporting
+                every stage of the farming journey. Our focus is on delivering
+                practical solutions that help farmers achieve better results and
+                long-term success.
+              </p>
+
+              {/* FEATURE CARDS */}
+              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
+                {features.map((item, i) => (
+                  <div
+                    key={i}
+                    className={`flex items-center gap-3 bg-white px-4 py-4 rounded-xl shadow-sm border border-gray-100 transition-all duration-700 ${
+                      visible
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-8"
+                    }`}
+                    style={{
+                      transitionDelay: `${i * 150}ms`,
+                    }}
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-green-500 to-orange-400 text-black flex items-center justify-center shrink-0">
+                      {item.icon}
                     </div>
 
-                    <p className="text-base md:text-lg font-semibold text-[#1D2418]">
-                      {item}
-                    </p>
+                    <span className="text-gray-700 font-medium text-sm">
+                      {item.text}
+                    </span>
                   </div>
                 ))}
               </div>
 
-              <a
-                href="https://wa.me/914105040000
-"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center bg-[#3E6C1E] hover:bg-[#355b19] text-white rounded-full overflow-hidden transition-all duration-300 shadow-lg"
+              <button
+                onClick={() => navigate("/contact")}
+                className={`bg-gradient-to-r from-green-500 to-orange-400 text-black font-semibold px-6 py-3 rounded-md shadow-lg hover:scale-105 transition-all duration-300 ${
+                  visible
+                    ? "opacity-100 scale-100"
+                    : "opacity-0 scale-75"
+                }`}
               >
-                <span className="px-6 md:px-8 py-4 md:py-5 text-base md:text-lg font-semibold">
-                  Learn More
-                </span>
-
-                <div className="w-14 h-14 md:w-16 md:h-16 bg-[#F0C94A] flex items-center justify-center">
-                  <ArrowRight
-                    size={22}
-                    className="text-black group-hover:translate-x-1 transition"
-                  />
-                </div>
-              </a>
-            </motion.div>
+                Contact Us →
+              </button>
+            </div>
 
             {/* RIGHT IMAGE */}
-            <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative order-2 lg:order-2"
+            <div
+              className={`relative transition-all duration-1000 delay-200 ${
+                visible
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-16"
+              }`}
             >
-              {/* Yellow Background Shape */}
-              <div className="absolute -right-3 md:-right-5 top-5 w-full h-full bg-[#F0C94A] rounded-[24px]"></div>
-
-              {/* Main Image */}
-              <div className="relative z-10 overflow-hidden rounded-[24px] shadow-2xl">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="https://thumbs.dreamstime.com/b/asian-male-farmer-working-sugarcane-farm-to-collect-data-study-innovation-technology-develop-farms-improve-production-457239733.jpg"
-                  alt="Agroplus Agriculture Solutions"
-                  className="
-                    w-full
-                    h-[320px]
-                    sm:h-[450px]
-                    md:h-[550px]
-                    lg:h-[650px]
-                    object-cover
-                    hover:scale-105
-                    transition duration-700
-                  "
+                  src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop"
+                  alt="Modern Agriculture"
+                  className="w-full h-[280px] sm:h-[380px] md:h-[500px] lg:h-[560px] object-cover transition-transform duration-[6000ms] hover:scale-110"
                 />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
               </div>
-            </motion.div>
+
+              {/* FLOATING EXPERIENCE CARD */}
+              <div
+                className={`relative sm:absolute sm:-bottom-8 sm:right-6 mt-4 sm:mt-0 bg-white shadow-xl p-5 rounded-xl border border-gray-100 w-full sm:w-72 transition-all duration-700 ${
+                  visible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                }`}
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-green-500 to-orange-400 flex items-center justify-center font-bold text-black">
+                    10+
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800">
+                      Years Experience
+                    </h4>
+
+                    <p className="text-sm text-gray-500">
+                      Supporting Modern Farming
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-gray-600 italic">
+                  "Helping farmers adopt smarter practices for higher
+                  productivity and sustainable growth."
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

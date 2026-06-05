@@ -1,12 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Download } from "lucide-react";
 
 export default function SoftwareHero() {
-  const navigate = useNavigate();
-
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -29,116 +26,97 @@ export default function SoftwareHero() {
           content="Agroplus Smart ERP helps farmers and agribusinesses manage crop planning, farm accounting, inventory management, labor tracking, fertigation schedules, sales, purchases and farm analytics."
         />
 
-        <meta
-          name="keywords"
-          content="Agriculture ERP Software, Farm Management Software, Crop Management Software, Farm Accounting Software, Agribusiness ERP, Smart Farming Software, Farm Analytics, Inventory Management, Fertigation Management"
-        />
-
-        <meta
-          property="og:title"
-          content="Agriculture ERP Software | Agroplus Smart ERP"
-        />
-
-        <meta
-          property="og:description"
-          content="Complete Farm Management Software for Farmers, FPOs and Agribusinesses."
-        />
-
-        <meta property="og:type" content="website" />
-
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
       </Helmet>
 
-      <section className="relative overflow-hidden pb-20 lg:pb-20 pt-20 lg:pt-30">
-        {/* BACKGROUND IMAGE */}
+      <section className="relative overflow-hidden min-h-screen flex items-center pt-10 md:pt-10 lg:pt-4 pb-0 md:-pb-0">
+        {/* Background */}
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1800&auto=format&fit=crop"
-            alt="Agriculture ERP Software Dashboard for Smart Farm Management"
+            alt="Agriculture ERP Software Dashboard"
             className="w-full h-full object-cover"
             loading="eager"
           />
 
-          <div className="absolute inset-0 bg-black/70"></div>
+          <div className="absolute inset-0 bg-black/75"></div>
 
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-green-900/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-green-950/40"></div>
         </div>
 
-        {/* BLUR EFFECT */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 rounded-full blur-3xl"></div>
+        {/* Decorative Blur */}
+        <div className="absolute top-10 left-0 w-72 h-72 bg-green-500/20 rounded-full blur-3xl"></div>
 
-        {/* CONTENT */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {/* TAG */}
-            <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-500/30 backdrop-blur-md text-green-300 px-5 py-2 mt-2 rounded-full mb-6 text-sm font-medium">
-              Agriculture ERP Software for Farmers, FPOs & Agribusinesses
-            </div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-500/10 rounded-full blur-3xl"></div>
 
-            {/* H1 */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Agriculture ERP Software
-              <br />
-              <span className="text-green-400">
-                For Smart Farm Management & Growth
-              </span>
-            </h1>
+        {/* Content */}
+        <div className="relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center"
+            >
+              {/* Tag */}
+              <div className="inline-flex items-center bg-green-500/15 border border-green-500/30 backdrop-blur-sm text-green-300 px-4 sm:px-6 py-2 rounded-full mb-6 text-xs sm:text-sm font-medium">
+                Agriculture ERP Software For Farmers
+              </div>
 
-            {/* DESCRIPTION */}
-            <p className="text-gray-300 text-lg leading-relaxed max-w-4xl mx-auto mb-10">
-              Agroplus Smart ERP is a complete Farm Management Software
-              designed for farmers, FPOs, agri-consultants, and
-              agribusiness companies. Manage crop planning, farm
-              accounting, expense tracking, inventory management,
-              labor management, fertigation schedules, sales,
-              purchases, and real-time farm analytics from a
-              single platform to improve productivity, reduce
-              operational costs, and maximize profitability.
-            </p>
+              {/* Heading */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-10">
+                Agriculture ERP Software
+                
 
-            {/* FEATURES */}
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
-              {[
-                "Crop Management Software",
-                "Farm Accounting",
-                "Inventory Management",
-                "Labor Tracking",
-                "Farm Analytics",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-white/10 border border-white/10 backdrop-blur-md px-5 py-2 rounded-full text-white text-sm font-medium"
+                <span className="text-green-400">
+                  For Smart Farm Management
+                </span>
+              </h1>
+
+              {/* Description */}
+              <p className="max-w-4xl mx-auto text-gray-300 leading-relaxed mb-8 text-base sm:text-lg lg:text-xl px-2">
+                Agroplus Smart ERP is a complete farm management platform
+                designed to simplify crop planning, farm accounting,
+                inventory management, labor tracking, expense monitoring
+                and real-time analytics. Manage your entire agricultural
+                operation from a single powerful system.
+              </p>
+
+              {/* Features */}
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 max-w-5xl mx-auto">
+                {[
+                  "Crop Management",
+                  "Farm Accounting",
+                  "Inventory Tracking",
+                  "Labor Management",
+                  "Farm Analytics",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/10 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-xs sm:text-sm font-medium"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              {/* Button */}
+              <div className="flex justify-center">
+                <a
+                  href="#"
+                  className="group border border-white/20 bg-white/10 backdrop-blur-sm hover:bg-white hover:text-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold flex items-center gap-3 transition-all duration-300 text-sm sm:text-base"
                 >
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            {/* BUTTONS */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button
-                onClick={() => navigate("/contact")}
-                className="bg-green-500 hover:bg-green-600 text-black px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all duration-300 shadow-2xl"
-              >
-                Schedule Demo
-                <ArrowRight size={18} />
-              </button>
-
-              <a
-                href="#"
-                className="border border-white/20 bg-white/10 backdrop-blur-md hover:bg-white hover:text-black text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2 transition-all duration-300"
-              >
-                <Download size={18} />
-                Download Application
-              </a>
-            </div>
-          </motion.div>
+                  <Download
+                    size={18}
+                    className="group-hover:scale-110 transition"
+                  />
+                  Download Application
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
     </>

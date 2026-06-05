@@ -38,35 +38,33 @@ export default function KrushiSevaKendraHero() {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="relative h-[45vh] min-h-[320px] overflow-hidden flex items-center justify-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2000&auto=format&fit=crop"
-            alt="Krushi Seva Kendra"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
-
-        {/* Center Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="relative z-10 text-center px-6 max-w-3xl mt-20"
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">
-            Krushi Seva Kendra
-          </h1>
-
-          <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl mx-auto">
-            Quality agricultural products, crop protection solutions,
-            fertilizers, seeds and expert farming guidance for better
-            productivity and sustainable agriculture.
-          </p>
-        </motion.div>
-      </section>
+      <section
+              className="relative min-h-[45vh] md:min-h-[50vh] flex items-center justify-center overflow-hidden pb-4 md:pb-4 pt-20 lg:pt-20"
+              style={{
+                backgroundImage: "url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2000&auto=format&fit=crop')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/55"></div>
+      
+              {/* Content */}
+              <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+                
+      
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-4xl sm:text-5xl md:text-6xl font-black text-white"
+                >
+                  Krushi Seva Kendra
+                </motion.h1>
+      
+                
+              </div>
+            </section>
     </>
   );
 }

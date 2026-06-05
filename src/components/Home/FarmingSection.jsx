@@ -174,18 +174,17 @@ export default function FarmingSection() {
           >
 
             {/* TAG */}
-            <p className="text-xs sm:text-sm text-orange-500 font-semibold uppercase tracking-[3px] mb-3">
+            <p className="text-xs sm:text-sm text-green-600 font-semibold uppercase tracking-[3px] mb-3">
               About Our Farming
             </p>
 
             {/* HEADING */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-5">
-
-              Farmers First <br className="hidden sm:block" />
-
-              Agriculture Always 🌱
-
-            </h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
+  Farmers First{" "}
+  <span className="text-green-600">
+    Agriculture Always 
+  </span>
+</h2>
 
             {/* DESCRIPTION */}
             <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-5">
@@ -238,7 +237,7 @@ export default function FarmingSection() {
 
             {/* BUTTON */}
             <button
-              onClick={() => navigate("/farming")}
+              onClick={() => navigate("/about")}
               data-aos="zoom-in-up"
               className="
                 w-full sm:w-fit

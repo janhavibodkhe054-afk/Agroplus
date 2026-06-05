@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Send,
-  MessageCircle,
-  Clock3,
-} from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle, Clock3 } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -37,10 +30,8 @@ export default function ContactPage() {
 ${formData.message}`;
 
     window.open(
-      `https://wa.me/914105040000?text=${encodeURIComponent(
-        whatsappMessage
-      )}`,
-      "_blank"
+      `https://wa.me/914105040000?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank",
     );
   };
 
@@ -48,8 +39,8 @@ ${formData.message}`;
     <>
       <Helmet>
         <title>
-          Contact Us | Krushi Seva Kendra | Seeds,
-          Fertilizers & Farming Guidance
+          Contact Us | Krushi Seva Kendra | Seeds, Fertilizers & Farming
+          Guidance
         </title>
 
         <meta
@@ -62,15 +53,9 @@ ${formData.message}`;
           content="Krushi Seva Kendra Contact, Agriculture Products, Seeds, Fertilizers, Pesticides, Farming Guidance, Crop Advisory, Agricultural Shop"
         />
 
-        <link
-          rel="canonical"
-          href="https://yourwebsite.com/contact"
-        />
+        <link rel="canonical" href="https://yourwebsite.com/contact" />
 
-        <meta
-          property="og:title"
-          content="Contact Krushi Seva Kendra"
-        />
+        <meta property="og:title" content="Contact Krushi Seva Kendra" />
 
         <meta
           property="og:description"
@@ -81,120 +66,117 @@ ${formData.message}`;
       </Helmet>
 
       {/* HERO */}
-      <section className="relative h-[280px] md:h-[360px] overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2000&auto=format&fit=crop"
-          alt="Contact Krushi Seva Kendra"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+      <section
+        className="relative min-h-[45vh] md:min-h-[50vh] flex items-center justify-center overflow-hidden pb-4 md:pb-4 pt-20 lg:pt-20"
+        style={{
+          backgroundImage:
+            "url('https://khetibuddy.com/wp-content/uploads/2026/05/Software-Development-for-Agriculture.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/55"></div>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 to-black/50"></div>
-
-        <div className="relative z-10 h-full flex items-center justify-center text-center px-6 mt-10">
-          <div>
-            <span className="inline-block px-5 py-2 rounded-full bg-white/10 backdrop-blur-md text-white text-sm font-medium mb-5 border border-white/20">
-              Contact Krushi Seva Kendra
-            </span>
-
-            <h1 className="text-white text-4xl md:text-6xl font-black mb-4">
-              Let's Grow Better Together
-            </h1>
-
-            <p className="text-white/90 max-w-xl mx-auto">
-              Contact us for agricultural products, crop guidance
-              and farming solutions.
-            </p>
-          </div>
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white"
+          >
+            Contact Us
+          </motion.h1>
         </div>
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="relative py-20 bg-[#f8faf7] overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-40"></div>
+      <section className="relative py-10 lg:py-10 bg-[#f8faf7] overflow-hidden">
+        {/* Background Shapes */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-40" />
 
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-200 rounded-full blur-3xl opacity-30" />
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
-            {/* LEFT SIDE */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            {/* LEFT */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold mb-6">
-                <MessageCircle size={16} />
-                Get In Touch
+              <span className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 sm:px-5 py-2 rounded-full font-semibold text-xs sm:text-sm mb-5 sm:mb-6">
+                <MessageCircle size={14} className="sm:w-4 sm:h-4" />
+                Contact Agroplus
               </span>
 
-              <h2 className="text-4xl lg:text-4xl font-black text-gray-900 leading-tight mb-5">
-                Need Farming
-                
-                  Support?
-               
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4 sm:mb-6">
+                Let's Grow{" "}
+                <span className="text-green-600">Agriculture Together</span>
               </h2>
 
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Our team is ready to help with seeds,
-                fertilizers, pesticides, crop management and
-                modern farming guidance.
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+                Whether you need quality seedlings, crop protection products,
+                fertilizers or expert farming guidance, our team is here to
+                support your agricultural journey.
               </p>
 
-              <div className="space-y-5">
-                <div className="group bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition-all duration-300 flex items-center gap-5">
-                  <div className="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center group-hover:scale-110 transition">
-                    <Phone size={28} />
+              {/* Contact Info Box */}
+              <div className="bg-white rounded-[32px] p-8 shadow-xl border border-gray-100">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center">
+                      <Phone size={22} className="text-green-700" />
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">Phone Number</p>
+
+                      <a
+                        href="tel:+914105040000"
+                        className="font-bold text-lg text-gray-900"
+                      >
+                        +91 41050 40000
+                      </a>
+                    </div>
                   </div>
 
-                  <div>
-                    <p className="text-gray-500 text-sm">
-                      Call Us
-                    </p>
+                  <div className="border-t"></div>
 
-                    <a
-                      href="tel:+919860207957"
-                      className="text-lg font-bold text-gray-900"
-                    >
-                      +91 41050 40000
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center">
+                      <Mail size={22} className="text-green-700" />
+                    </div>
 
-                    </a>
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">
+                        Email Address
+                      </p>
+
+                      <p className="font-bold text-lg text-gray-900">
+                        info@yourwebsite.com
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-t"></div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center">
+                      <MapPin size={22} className="text-green-700" />
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">Location</p>
+
+                      <p className="font-bold text-gray-900 leading-relaxed">
+                        Pargaon Mangrul, Pune, Maharashtra 412105
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <div className="group bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition-all duration-300 flex items-center gap-5">
-                  <div className="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center group-hover:scale-110 transition">
-                    <Mail size={28} />
-                  </div>
-
-                  <div>
-                    <p className="text-gray-500 text-sm">
-                      Email Address
-                    </p>
-
-                    <p className="text-lg font-bold text-gray-900">
-                      info@yourwebsite.com
-                    </p>
-                  </div>
-                </div>
-
-                <div className="group bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition-all duration-300 flex items-center gap-5">
-                  <div className="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center group-hover:scale-110 transition">
-                    <MapPin size={28} />
-                  </div>
-
-                  <div>
-                    <p className="text-gray-500 text-sm">
-                      Location
-                    </p>
-
-                    <p className="text-lg font-bold text-gray-900">
-                      Pargaon Mangrul, Pune, Maharashtra 412105
-                    </p>
-                  </div>
-                </div>
-
-                
               </div>
             </motion.div>
 
@@ -202,26 +184,20 @@ ${formData.message}`;
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7 }}
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-[40px] blur-xl opacity-20"></div>
-
-              <div className="relative bg-white rounded-[40px] p-8 md:p-10 shadow-2xl border border-gray-100">
+              <div className="bg-white rounded-[36px] p-8 md:p-10 shadow-[0_25px_60px_rgba(0,0,0,0.08)] border border-gray-100">
                 <h3 className="text-3xl font-black text-gray-900 mb-3">
                   Send Inquiry
                 </h3>
 
                 <p className="text-gray-600 mb-8">
-                  Fill the form and connect instantly through
-                  WhatsApp.
+                  Fill in your details and connect with us instantly.
                 </p>
 
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-5"
-                >
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <input
                     type="text"
                     name="name"
@@ -229,7 +205,16 @@ ${formData.message}`;
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full h-14 px-5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-green-600 outline-none"
+                    className="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-green-600 outline-none"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-green-600 outline-none"
                   />
 
                   <input
@@ -239,7 +224,7 @@ ${formData.message}`;
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full h-14 px-5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-green-600 outline-none"
+                    className="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-green-600 outline-none"
                   />
 
                   <textarea
@@ -249,23 +234,15 @@ ${formData.message}`;
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full p-5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-green-600 outline-none resize-none"
+                    className="w-full p-5 rounded-2xl border border-gray-200 focus:border-green-600 outline-none resize-none"
                   />
 
                   <button
                     type="submit"
-                    className="group w-full flex items-center justify-between bg-green-700 hover:bg-green-800 rounded-2xl text-white overflow-hidden transition-all"
+                    className="inline-flex items-center gap-3 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
                   >
-                    <span className="px-6 py-4 text-lg font-semibold">
-                      Send on WhatsApp
-                    </span>
-
-                    <div className="w-16 h-16 bg-yellow-400 flex items-center justify-center">
-                      <Send
-                        size={22}
-                        className="text-black group-hover:translate-x-1 transition"
-                      />
-                    </div>
+                    <MessageCircle size={20} />
+                    Send on WhatsApp
                   </button>
                 </form>
               </div>
@@ -277,15 +254,15 @@ ${formData.message}`;
       {/* MAP */}
       <section className="w-full">
         <iframe
-    title="Pargaon Mangrul Pune Maharashtra Location"
-    src="https://maps.google.com/maps?q=Pargaon%20Mangrul%20Pune%20Maharashtra%20412105&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="100%"
-    height="320"
-    loading="lazy"
-    allowFullScreen
-    referrerPolicy="no-referrer-when-downgrade"
-    className="w-full border-0"
-  ></iframe>
+          title="Pargaon Mangrul Pune Maharashtra Location"
+          src="https://maps.google.com/maps?q=Pargaon%20Mangrul%20Pune%20Maharashtra%20412105&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="320"
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full border-0"
+        ></iframe>
       </section>
     </>
   );

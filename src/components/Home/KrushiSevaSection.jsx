@@ -50,7 +50,7 @@ export default function KrushiSevaSection() {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
         {/* 📄 LEFT CONTENT */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" className="relative order-2 lg:order-1">
           <p className="text-xs sm:text-sm text-green-600 font-semibold mb-2 uppercase tracking-wider">
             Krushi Seva Kendra
           </p>
@@ -98,7 +98,7 @@ export default function KrushiSevaSection() {
         {/* 🎬 RIGHT SLIDER */}
         <div
           data-aos="fade-left"
-          className="relative group"
+          className="relative group order-1 lg:order-2"
           onMouseEnter={() => setPause(true)}
           onMouseLeave={() => setPause(false)}
         >

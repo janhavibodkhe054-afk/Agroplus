@@ -50,7 +50,7 @@ export default function AgroplusTestimonials() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-green-50/40 to-white py-14 sm:py-4 md:py-2 lg:py-2">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-green-50/40 to-white py-14 sm:py-4">
       {/* BACKGROUND BLURS */}
       <div className="absolute top-0 left-0 w-52 sm:w-80 md:w-96 h-52 sm:h-80 md:h-96 bg-green-100/50 rounded-full blur-3xl"></div>
 
@@ -66,7 +66,7 @@ export default function AgroplusTestimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 px-4 sm:px-6"
+          className="text-center max-w-6xl mx-auto mb-12 sm:mb-16 px-4 sm:px-6"
         >
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 sm:px-5 py-2 rounded-full mb-5 sm:mb-6 shadow-sm">
             <Quote size={18} />
@@ -77,9 +77,9 @@ export default function AgroplusTestimonials() {
 
           <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-5 sm:mb-6">
             What Farmers Say About
-            <span className="block text-green-600 mt-2">
+            
               Agroplus ERP
-            </span>
+            
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
@@ -89,7 +89,7 @@ export default function AgroplusTestimonials() {
         </motion.div>
 
         {/* TESTIMONIAL SCROLLER */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden pb-16">
           {/* LEFT FADE */}
           <div className="absolute left-0 top-0 z-20 h-full w-10 sm:w-24 md:w-32 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
 

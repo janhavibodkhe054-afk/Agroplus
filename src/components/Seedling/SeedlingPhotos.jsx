@@ -47,8 +47,7 @@ export default function SeedlingPhotos() {
             </h2>
 
             <p className="max-w-3xl mx-auto text-gray-600 text-lg">
-              Explore our farming projects, nursery plants, banana tissue
-              culture, sugarcane cultivation and agricultural activities.
+              Explore our farming projects, nursery plants, sugarcane cultivation and agricultural activities.
             </p>
           </div>
 
