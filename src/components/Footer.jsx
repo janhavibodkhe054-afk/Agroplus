@@ -8,20 +8,14 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
-  const quickLinks = [
+  const pages = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Krushi Seva Kendra", path: "/kendra" },
     { name: "Seedling", path: "/seed" },
-    
-  ];
-
-  const pages = [
     { name: "Agroplus Software", path: "/software" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
-    { name: "Privacy Policy", path: "/privacy-policy" },
-    { name: "Terms & Conditions", path: "/terms-conditions" },
   ];
 
   return (
@@ -34,20 +28,21 @@ export default function Footer() {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-400/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
           {/* Company Info */}
-          <div>
+          <div className="flex flex-col">
             <img
               src="/logo.png"
               alt="Agroplus Logo"
-              className="h-20 w-auto object-contain mb-5"
+              className="h-20 w-auto object-contain mb-5 -ml-12"
             />
 
-            <p className="text-base md:text-lg leading-relaxed text-gray-400">
+            <p className="max-w-md text-base md:text-lg leading-relaxed text-gray-400">
               Agroplus provides quality seedlings, agricultural inputs,
-              crop protection products and smart digital solutions that
-              help farmers improve productivity and achieve sustainable
-              agricultural growth.
+              crop protection products, and smart digital solutions that help
+              farmers improve productivity and achieve sustainable agricultural
+              growth.
             </p>
 
             {/* Social Icons */}
@@ -75,33 +70,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white text-lg font-bold mb-5">
-              Quick Links
-            </h3>
-
-            <ul className="space-y-3">
-              {quickLinks.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={item.path}
-                    className="text-gray-400 hover:text-green-400 transition-all duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Pages */}
-          <div>
+          <div className="flex flex-col lg:mx-auto">
             <h3 className="text-white text-lg font-bold mb-5">
               Pages
             </h3>
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 lg:min-w-[220px]">
               {pages.map((item, index) => (
                 <li key={index}>
                   <Link
@@ -116,12 +91,12 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-white text-lg font-bold mb-5">
               Contact Information
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 lg:max-w-sm">
               <a
                 href="tel:+919860207957"
                 className="flex items-start gap-3 text-gray-400 hover:text-white transition"
@@ -179,14 +154,31 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-6">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-center lg:text-left">
-            <p className="text-sm text-gray-500">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+            {/* Copyright */}
+            <p className="text-sm text-gray-500 text-center lg:text-left">
               © {new Date().getFullYear()} Agroplus. All Rights Reserved.
             </p>
 
-            
+            {/* Legal Links */}
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+              <Link
+                to="/privacy-policy"
+                className="text-gray-500 hover:text-green-400 transition"
+              >
+                Privacy Policy
+              </Link>
 
-            <p className="text-sm text-gray-500">
+              <Link
+                to="/terms-conditions"
+                className="text-gray-500 hover:text-green-400 transition"
+              >
+                Terms & Conditions
+              </Link>
+            </div>
+
+            {/* Developer Credit */}
+            <p className="text-sm text-gray-500 text-center lg:text-right">
               Designed & Developed by{" "}
               <a
                 href="https://hashgridtech.com/"
