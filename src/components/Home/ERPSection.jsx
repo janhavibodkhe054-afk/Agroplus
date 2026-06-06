@@ -129,7 +129,7 @@ export default function ERPSection() {
 
           <p className="text-gray-600 mb-6 text-base md:text-lg">
             Manage inventory, billing, and financial data with ease using our
-            intelligent ERP platform designed for agro businesses.
+            intelligent ERP platform designed for farmers.
           </p>
 
           {/* FEATURES */}

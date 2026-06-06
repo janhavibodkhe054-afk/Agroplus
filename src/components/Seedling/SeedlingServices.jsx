@@ -67,7 +67,7 @@ export default function SeedlingServices() {
             </h2>
 
             <p className="max-w-3xl mx-auto text-gray-600 text-base md:text-lg leading-relaxed">
-              Quality seedlings, tissue culture plants, farming guidance and
+              Quality seedlings, farming guidance and
               agricultural solutions designed to support healthy crop growth and
               better farming outcomes.
             </p>

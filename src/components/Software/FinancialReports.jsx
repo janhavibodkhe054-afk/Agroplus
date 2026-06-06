@@ -182,11 +182,7 @@ export default function FinancialReports() {
               </div>
 
               {/* NOTE */}
-              <p className="text-sm text-gray-500 mt-4">
-                Trusted Farm ERP Software for modern agriculture, crop
-                management, farm accounting, inventory control, labor management
-                and agribusiness growth.
-              </p>
+             
             </motion.div>
           </div>
         </div>
